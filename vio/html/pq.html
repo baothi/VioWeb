@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs - Unsemantic</title>
+<link rel="stylesheet" href="unsemantic-grid-responsive.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background-color: #1a1a1a;
+        line-height: 1.6;
+        padding: 10px;
+    }
+
+    .grid-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .faq-section {
+        border-bottom: 1px solid #333;
+        padding: 20px 0;
+    }
+
+    .faq-section:last-child {
+        border-bottom: none;
+    }
+
+    .faq-question {
+        margin: 0;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .faq-answer {
+        margin: 0;
+        padding: 10px;
+        display: none;
+    }
+
+    /* Unsemantic Grid Overrides */
+    .grid-100 {
+        padding: 0 15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="grid-100">
+        <div class="faq-section">
+            <p class="faq-question">+ What is Vio?</p>
+            <div class="faq-answer">
+                Vio is a global visual schedule aggregator that connects you to the rest of the world from a personal, professional, and social standpoint.
+            </div>
+        </div>
+        <div class="faq-section">
+            <p class="faq-question">+ How do you pronounce Vio?</p>
+            <div class="faq-answer">
+                Vio is pronounced as "Vee-oh".
+            </div>
+        </div>
+        <!-- Repeat for other FAQ sections -->
+    </div>
+</div>
+
+<script>
+    // JavaScript for FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', event => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
