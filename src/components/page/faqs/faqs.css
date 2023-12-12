@@ -1,55 +1,60 @@
-/* faqs.css */
+.grid-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: white; /* Thêm màu trắng cho toàn bộ văn bản */
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: white; /* Màu chữ màu trắng cho tiêu đề */
+}
+
 .faq-section {
-    margin-bottom: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+}
+
+.faq-section:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin: 0;
+  padding: 10px;
+  display: none; /* Đã ẩn mặc định, sẽ hiển thị thông qua JavaScript hoặc React state */
+}
+
+/* Unsemantic Grid Overrides */
+.grid-100 {
+  padding: 0 15px;
+}
+
+/* Media queries cho các kích thước màn hình khác nhau */
+@media only screen and (max-width: 768px) {
+  .grid-container {
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
   }
-  
-  .faq-question {
-    margin: 0;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #333;
-    user-select: none;
+
+  .faq-question, .faq-answer {
+    padding: 8px;
   }
-  
-  .faq-question:hover {
-    background-color: #e0e0e0;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Giảm kích thước font chữ cho tiêu đề trên màn hình nhỏ */
   }
-  
-  .faq-answer {
-    padding: 10px;
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-    color: #666;
+
+  .faq-question, .faq-answer {
+    padding: 5px;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .faq-section {
-      padding: 10px;
-    }
-  
-    .faq-question {
-      font-size: 16px;
-    }
-  
-    .faq-answer {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .faq-question {
-      font-size: 14px;
-    }
-  
-    .faq-answer {
-      font-size: 12px;
-    }
-  }
-  
+}
