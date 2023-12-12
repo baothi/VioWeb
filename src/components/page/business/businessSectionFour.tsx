@@ -13,29 +13,55 @@ import img_nav_3 from '../../../assets/images/img_nav_3.png';
 import img_nav_4 from '../../../assets/images/img_nav_4.png';
 import img_nav_5 from '../../../assets/images/img_nav_5.png';
 import img_nav_6 from '../../../assets/images/img_nav_6.png';
+import { useEffect, useRef, useState } from 'react';
 
 
 const BusinessSectionFour = () => {
-    const sliderThumb = {
-      slidesToShow: 6,
-      slidesToScroll: 6,
-      asNavFor: '.slider-content',
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      arrows: false,
-    };
-    
-    const sliderContent = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      fade: false,
-      infinite: false,
-      speed: 1000,
-      asNavFor: '.slider-thumb',
-      arrows: false,
-    }
+    const sliderContentRef = useRef(null);
+    const sliderThumbRef = useRef(null);
+    const [nav1, setNav1] = useState(null);
+    const [nav2, setNav2] = useState(null);
 
+    useEffect(() => {
+        setNav1(sliderContentRef.current);
+        setNav2(sliderThumbRef.current);
+    }, [sliderContentRef.current, sliderThumbRef.current]);
+
+    const sliderThumbSettings = {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: sliderContentRef.current,
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+        ref: sliderThumbRef,
+      };
+    
+      const sliderContentSettings = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: false,
+        infinite: false,
+        speed: 1000,
+        asNavFor: nav2,
+        arrows: false,
+        ref: sliderContentRef,
+      };
 
 
     const slidesData = [
@@ -53,6 +79,357 @@ const BusinessSectionFour = () => {
         { imgSrc: img_nav_6, title: "Calendar" },
     ];
 
+    const sliderContent = [
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_1} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_2} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_3} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_4} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_5} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_6} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_1} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_2} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_3} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_4} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_5} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        },
+        {
+            htmlContent: `<div class="item">
+            <img src=${slider_content_6} alt="" />
+            <div class="box_content">
+                <div class="icon">
+                    <img src=${shoppingbag03} alt="" />
+                </div>
+                <h3 class="heading_title">
+                    Open Your
+                    <b>Online Store</b>
+                </h3>
+                <div class="content">
+                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                </div>
+                <div class="nav_slider">
+                    <div class="arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>`
+        }
+    ]
+
 
     return (
       <section className="section business_sec_4">
@@ -68,335 +445,14 @@ const BusinessSectionFour = () => {
                 </div>
 
                 <div className="slider slider-content" data-aos="fade-up">
-                  <Slider {...sliderContent}>
-                    <div className="item">
-                        <img src={slider_content_1} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_2} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_3} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_4} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_5} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_6} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_1} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_2} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_3} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_4} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_5} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <img src={slider_content_6} alt="" />
-                        <div className="box_content">
-                            <div className="icon">
-                                <img src={shoppingbag03} alt="" />
-                            </div>
-                            <h3 className="heading_title">
-                                Open Your
-                                <b>Online Store</b>
-                            </h3>
-                            <div className="content">
-                                From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                            </div>
-                            <div className="nav_slider">
-                                <div className="arrow left">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M20 24L12 16L20 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div className="arrow right">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M12 24L20 16L12 8" stroke="#FAFAFA" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <Slider {...sliderContentSettings}>
+                    {sliderContent.map((slide, index) => (
+                        <div key={index} dangerouslySetInnerHTML={{ __html: slide.htmlContent }} />
+                    ))}
                   </Slider>
                 </div>
                 <div className="slider slider-thumb" data-aos="fade-up">
-                    <Slider {...sliderThumb}>
+                    <Slider {...sliderThumbSettings}>
                       {slidesData.map((slide, index) => (
                             <div className="item" key={index}>
                                 <img src={slide.imgSrc} alt=""/>
