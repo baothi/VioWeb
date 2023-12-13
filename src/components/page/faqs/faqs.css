@@ -6,6 +6,7 @@
 }
 
 h1 {
+  font-size: 50px;
   text-align: center;
   margin: 40px 0;
   color: white; /* Màu chữ màu trắng cho tiêu đề */
@@ -30,7 +31,9 @@ h1 {
 .faq-answer {
   margin: 0;
   padding: 10px;
-  display: none; /* Đã ẩn mặc định, sẽ hiển thị thông qua JavaScript hoặc React state */
+  white-space: break-spaces;
+  /* display: none;  */
+  /* Đã ẩn mặc định, sẽ hiển thị thông qua JavaScript hoặc React state */
 }
 
 /* Unsemantic Grid Overrides */

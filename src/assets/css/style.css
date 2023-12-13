@@ -24,7 +24,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 99;
-    padding: 0.625rem 0;
+    /* padding: 0.625rem 0; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15.600000381469727px);
@@ -89,6 +89,7 @@ ul.change_language>li:hover ul {
 }
 
 .grid-container {
+    padding: 10px !important;
     max-width: 64.583rem;
     z-index: 2;
 }
@@ -147,7 +148,7 @@ b {}
 }
 
 .home_sec_2 .box:after {
-    width: 0.15625rem;
+    /* width: 0.15625rem; */
     top: 0.833rem;
     bottom: 0.833rem;
     content: '';
