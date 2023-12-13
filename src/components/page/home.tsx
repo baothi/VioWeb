@@ -22,6 +22,7 @@ import HomeSectionSix from './homeSectionSix';
 import HomeSectionThree from './homeSectionThree';
 // the hook
 import { useTranslation} from 'react-i18next';
+import './home.scss'
 
 
 
@@ -54,7 +55,10 @@ const Home = () => {
           <div className="grid-container">
               <div className="grid-100">
                   <h2 className="heading_title" data-aos="fade-right">
-                      Book <div className="box"><b>Beauty and Spa</b></div>
+                      Book <div className="box">
+                        <div className='box-scroll-text'>
+                            <b>Beauty and Spa</b>
+                        </div></div>
                   </h2>
                   <div className="wrap">
                       <div className="box_content">
