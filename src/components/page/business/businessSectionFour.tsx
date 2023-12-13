@@ -35,11 +35,15 @@ const BusinessSectionFour = () => {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        // autoplay: true,
+        // speed: 5000,
+        // autoplaySpeed: 5000,
+        // cssEase: "linear",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 500,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
           {
@@ -57,10 +61,13 @@ const BusinessSectionFour = () => {
         slidesToScroll: 1,
         fade: false,
         infinite: false,
-        speed: 1000,
         asNavFor: nav2,
         arrows: false,
         ref: sliderContentRef,
+        autoplay: true,
+        speed: 5000,
+        autoplaySpeed: 5000,
+        cssEase: "linear",
       };
 
 

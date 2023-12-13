@@ -56,7 +56,7 @@ const HomeSectionSix = () => {
                             Online business is booming, vio packs all the tool you need to take your online shop velocity to the next level.
                         </div>
                     </div>
-                    <div className="slider_business" data-aos="fade-up">
+                    <div className="slider_business" data-aos="fade-up" data-aos-duration="3000">
                         <Slider {...settings}>
                             {slidesData.map((slide, index) => (
                                 <div className="item" key={index}>
