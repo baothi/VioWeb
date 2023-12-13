@@ -89,7 +89,7 @@ ul.change_language>li:hover ul {
 }
 
 .grid-container {
-    /* padding: 10px !important; */
+    padding: 10px !important;
     max-width: 64.583rem;
     z-index: 2;
 }
