@@ -13,6 +13,8 @@
     "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\""
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.0.2",
+    "@tsparticles/react": "^3.0.0",
     "@types/react-slick": "^0.23.12",
     "aos": "^2.3.4",
     "react": "^18.2.0",
@@ -22,9 +24,11 @@
     "react-router-dom": "^6.20.1",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.3",
+    "react-tsparticles": "^2.12.2",
     "sass": "^1.69.5",
     "slick-carousel": "^1.8.1",
-    "tsparticles": "^3.0.2"
+    "tsparticles": "^3.0.2",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",
