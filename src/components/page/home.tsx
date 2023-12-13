@@ -1,6 +1,5 @@
 import home_img_sec_1 from '../../assets/images/home_img_sec_1.png';
 import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
-import img_change_1 from '../../assets/images/img_change_1.png';
 import banner_sec_4 from '../../assets/images/banner_sec_4.png';
 import bg_sec_5 from '../../assets/images/bg_sec_5.jpg';
 import Rectangle_3053 from '../../assets/images/Rectangle_3053.png';
@@ -20,6 +19,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import HomeSectionSix from './homeSectionSix';
+import HomeSectionThree from './HomeSectionThree';
 
 
 
@@ -131,40 +131,7 @@ const Home = () => {
 
             </div>
         </section>
-        <section className="section home_sec_3">
-            <div className="grid-container">
-                <div className="grid-50" data-aos="fade-right">
-                    <ul className="tab_img">
-                        <li className="active" data-id="1">
-                            <img src={img_change_1} alt=""/>
-                        </li>
-                        <li className="" data-id="2">
-                            <img src={img_change_1} alt=""/>
-                        </li>
-                        <li className="" data-id="3">
-                            <img src={img_change_1} alt=""/>
-                        </li>
-                    </ul>
-                </div>
-                <div className="grid-50 tablet-grid-50">
-                    <h2 className="heading_title" data-aos="fade-left">
-                        <b>Vio</b> simplifies<br/>
-                        your <span>Life</span>
-                    </h2>
-                    <ul className="tab_content" data-aos="fade-left">
-                        <li data-id="1" className="active" data-aos="fade-left">
-                            <b>Find your favorite service</b>
-                        </li>
-                        <li data-id="2" data-aos="fade-left">
-                            Booking anywhere, anytime
-                        </li>
-                        <li data-id="3" data-aos="fade-left">
-                            Keep track of your calendar
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <HomeSectionThree />
         <section className="section home_sec_4">
             <div className="grid-container">
                 <div className="grid-50 box_content">
