@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Vio_Logo from '../../assets/images/Vio_Logo.svg';
 import USA from '../../assets/images/USA.png';
 import vietnam from '../../assets/images/VietNam.png';
 import { Link } from 'react-router-dom';
-// the hook
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  // Retrieve the language from localStorage or default to USA
+  const initialLanguage = localStorage.getItem('language') || USA;
   const [showSubMenu, setShowSubMenu] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState(USA);
+  const [currentLanguage, setCurrentLanguage] = useState(initialLanguage);
   const { i18n } = useTranslation();
 
   const toggleSubMenu = () => {
@@ -16,16 +17,25 @@ const Header = () => {
   };
 
   const changeLanguage = (languageImage) => {
-    console.log(languageImage)
-    if(languageImage === '/src/assets/images/USA.png')
-    {
-      i18n.changeLanguage('en')
-    }else{
-      i18n.changeLanguage('vi')
-    }
+    console.log(languageImage);
+    const newLang = languageImage === '/src/assets/images/USA.png' ? 'en' : 'vi';
+    i18n.changeLanguage(newLang);
     setCurrentLanguage(languageImage);
     setShowSubMenu(false);
+
+    // Store the selected language in localStorage
+    localStorage.setItem('language', languageImage);
   };
+
+  // This effect runs when the component mounts and updates the language
+  // based on the stored value in localStorage.
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      const langCode = storedLanguage === '/src/assets/images/USA.png' ? 'en' : 'vi';
+      i18n.changeLanguage(langCode);
+    }
+  }, [i18n]);
 
   return (
     <>

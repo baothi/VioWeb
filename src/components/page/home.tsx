@@ -1,4 +1,3 @@
-import home_img_sec_1 from '../../assets/images/home_img_sec_1.png';
 import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
 import banner_sec_4 from '../../assets/images/banner_sec_4.png';
 import bg_sec_5 from '../../assets/images/bg_sec_5.jpg';
@@ -20,9 +19,9 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import HomeSectionSix from './homeSectionSix';
 import HomeSectionThree from './homeSectionThree';
-// the hook
-import { useTranslation} from 'react-i18next';
+
 import './home.scss'
+import HomeSectionOne from './homeSectionOne';
 
 
 
@@ -35,22 +34,9 @@ const Home = () => {
             easing: 'ease', // default easing for AOS animations
         });
       }, []);
-    const { t, i18n } = useTranslation();
   return (
     <>
-      <section className="section home_sec_1">
-          <div className="grid-container">
-              <div className="grid-100">
-                  <div className="text_center">
-                      <h1 className="heading_title" data-aos="fade-in">
-                          Vio<br/>
-                          <div dangerouslySetInnerHTML={{ __html: t('Smart Booking') }} />
-                      </h1>
-                      <img src={home_img_sec_1} alt="" data-aos="fade-in"/>
-                  </div>
-              </div>
-          </div>
-      </section>
+    <HomeSectionOne />
       <section className="section home_sec_2">
           <div className="grid-container">
               <div className="grid-100">

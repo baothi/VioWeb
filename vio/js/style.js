@@ -23,6 +23,27 @@ function tabs_imgs(){
 }
 
 function slick_slider(){
+    jQuery('.slider_top').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        arrows: false,
+        autoplay: true,
+        focusOnSelect: true,
+        speed: 1000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+
     jQuery('.slider_business').slick({
         centerMode: true,
         centerPadding: '0px',
