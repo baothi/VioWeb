@@ -6,7 +6,12 @@ import slider_content_3 from '../../../assets/images/slider_content_3.png';
 import slider_content_4 from '../../../assets/images/slider_content_4.png';
 import slider_content_5 from '../../../assets/images/slider_content_5.png';
 import slider_content_6 from '../../../assets/images/slider_content_6.png';
-import shoppingbag03 from '../../../assets/images/shopping-bag-03.svg';
+import shoppingbag03 from '../../../assets/images/shopping-bag.svg';
+import calendarcheck02 from '../../../assets/images/calendar-check.svg';
+import setting02 from '../../../assets/images/settings-02.svg';
+import setting04 from '../../../assets/images/settings-04.svg';
+import bellringing from '../../../assets/images/bell-ringing-03.svg';
+import calendardate from '../../../assets/images/calendar-date.svg';
 import img_nav_1 from '../../../assets/images/img_nav_1.png';
 import img_nav_2 from '../../../assets/images/img_nav_2.png';
 import img_nav_3 from '../../../assets/images/img_nav_3.png';
@@ -121,14 +126,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_2} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${calendarcheck02} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Appointment
+                    <b>Scheduling</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Say goodbye to old way, no phone call needed: Get book from clients with our seamless appointment scheduling.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -150,14 +155,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_3} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${setting02} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Manage
+                    <b>Team Member</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Set up staff for services and manage their working shift, booking.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -179,14 +184,13 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_4} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${bellringing} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Notification
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Notify your client with reminder to reduce cancel rate.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -208,15 +212,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_5} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${setting04} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Inventory
+                    <b>Management</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                </div>
+                Track product, services slot and manage them among your branches.                </div>
                 <div class="nav_slider">
                     <div class="arrow left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -237,15 +240,13 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_6} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${calendardate} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Calendar
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                </div>
+                All in one calendar to stay in the loop, keep track of your bookings, your event, promotion and your staff time.                </div>
                 <div class="nav_slider">
                     <div class="arrow left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -261,6 +262,7 @@ const BusinessSectionFour = () => {
             </div>
         </div>`
         },
+
         {
             htmlContent: `<div class="item">
             <img src=${slider_content_1} alt="" />
@@ -295,14 +297,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_2} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${calendarcheck02} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Appointment
+                    <b>Scheduling</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Say goodbye to old way, no phone call needed: Get book from clients with our seamless appointment scheduling.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -324,14 +326,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_3} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${setting02} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Manage
+                    <b>Team Member</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Set up staff for services and manage their working shift, booking.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -353,14 +355,13 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_4} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${bellringing} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Notification
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
+                Notify your client with reminder to reduce cancel rate.
                 </div>
                 <div class="nav_slider">
                     <div class="arrow left">
@@ -382,15 +383,14 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_5} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${setting04} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Inventory
+                    <b>Management</b>
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                </div>
+                Track product, services slot and manage them among your branches.                </div>
                 <div class="nav_slider">
                     <div class="arrow left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -411,15 +411,13 @@ const BusinessSectionFour = () => {
             <img src=${slider_content_6} alt="" />
             <div class="box_content">
                 <div class="icon">
-                    <img src=${shoppingbag03} alt="" />
+                    <img src=${calendardate} alt="" />
                 </div>
                 <h3 class="heading_title">
-                    Open Your
-                    <b>Online Store</b>
+                    Calendar
                 </h3>
                 <div class="content">
-                    From the ground up with our built-in store builder and get found by customer on <span>Vio market place</span>.
-                </div>
+                All in one calendar to stay in the loop, keep track of your bookings, your event, promotion and your staff time.                </div>
                 <div class="nav_slider">
                     <div class="arrow left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -434,7 +432,7 @@ const BusinessSectionFour = () => {
                 </div>
             </div>
         </div>`
-        }
+        },
     ]
 
 

@@ -19,9 +19,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import HomeSectionSix from './homeSectionSix';
-import HomeSectionThree from './HomeSectionThree';
+import HomeSectionThree from './homeSectionThree';
 // the hook
-import { useTranslation } from 'react-i18next';
+import { useTranslation} from 'react-i18next';
 
 
 
