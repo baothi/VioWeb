@@ -9,7 +9,7 @@ const MainLayout = () => {
     <>
       <ParticlesContainer />
       <Header />
-      <main>
+      <main>developingdeveloping
         <Outlet />
       </main>
       <Footer />
