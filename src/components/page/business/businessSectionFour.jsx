@@ -1,4 +1,5 @@
-import Slider from 'react-slick';
+import { default as Slider } from "react-slick";
+// import Slider from '../slider'
 import 'slick-carousel/slick/slick.css';
 import slider_content_1 from '../../../assets/images/slider_content_1.png';
 import slider_content_2 from '../../../assets/images/slider_content_2.png';
@@ -21,6 +22,7 @@ import img_nav_6 from '../../../assets/images/img_nav_6.png';
 import { useEffect, useRef, useState } from 'react';
 
 
+
 const BusinessSectionFour = () => {
     const sliderContentRef = useRef(null);
     const sliderThumbRef = useRef(null);
@@ -40,9 +42,9 @@ const BusinessSectionFour = () => {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
-        // autoplay: true,
-        // speed: 5000,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        speed: 8000,
+        autoplaySpeed: 8000,
         // cssEase: "linear",
         responsive: [
           {
@@ -66,14 +68,25 @@ const BusinessSectionFour = () => {
         slidesToScroll: 1,
         fade: false,
         infinite: false,
-        asNavFor: nav2,
+        // asNavFor: nav2,
         arrows: false,
         ref: sliderContentRef,
         autoplay: true,
         speed: 5000,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
         cssEase: "linear",
       };
+
+      // Adjust the settings within the render method
+    const adjustedSliderContentSettings = {
+      ...sliderContentSettings,
+      asNavFor: nav2, // This will be either `null` or the slider instance
+    };
+
+    const adjustedSliderThumbSettings = {
+        ...sliderThumbSettings,
+        asNavFor: nav1, // This will be either `null` or the slider instance
+    };
 
 
     const slidesData = [
@@ -435,7 +448,6 @@ const BusinessSectionFour = () => {
         },
     ]
 
-
     return (
       <section className="section business_sec_4">
         <div className="grid-container">
@@ -450,14 +462,14 @@ const BusinessSectionFour = () => {
                 </div>
 
                 <div className="slider slider-content" data-aos="fade-up">
-                  <Slider {...sliderContentSettings}>
+                  <Slider {...adjustedSliderContentSettings}>
                     {sliderContent.map((slide, index) => (
                         <div key={index} dangerouslySetInnerHTML={{ __html: slide.htmlContent }} />
                     ))}
                   </Slider>
                 </div>
                 <div className="slider slider-thumb" data-aos="fade-up">
-                    <Slider {...sliderThumbSettings}>
+                    <Slider {...adjustedSliderThumbSettings}>
                       {slidesData.map((slide, index) => (
                             <div className="item" key={index}>
                                 <img src={slide.imgSrc} alt=""/>

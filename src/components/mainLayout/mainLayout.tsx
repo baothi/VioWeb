@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from './header'
 import { Outlet } from "react-router-dom";
 import Footer from './footer';
@@ -9,7 +8,7 @@ const MainLayout = () => {
     <>
       <ParticlesContainer />
       <Header />
-      <main>developingdeveloping
+      <main>
         <Outlet />
       </main>
       <Footer />
