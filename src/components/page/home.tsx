@@ -20,11 +20,13 @@ import HomeSectionSix from './homeSectionSix';
 import HomeSectionThree from './homeSectionThree';
 import HomeSectionOne from './homeSectionOne';
 import HomeSectionTwo from './homeSectionTwo'
+import { useTranslation} from 'react-i18next';
 
 
 
 
 const Home = () => {
+    const { t, i18n } = useTranslation();
     useEffect(() => {
         AOS.init({
             delay: 500, // values from 0 to 3000, with step 50ms
@@ -40,64 +42,16 @@ const Home = () => {
       <section className="section home_sec_4">
           <div className="grid-container">
               <div className="grid-50 box_content">
-                  <h2 className="heading_title" data-aos="fade-right">
-                      All<b>-</b>in<b>-</b>one <br/>
-                      <div className="box"><b>Platform</b></div>
-                  </h2>
+              <div dangerouslySetInnerHTML={{ __html: t("All in one platform") }} />
                   <div className="list">
                       <div className="item" data-aos="fade-right">
-                          <h3>
-                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
-                                  <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <defs>
-                                      <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                          <stop stopColor="#7D2EBD"/>
-                                          <stop offset="1" stopColor="#C054EE"/>
-                                      </linearGradient>
-                                  </defs>
-                              </svg>
-                              Marketplace
-                          </h3>
-                          <div className="content">
-                              Explore shop, services, promotion and more in vio's Marketplace.
-                          </div>
+                        <div dangerouslySetInnerHTML={{ __html: t("Marketplace") }} />
                       </div>
                       <div className="item" data-aos="fade-right">
-                          <h3>
-                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
-                                  <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <defs>
-                                      <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                          <stop stopColor="#7D2EBD"/>
-                                          <stop offset="1" stopColor="#C054EE"/>
-                                      </linearGradient>
-                                  </defs>
-                              </svg>
-                              Calendar
-                          </h3>
-                          <div className="content">
-                              All in one calendar to stay in the loop, keep track of your bookings, your event, activities and sync with your everyday calendar.
-                          </div>
+                        <div dangerouslySetInnerHTML={{ __html: t("Calendar") }} />
                       </div>
                       <div className="item" data-aos="fade-right">
-                          <h3>
-                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
-                                  <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                  <defs>
-                                      <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                          <stop stopColor="#7D2EBD"/>
-                                          <stop offset="1" stopColor="#C054EE"/>
-                                      </linearGradient>
-                                  </defs>
-                              </svg>
-                              Social Network Platform
-                          </h3>
-                          <div className="content">
-                              Social media integrated: Feed, chat, livestream, review system.
-                          </div>
+                      <div dangerouslySetInnerHTML={{ __html: t("Social Network Platform") }} />
                       </div>
                   </div>
               </div>
@@ -108,11 +62,7 @@ const Home = () => {
           <div className="grid-container">
               <div className="grid-100">
                   <div className="text_center">
-                      <h2 className="heading_title" data-aos="fade-in">
-                          <b>
-                              Our Partners
-                          </b>
-                      </h2>
+                    <div dangerouslySetInnerHTML={{ __html: t("Our Partners") }} />
                   </div>
                   <div className="wrap">
                       <div className="item" data-aos="fade-up" data-aos-duration="3000">
@@ -140,10 +90,7 @@ const Home = () => {
               <div className="box" style={{ backgroundImage: `url(${bg_app})` }}>
                   <div className="left" data-aos="fade-right">
                       <div className="wrap_title">
-                          <h2 className="heading_title">
-                              <b>Download</b> The<br/>
-                              Vio mobile app
-                          </h2>
+                      <div dangerouslySetInnerHTML={{ __html: t("Download Vio mobile app") }} />
                           <img src={qr_code} alt=""/>
                       </div>
                       <ul className="link_app">

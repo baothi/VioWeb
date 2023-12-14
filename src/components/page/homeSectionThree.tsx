@@ -2,9 +2,11 @@ import img_change_1 from '../../assets/images/img_change_1.png';
 import booking_anywhere from '../../assets/images/booking_anywhere.png';
 import keep_track_of_calendar from '../../assets/images/keep_track_of_calendar.png';
 import React, { useState } from 'react';
+import { useTranslation} from 'react-i18next';
 
 
 const HomeSectionThree = () => {
+    const { t, i18n } = useTranslation();
     interface ITabItem {
       id: number;
       title: string;
@@ -35,10 +37,7 @@ const HomeSectionThree = () => {
                 </ul>
             </div>
             <div className="grid-50 tablet-grid-50">
-                <h2 className="heading_title" data-aos="fade-left" data-aos-duration="3000">
-                    <b>Vio</b> simplifies<br/>
-                    your <span>Life</span>
-                </h2>
+              <div dangerouslySetInnerHTML={{ __html: t("Vio simplifies your life") }} /> 
                 <ul className="tab_content" data-aos="fade-left" data-aos-duration="3000">
                 {tabItems.map(item => (
                   <li
@@ -48,7 +47,7 @@ const HomeSectionThree = () => {
                     // data-aos="fade-left"
                     onClick={() => handleTabClick(item.id)}
                   >
-                    <b>{item.title}</b>
+                    <b><div dangerouslySetInnerHTML={{ __html: t(item.title) }} /> </b>
                   </li>
                 ))}
                 </ul>

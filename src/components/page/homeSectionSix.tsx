@@ -4,9 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import IMG3 from '../../assets/images/IMG-3.png';
 import IMG31 from '../../assets/images/IMG-3-1.png';
 import IMG32 from '../../assets/images/IMG-3-2.png';
-
+import { useTranslation} from 'react-i18next';
 
 const HomeSectionSix = () => {
+    const { t, i18n } = useTranslation();
     const settings = {
         centerMode: true,
         centerPadding: '0px',
@@ -49,12 +50,7 @@ const HomeSectionSix = () => {
             <div className="grid-container">
                 <div className="grid-100">
                     <div className="text_center">
-                        <h2 className="heading_title" data-aos="fade-up">
-                            Supercharge <b>your business</b>
-                        </h2>
-                        <div className="content top" data-aos="fade-up">
-                            Online business is booming, vio packs all the tool you need to take your online shop velocity to the next level.
-                        </div>
+                    <div dangerouslySetInnerHTML={{ __html: t("Supercharge your business") }} />
                     </div>
                     <div className="slider_business" data-aos="fade-up" data-aos-duration="3000">
                         <Slider {...settings}>
@@ -62,7 +58,7 @@ const HomeSectionSix = () => {
                                 <div className="item" key={index}>
                                     <a href="" className="style_center max"></a>
                                     <img src={slide.imgSrc} alt=""/>
-                                    <h3>{slide.title}</h3>
+                                    <h3><div dangerouslySetInnerHTML={{ __html: t(slide.title) }} /></h3>
                                 </div>
                             ))}
                         </Slider>
