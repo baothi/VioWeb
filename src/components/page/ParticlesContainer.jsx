@@ -28,32 +28,62 @@ const ParticlesContainer = () => {
                     id="tsparticles"
                     particlesLoaded={particlesLoaded}
                     options={{
-                        particles: {
-                            number: {
-                                value: 200,
-                                density: {
-                                    enable: true,
-                                    area: 800
-                                }
-                            },
-                            color: {
-                                value: "#00bfff",
-                            },
-                            opacity: {
-                                value: 0.7,
-                            },
-                            size: {
-                                value: 10,
-                            },
-                            move: {
-                                enable: true,
-                                speed: 1,
-                                direction: "bottom",
-                                outModes: {
-                                    default: "out"
-                                },
-                            },
+                      fpsLimit: 120,
+                      interactivity: {
+                        events: {
+                          onClick: {
+                            enable: true,
+                            mode: "push"  
+                          },
+                          onHover: {
+                            enable: true,
+                            mode: "repulse"
+                          },
+                          resize: true
                         },
+                        modes: {
+                          push: { 
+                            quantity: 4 
+                          },
+                          repulse: {
+                            distance: 200,
+                            duration: 0.4
+                          }
+                        }
+                      },
+                      particles: {
+                        color: {
+                          value: "#ffffff"
+                        },
+                        links: {
+                          enable: false  
+                        },
+                        move: {
+                          direction: "bottom",
+                          enable: true, 
+                          outModes: {
+                            bottom: "out"
+                          },
+                          speed: 2  
+                        },
+                        number: {
+                          density: {
+                            enable: true,
+                            area: 800
+                          },
+                          value: 200
+                        },
+                        opacity: {
+                          value: 0.5
+                        },
+                        shape: {
+                          type: "star"
+                        },
+                        size: {
+                          value: { min: 1, max: 4 }
+                        }
+                      },
+                      detectRetina: true
                     }}
                 />
             )}

@@ -1,7 +1,13 @@
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './ourteam.css'
+import './ourteam.css';
+import Email_icon from '../../../assets/images/Email_icon.png';
+import LinkedIn_Icon from '../../../assets/images/LinkedIn_Icon.png';
+import PeterTran1 from '../../../assets/images/PeterTran1.png';
+import RyanEames from '../../../assets/images/RyanEames.png';
+import JuanMondragon from '../../../assets/images/JuanMondragon.png';
+import DatHuynh2 from '../../../assets/images/DatHuynh2.png';
 
 const OurTeam = () => {
   useEffect(() => {
@@ -35,7 +41,7 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={PeterTran1} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
@@ -50,12 +56,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -63,7 +69,7 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={RyanEames} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
@@ -78,12 +84,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -91,7 +97,7 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6372deb6a20ab77201291b7d/1668282486823/JuanMondragon.png" alt="" />
+                                      <img src={JuanMondragon} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
@@ -107,12 +113,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -125,27 +131,27 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={DatHuynh2} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        DAT HUYNH
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        DIRECTOR OF OPERATIONS - VN
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                        As an entrepreneur, business owner, and professor, Dat has immense experience in the Vietnamese ecosystem. Equipped with a thirst for success and tenacity of getting the job done, Dat is now leading the VN Operations team and will usher Vio into the new era of optimization for daily social life in Vietnam.
                                       </div>
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -168,12 +174,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -197,12 +203,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -230,12 +236,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -258,12 +264,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -291,12 +297,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -324,12 +330,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -352,12 +358,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -381,12 +387,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -414,12 +420,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -442,12 +448,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -471,12 +477,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -504,12 +510,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -532,12 +538,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
@@ -565,12 +571,12 @@ const OurTeam = () => {
                                       <ul className="socials">
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5d59c7f3109b63b4e0f/1667544533619/Email+Icon.png" alt="email-icon" />
+                                                  <img src={Email_icon} alt="email-icon" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="">
-                                                  <img src="https://static1.squarespace.com/static/6354821643389a019490e380/t/6364b5b7b118c16557f9ab83/1667544503576/LinkedIn+Icon.png" alt="linkedin-icon" />
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
                                               </a>
                                           </li>
                                       </ul>
