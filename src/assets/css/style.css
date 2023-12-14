@@ -60,6 +60,10 @@ ul.change_language {
     margin-right: 0.833rem;
 }
 
+ul.change_language:hover .sub_menu {
+    opacity: 1;
+}
+
 ul.change_language li {
     position: relative;
 }
@@ -1266,13 +1270,13 @@ section.section.home_sec_1 .sub {
     object-position: top center;
 }
 
-.slider_top .item {
+.slider_top .slick-slide {
     transform: scale(1);
     transition: .5s all;
     cursor: pointer;
 }
 
-.slider_top .item.slick-current {
+.slider_top .slick-current {
     z-index: 9;
     transform: scale(1.2) translateY(-32px);
     position: relative;
@@ -1526,11 +1530,11 @@ section.section.home_sec_1 .sub {
     footer .box b {
         font-size: .7rem;
     }
-    .wrap_member .item {
+    .wrap_member .slick-slide {
         width: 100%;
         margin-left: 0;
     }
-    .slider_top .item.slick-current {
+    .slider_top .slick-current {
         transform: scale(1) translateY(0);
     }
 

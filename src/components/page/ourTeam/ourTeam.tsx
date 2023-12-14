@@ -8,6 +8,11 @@ import PeterTran1 from '../../../assets/images/PeterTran1.png';
 import RyanEames from '../../../assets/images/RyanEames.png';
 import JuanMondragon from '../../../assets/images/JuanMondragon.png';
 import DatHuynh2 from '../../../assets/images/DatHuynh2.png';
+import Ngoc_Phan from '../../../assets/images/Ngoc_Phan.jpeg';
+import PlaceholderAvatarMale from '../../../assets/images/PlaceholderAvatarMale.png';
+import PlaceholderAvatarFemale from '../../../assets/images/PlaceholderAvatarFemale.png';
+import Tien_Nguyen from '../../../assets/images/Tien_Nguyen.jpeg';
+
 
 const OurTeam = () => {
   useEffect(() => {
@@ -163,10 +168,10 @@ const OurTeam = () => {
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          RYAN EAMES
+                                        NGOC PHAN (GEM)
                                       </h3>
                                       <b>
-                                          CO-FOUNDER / COO / CPO
+                                        PRODUCT MANAGER - VN
                                       </b>
                                       <div className="content">
                                           A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
