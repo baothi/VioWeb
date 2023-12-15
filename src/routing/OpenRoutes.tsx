@@ -1,12 +1,3 @@
-// import { Navigate } from "react-router-dom";
-
-// export const OpenRoutes = ({ children }) =>{
-//   const getTokenFromLocalStorage = localStorage.getItem("user")
-//   ? JSON.parse(localStorage.getItem("user")).token
-//   : null;
-//  return getTokenFromLocalStorage ===null ? children : (<Navigate to="/admin" replace={true}/>);
-// }
-import React from "react";
 import { Navigate } from "react-router-dom";
 
 const checkToken = () => {
@@ -15,7 +6,7 @@ const checkToken = () => {
 };
 
 interface OpenRoutesProps {
-  children: React.ReactNode;
+  children: JSX.Element;
 }
 
 export const OpenRoutes = ({ children }: OpenRoutesProps) => {

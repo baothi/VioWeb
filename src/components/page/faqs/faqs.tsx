@@ -1,5 +1,5 @@
 // FAQs.tsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './faqs.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -47,6 +47,7 @@ const faqs: FAQ[] = [
     answer: "Absolutely. You may perform one of the following:\n\nContact our Sales department for more information.\nLeave us your information in the Contact section.",
   },
 ];
+
 
 const FAQItem: React.FC<{ faq: FAQ }> = ({ faq }) => {
   useEffect(() => {

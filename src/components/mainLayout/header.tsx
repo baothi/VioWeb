@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Vio_Logo from '../../assets/images/Vio_Logo.svg';
 import USA from '../../assets/images/USA.png';
 import vietnam from '../../assets/images/VietNam.png';
@@ -16,7 +16,7 @@ const Header = () => {
     setShowSubMenu(!showSubMenu);
   };
 
-  const changeLanguage = (languageImage) => {
+  const changeLanguage = (languageImage: string) => {
     console.log(languageImage);
     const newLang = languageImage === '/src/assets/images/USA.png' ? 'en' : 'vi';
     i18n.changeLanguage(newLang);

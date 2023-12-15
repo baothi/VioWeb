@@ -107,7 +107,7 @@ ul.change_language>li:hover ul {
     text-align: center;
 }
 
-.home_sec_1 {background-size: cover;background-repeat: no-repeat;background-position: center;padding-top: 9.375rem;}
+.home_sec_1 {background-size: cover;background-repeat: no-repeat;background-position: center;padding-top: 2.375rem;}
 body{
     background-color: #031414;background-image: url(../images/bg_section.jpg);background-size: cover;background-repeat: no-repeat;background-position: center; background-attachment: fixed;
 }

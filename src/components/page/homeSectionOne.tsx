@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import Mockup_1_slider from '../../assets/images/Mockup_1_slider.png';
@@ -9,7 +8,7 @@ import { useTranslation} from 'react-i18next';
 
 
 const HomeSectionOne = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const settings = {
         centerMode: true,
         centerPadding: '0px',
