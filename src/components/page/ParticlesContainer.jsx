@@ -30,60 +30,60 @@ const ParticlesContainer = () => {
                     options={{
                       fpsLimit: 120,
                       interactivity: {
-                        events: {
-                          onClick: {
-                            enable: true,
-                            mode: "push"  
+                          events: {
+                              onClick: {
+                                  enable: true,
+                                  mode: "push",
+                              },
+                              onHover: {
+                                  enable: true,
+                                  mode: "repulse",
+                              },
+                              resize: true,
                           },
-                          onHover: {
-                            enable: true,
-                            mode: "repulse"
+                          modes: {
+                              push: {
+                                  quantity: 4,
+                              },
+                              repulse: {
+                                  distance: 200,
+                                  duration: 0.4,
+                              },
                           },
-                          resize: true
-                        },
-                        modes: {
-                          push: { 
-                            quantity: 4 
-                          },
-                          repulse: {
-                            distance: 200,
-                            duration: 0.4
-                          }
-                        }
                       },
                       particles: {
-                        color: {
-                          value: "#ffffff"
-                        },
-                        links: {
-                          enable: false  
-                        },
-                        move: {
-                          direction: "bottom",
-                          enable: true, 
-                          outModes: {
-                            bottom: "out"
+                          color: {
+                              value: "#ffffff",
                           },
-                          speed: 2  
-                        },
-                        number: {
-                          density: {
-                            enable: true,
-                            area: 800
+                          links: {
+                              enable: false,
                           },
-                          value: 200
-                        },
-                        opacity: {
-                          value: 0.5
-                        },
-                        shape: {
-                          type: "star"
-                        },
-                        size: {
-                          value: { min: 1, max: 4 }
-                        }
+                          move: {
+                              direction: "bottom",
+                              enable: true,
+                              outModes: {
+                                  bottom: "out",
+                              },
+                              speed: 2,
+                          },
+                          number: {
+                              density: {
+                                  enable: true,
+                                  area: 800,
+                              },
+                              value: 200,
+                          },
+                          opacity: {
+                              value: 0.5,
+                          },
+                          shape: {
+                              type: "circle",
+                          },
+                          size: {
+                              value: { min: 1, max: 4 },
+                          },
                       },
-                      detectRetina: true
+                      detectRetina: true,
                     }}
                 />
             )}

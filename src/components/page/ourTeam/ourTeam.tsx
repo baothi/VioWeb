@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ourteam.css';
@@ -16,13 +16,14 @@ import LyTran from '../../../assets/images/LyTran.png';
 import Marco_Alvarado from '../../../assets/images/MarcoAlvarado.png';
 import Will_Vong from '../../../assets/images/WillVong.png';
 import Khoa_Tran from '../../../assets/images/Khoa_tran.jpeg';
-import DuyTran from '../../../assets/images/DuyTran.png';
+import DuyTran from '../../../assets/images/Duy_Tran.jpeg';
 import Trung_Nguyen from '../../../assets/images/Trung_Nguyen.jpeg';
-import Hai_Danga from '../../../assets/images/Hai_Dang.jpeg';
+import Hai_Dang from '../../../assets/images/Hai_Dang.jpeg';
 import Cong_Nguyen from '../../../assets/images/Cong_Nguyen.jpeg';
 import Nguyen_Bao from '../../../assets/images/Thi_Nguyen.jpeg';
 import Vu_Vu from '../../../assets/images/Vu_Vu.jpeg';
 import Brian from '../../../assets/images/BrianBacungan.png';
+import Hieu_QC from '../../../assets/images/Hieu_QC.jpg'
 
 
 const OurTeam = () => {
@@ -351,6 +352,34 @@ const OurTeam = () => {
                                       </ul>
                                   </div>
                               </div>
+                              <div className="item" data-aos="fade-in">
+                                  <div className="box_img">
+                                      <img src={Hieu_QC} alt="" />
+                                  </div>
+                                  <div className="box_content">
+                                      <h3>
+                                        Hieu Tran
+                                      </h3>
+                                      <b>
+                                        QC
+                                      </b>
+                                      <div className="content">
+                                      A 7-year veteran of large corporations and startups contributes the Agile Scrum model and the Testing process to ensure the quality of products before they are delivered to customers. Hieu has a strong desire to improve processes and products to help deliver better in the future.
+                                      </div>
+                                      <ul className="socials">
+                                          <li>
+                                              <a href="">
+                                                  <img src={Email_icon} alt="email-icon" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="">
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
                           </div>
                       </div>
                       <div className="box_items">
@@ -412,35 +441,6 @@ const OurTeam = () => {
                                       </ul>
                                   </div>
                               </div>
-                              <div className="item" data-aos="fade-in">
-                                  <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6372deb6a20ab77201291b7d/1668282486823/JuanMondragon.png" alt="" />
-                                  </div>
-                                  <div className="box_content">
-                                      <h3>
-                                          JUAN MONDRAGON
-
-                                      </h3>
-                                      <b>
-                                          CFO
-                                      </b>
-                                      <div className="content">
-                                          A CPA and an MBA with over 14 years of experience, Juan has played critical roles for young and mature companies. He brings experience as a controller, treasurer, and a partner in financial planning. He has joined PrismTech as the CFO and is excited to be a major contributor.
-                                      </div>
-                                      <ul className="socials">
-                                          <li>
-                                              <a href="">
-                                                  <img src={Email_icon} alt="email-icon" />
-                                              </a>
-                                          </li>
-                                          <li>
-                                              <a href="">
-                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
                           </div>
                       </div>
                       <div className="box_items">
@@ -448,17 +448,17 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={Trung_Nguyen} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        TRUNG NGUYEN
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        MOBILE DEVELOPER LEAD
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                      A 10+ year of software engineer and team leadership, Trung's expertise spans multiple programming languages, particularly in the realm of mobile development. His enthusiasm is rooted in the creation of inventive, user-centric products designed to address genuine, everyday problems.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -476,17 +476,17 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={Hai_Dang} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          RYAN EAMES
+                                        HAI DANG
                                       </h3>
                                       <b>
-                                          CO-FOUNDER / COO / CPO
+                                        MOBILE DEVELOPER
                                       </b>
                                       <div className="content">
-                                          A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
+                                        As a tech enthusiast who thrives on embracing fresh challenges, relishes opportunities for learning. Hai specializes in developing exceptional applications for both Android and iOS devices .
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -504,18 +504,17 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6372deb6a20ab77201291b7d/1668282486823/JuanMondragon.png" alt="" />
+                                      <img src={Cong_Nguyen} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          JUAN MONDRAGON
-
+                                        CONG NGUYEN
                                       </h3>
                                       <b>
-                                          CFO
+                                        MOBILE DEVELOPER
                                       </b>
                                       <div className="content">
-                                          A CPA and an MBA with over 14 years of experience, Juan has played critical roles for young and mature companies. He brings experience as a controller, treasurer, and a partner in financial planning. He has joined PrismTech as the CFO and is excited to be a major contributor.
+                                      Cong Nguyen, a skilled mobile developer with a passion for creating innovative and user-friendly applications. With a strong background in mobile app development, He combines technical expertise with a keen eye for design to deliver exceptional user experience.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -538,17 +537,17 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={Nguyen_Bao} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                          Nguyen Bao
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        BACKEND DEVELOPER LEAD
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                      As the Backend Manager, Bao Thi is a dedicated and highly skilled professional with a wealth of experience in the field of technology. With a strong background in managing backend systems and teams, Bao Thi has consistently demonstrated his ability to lead and innovate.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -566,17 +565,17 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={Vu_Vu} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          RYAN EAMES
+                                        VU VU
                                       </h3>
                                       <b>
-                                          CO-FOUNDER / COO / CPO
+                                        BACKEND DEVELOPER
                                       </b>
                                       <div className="content">
-                                          A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
+                                        As a proficient backend developer with a knack for problem-solving. Vu Trong Vu specialize in Python, Django, Flask, MongoDB, and Azure, which he adeptly employs to craft remarkable products.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -599,17 +598,50 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={Brian} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        BRIAN BACUNGAN
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        LEAD WEB DEVELOPER
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                        A multidisciplinary tech professional with over 13+ years of combined experience in fields ranging from graphic design, digital marketing, and web development. Utilizing Brian's full-stack development expertise, he now leads PrismTech's web efforts towards success with relentless passion and dedication.
+                                      </div>
+                                      <ul className="socials">
+                                          <li>
+                                              <a href="">
+                                                  <img src={Email_icon} alt="email-icon" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="">
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div className="box_items">
+                          <h2 data-aos="fade-in">Content Creation</h2>
+                          <div className="wrap_member">
+                              <div className="item" data-aos="fade-in">
+                                  <div className="box_img">
+                                      <img src={DuyTran} alt="" />
+                                  </div>
+                                  <div className="box_content">
+                                      <h3>
+                                        DUY TRAN
+                                      </h3>
+                                      <b>
+                                        LEAD WEB DEVELOPER
+                                      </b>
+                                      <div className="content">
+                                        A multidisciplinary tech professional with over 13+ years of combined experience in fields ranging from graphic design, digital marketing, and web development. Utilizing Brian's full-stack development expertise, he now leads PrismTech's web efforts towards success with relentless passion and dedication.
                                       </div>
                                       <ul className="socials">
                                           <li>

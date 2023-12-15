@@ -1,11 +1,11 @@
 import img_change_1 from '../../assets/images/img_change_1.png';
 import booking_anywhere from '../../assets/images/booking_anywhere.png';
 import keep_track_of_calendar from '../../assets/images/keep_track_of_calendar.png';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation} from 'react-i18next';
 
 const HomeSectionThree = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     interface ITabItem {
       id: number;
       title: string;

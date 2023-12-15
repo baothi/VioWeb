@@ -58,9 +58,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Our team
-                        </a>
+                        <Link to="/ourteam" className="">Our team</Link>
                     </li>
                     <li>
                         <a href="">
@@ -96,7 +94,7 @@ const Footer = () => {
             <div className="wrap">
                 <div className="grid-50 copyright">
                     Copyright © 2023 Prismtechinc. All rights reserved
-                    <a className="chinh_sach" href="">Terms &amp; Privacy</a>
+                    <Link to="/terms-of-service" className="chinh_sach">Terms &amp; Privacy</Link>
                 </div>
                 <div className="grid-50">
                     <ul className="socials">

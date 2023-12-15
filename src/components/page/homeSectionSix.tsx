@@ -6,7 +6,7 @@ import IMG32 from '../../assets/images/IMG-3-2.png';
 import { useTranslation} from 'react-i18next';
 
 const HomeSectionSix = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const settings = {
         centerMode: true,
         centerPadding: '0px',

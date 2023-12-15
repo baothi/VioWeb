@@ -1,5 +1,3 @@
-import React from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
 // the hook

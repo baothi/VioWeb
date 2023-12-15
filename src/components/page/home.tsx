@@ -23,7 +23,7 @@ import { useTranslation} from 'react-i18next';
 
 
 const Home = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     useEffect(() => {
         AOS.init({
             delay: 500, // values from 0 to 3000, with step 50ms
