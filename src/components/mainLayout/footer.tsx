@@ -1,4 +1,5 @@
 import logo_footer from '../../assets/images/logo_footer.svg'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -44,9 +45,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            FAQ
-                        </a>
+                        <Link to="/faqs" className="">FAQ</Link>
                     </li>
                 </ul>
             </div>

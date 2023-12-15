@@ -30,7 +30,7 @@ function slick_slider(){
         arrows: false,
         autoplay: true,
         focusOnSelect: true,
-        speed: 1000,
+        speed: 10000000,
         responsive: [
             {
                 breakpoint: 768,

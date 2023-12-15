@@ -348,3 +348,71 @@ options={{
         },
     },
 }}
+
+
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+
+const ParticlesContainer = () => {
+    const [ init, setInit ] = useState(false);
+
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+            // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+            // starting from v2 you can add only the features you need reducing the bundle size
+            //await loadAll(engine);
+            //await loadFull(engine);
+            await loadSlim(engine);
+            //await loadBasic(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
+
+    const particlesLoaded = (container: any) => {
+        console.log(container);
+    };
+
+    return (
+      <>
+        { init && (<Particles
+            id="tsparticles"
+            particlesLoaded={particlesLoaded}
+            options={{
+              particles: {
+                  number: {
+                      value: 200,
+                      density: {
+                          enable: true,
+                          value_area: 800
+                      }
+                  },
+                  color: {
+                      value: "#00bfff",
+                  },
+                  opacity: {
+                      value: 0.7,
+                      random: false,
+                  },
+                  size: {
+                      value: 10,
+                      random: true,
+                  },
+                  move: {
+                      enable: true,
+                      speed: 1,
+                      direction: "bottom",
+                      outMode: "out",
+                  },
+              },
+            }}
+        />)}
+      </>
+)
+    ;
+};
+
+export default ParticlesContainer;

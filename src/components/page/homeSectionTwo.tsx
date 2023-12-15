@@ -1,15 +1,10 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
+import { useTranslation } from 'react-i18next';
 import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
-// the hook
-import { useTranslation} from 'react-i18next';
 import './homeSectionTwo.scss'
 
 
 const HomeSectionTwo = () => {
-    const { t, i18n } = useTranslation();
-    
+    const { t } = useTranslation();
     return (
       <section className="section home_sec_2">
         <div className="grid-container">
