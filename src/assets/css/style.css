@@ -6,12 +6,12 @@
     }
 }
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     line-height: 1.5;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Inter';
     margin: 0 0 1.042rem;
 }
 body {
@@ -379,7 +379,7 @@ ul.tab_content:before {
     align-items: center;
     font-size: 2.083rem;
     font-style: normal;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     margin-bottom: 0.26rem;
 }
 
@@ -1204,6 +1204,7 @@ section.section.home_sec_1 .sub {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 

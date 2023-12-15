@@ -12,6 +12,17 @@ import Ngoc_Phan from '../../../assets/images/Ngoc_Phan.jpeg';
 import PlaceholderAvatarMale from '../../../assets/images/PlaceholderAvatarMale.png';
 import PlaceholderAvatarFemale from '../../../assets/images/PlaceholderAvatarFemale.png';
 import Tien_Nguyen from '../../../assets/images/Tien_Nguyen.jpeg';
+import LyTran from '../../../assets/images/LyTran.png';
+import Marco_Alvarado from '../../../assets/images/MarcoAlvarado.png';
+import Will_Vong from '../../../assets/images/WillVong.png';
+import Khoa_Tran from '../../../assets/images/Khoa_tran.jpeg';
+import DuyTran from '../../../assets/images/DuyTran.png';
+import Trung_Nguyen from '../../../assets/images/Trung_Nguyen.jpeg';
+import Hai_Danga from '../../../assets/images/Hai_Dang.jpeg';
+import Cong_Nguyen from '../../../assets/images/Cong_Nguyen.jpeg';
+import Nguyen_Bao from '../../../assets/images/Thi_Nguyen.jpeg';
+import Vu_Vu from '../../../assets/images/Vu_Vu.jpeg';
+import Brian from '../../../assets/images/BrianBacungan.png';
 
 
 const OurTeam = () => {
@@ -164,7 +175,7 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={Ngoc_Phan} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
@@ -174,7 +185,7 @@ const OurTeam = () => {
                                         PRODUCT MANAGER - VN
                                       </b>
                                       <div className="content">
-                                          A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
+                                        With over 10 years of experience, Gem shines as a proficient Product Manager. Her capabilities extend to handling challenges across aviation, banking, fintech, and technology. As a person who loves balance and harmony, she remain ready to acquire fresh insights and establish connections.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -192,18 +203,45 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6372deb6a20ab77201291b7d/1668282486823/JuanMondragon.png" alt="" />
+                                      <img src={PlaceholderAvatarMale} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          JUAN MONDRAGON
-
+                                        KEVIN DE ARMOND
                                       </h3>
                                       <b>
-                                          CFO
+                                        PRODUCT MANAGER - US
                                       </b>
                                       <div className="content">
-                                          A CPA and an MBA with over 14 years of experience, Juan has played critical roles for young and mature companies. He brings experience as a controller, treasurer, and a partner in financial planning. He has joined PrismTech as the CFO and is excited to be a major contributor.
+                                      With grit, unshakable work ethic, and a solid understanding of development and organizational opimization, Kevin joins Team Vio as our US Product Manager to help bring Vio's vision to life.
+                                      </div>
+                                      <ul className="socials">
+                                          <li>
+                                              <a href="">
+                                                  <img src={Email_icon} alt="email-icon" />
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="">
+                                                  <img src={LinkedIn_Icon} alt="linkedin-icon" />
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div className="item" data-aos="fade-in">
+                                  <div className="box_img">
+                                      <img src={Tien_Nguyen} alt="" />
+                                  </div>
+                                  <div className="box_content">
+                                      <h3>
+                                        TIEN NGUYEN (ADONIS)
+                                      </h3>
+                                      <b>
+                                        BUSINESS ANALYST
+                                      </b>
+                                      <div className="content">
+                                        Adonis, a dedicated business analyst, introduces himself as someone who possesses a deep affinity for both numbers and human interactions. He describes himself as an ambivert, able to adapt his demeanor to the prevailing mood, whether it be reserved or outgoing. He lives by the motto: "Listen to the silence, it speaks louder than words".
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -226,17 +264,17 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={LyTran} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        LY TRAN
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        DIRECTOR OF COMMUNICATIONS
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                        Graduated from Columbia University with a successful writing career, Ly has proven to be a stellar communicator, writer, and linguist. Combining creativity with conviction, vision with execution, she takes the helm as PrismTech’s Director of Communications.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -254,17 +292,17 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={PlaceholderAvatarFemale} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          RYAN EAMES
+                                        HIEU (HR)
                                       </h3>
                                       <b>
-                                          CO-FOUNDER / COO / CPO
+                                        HR 
                                       </b>
                                       <div className="content">
-                                          A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
+                                        With a phenominal sales track record, Linh is ready to apply her expertiese and spearhead PrismTech's sales efforts. With Linh onboard, we're ready to grow and continue to improve the lives of our users through the expansion of our organization.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -287,17 +325,17 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={Marco_Alvarado} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        MARCO ALVARADO
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        DIRECTOR OF QA
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                        A 15 year veteran of small and Fortune 500 companies, Marco helps teams integrate an innovative blend of Agile Development and Modern Quality Assurance practices. From idea to delivery, he equally improves process and product resulting in a track record of highly-rated releases.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -320,17 +358,17 @@ const OurTeam = () => {
                           <div className="wrap_member">
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/639db738cb0a396f50acbe41/1671280442487/PeterTran1.png" alt="" />
+                                      <img src={Will_Vong} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          PETER TRAN
+                                        WILL VONG
                                       </h3>
                                       <b>
-                                          FOUNDER / CEO
+                                        UX/UI ADVISOR
                                       </b>
                                       <div className="content">
-                                          As an optimizer in the tech industry for over 15 years, Peter recognizes disruptions in efficiency and drives solutions through advanced technological development. Coming from a humble background, Peter understands what it takes to succeed.
+                                        With over 27 years of UX design and research experience, William has been at the forefront of design leadership. He holds over 70 design and utility patents over 25 years at Microsoft pioneering innovations in Xbox, Media Center, Mobile, Tablets/ Surface, Windows, Office, Azure, HoloLens and more.
                                       </div>
                                       <ul className="socials">
                                           <li>
@@ -348,17 +386,17 @@ const OurTeam = () => {
                               </div>
                               <div className="item" data-aos="fade-in">
                                   <div className="box_img">
-                                      <img src="https://static1.squarespace.com/static/6372dea9a20ab77201291938/t/6373e7d8a7da1f6ee1f10398/1668540381831/RyanEames.png/*%20GLOBAL%20*/" alt="" />
+                                      <img src={Khoa_Tran} alt="" />
                                   </div>
                                   <div className="box_content">
                                       <h3>
-                                          RYAN EAMES
+                                        KHOA TRAN
                                       </h3>
                                       <b>
-                                          CO-FOUNDER / COO / CPO
+                                        UX/UI DESIGNER
                                       </b>
                                       <div className="content">
-                                          A 20+ year entertainment and tech industry veteran turned entrepreneur, Ryan’s laser focused drive helps bring each of his projects to market. His ability to cultivate teamwork and define direction provide the tuning rod that brings the project into
+                                        A Information Design master's degree holder, with over 5 years of experience in UI/UX design, Khoa Tran dedicated to creating user-centered experiences that seamlessly blend functionality with aesthetics.
                                       </div>
                                       <ul className="socials">
                                           <li>
