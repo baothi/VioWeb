@@ -27,7 +27,7 @@ const Home = () => {
     useEffect(() => {
         AOS.init({
             delay: 500, // values from 0 to 3000, with step 50ms
-            duration: 700, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
             easing: 'ease', // default easing for AOS animations
         });
       }, []);
