@@ -4,7 +4,6 @@ import keep_track_of_calendar from '../../assets/images/keep_track_of_calendar.p
 import React, { useState } from 'react';
 import { useTranslation} from 'react-i18next';
 
-
 const HomeSectionThree = () => {
     const { t, i18n } = useTranslation();
     interface ITabItem {

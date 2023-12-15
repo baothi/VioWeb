@@ -168,7 +168,9 @@ const resources = {
                                   </h2>`
     
 
-}
+    },
+      "Smart Booking": "Smart <b>Booking</b>",
+      "homeSectionBook": "<h2 className='heading_title' data-aos='fade-right'>Book <div className='box'><div className='box-scroll-text'><b>Beauty and Spa</b></div></div></h2>"
   },
   vi: {
     translation: {
@@ -290,7 +292,7 @@ const resources = {
                   <div class="content">
                   Lịch trình của bạn đều tập trung một nơi, luôn luôn kiểm soát được lịch hẹn, sự kiện, hoạt động và đồng bộ với lịch trình hàng ngày của bạn
                   </div>`,
-  "Social Network Platform": ` <h3>
+    "Social Network Platform": ` <h3>
                                   <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                                       <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -307,43 +309,40 @@ const resources = {
                                 Nền tảng tích hợp mạng xã hội dành riêng cho bạn: khám phá, chat, phát trực tiếp và hơn thế nữa
                                 </div>`,
                                 
-  //section 5
-  "Our Partners": `<h2 class="heading_title" data-aos="fade-in">
+    //section 5
+    "Our Partners": `<h2 class="heading_title" data-aos="fade-in">
                         <b>
                           Đối tác
                         </b>
                     </h2> `,
 
-  //section 6
-  "Supercharge your business" : `<h2 class="heading_title" data-aos="fade-up">
+    //section 6
+    "Supercharge your business" : `<h2 class="heading_title" data-aos="fade-up">
                                     Tăng trưởng cửa hàng <b> với Vio </b>
                                   </h2>
                                   <div class="content top" data-aos="fade-up">
                                   Việc kinh doanh trực tuyến ngày càng phát triển, Vio cung cấp các công cụ số hoá để đưa cửa hàng của bạn lên một tầm cao mới
-                                  </div>`,
-  "Open Your Online Store": "Mở cửa hàng trực tuyến",
-  "Appointment Scheduling": "Đặt hẹn trực tuyến",
-  "Manage Team Member": "Quản lý nhân sự",
+                                    </div>`,
+    "Open Your Online Store": "Mở cửa hàng trực tuyến",
+    "Appointment Scheduling": "Đặt hẹn trực tuyến",
+    "Manage Team Member": "Quản lý nhân sự",
 
-  //section 7
-  "Download Vio mobile app" :  `<h2 class="heading_title">
+    //section 7
+    "Download Vio mobile app" :  `<h2 class="heading_title">
                                   <b>Tải ngay</b><br/>
                                   Ứng dụng Vio
                                 </h2>`
-
-
-}
+    }
   }
-};
-
+}
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "vi", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
     // if you're using a language detector, do not define the lng option
-    fallbackLng: 'vi',
+    fallbackLng: 'en',
 
     interpolation: {
       escapeValue: false // react already safes from xss

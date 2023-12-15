@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ourteam.css';
-import Email_icon from '../../../assets/images/Email_icon.png';
+import Email_icon from '../../../assets/images/Email_Icon.png';
 import LinkedIn_Icon from '../../../assets/images/LinkedIn_Icon.png';
 import PeterTran1 from '../../../assets/images/PeterTran1.png';
 import RyanEames from '../../../assets/images/RyanEames.png';
