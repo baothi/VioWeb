@@ -361,7 +361,7 @@ const OurTeam = () => {
                                         Hieu Tran
                                       </h3>
                                       <b>
-                                        QC
+                                        Senior Quality Assurance
                                       </b>
                                       <div className="content">
                                       A 7-year veteran of large corporations and startups contributes the Agile Scrum model and the Testing process to ensure the quality of products before they are delivered to customers. Hieu has a strong desire to improve processes and products to help deliver better in the future.
