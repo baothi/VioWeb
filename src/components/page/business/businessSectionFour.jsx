@@ -20,10 +20,12 @@ import img_nav_4 from '../../../assets/images/img_nav_4.png';
 import img_nav_5 from '../../../assets/images/img_nav_5.png';
 import img_nav_6 from '../../../assets/images/img_nav_6.png';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation} from 'react-i18next';
 
 
 
 const BusinessSectionFour = () => {
+    const { t } = useTranslation();
     const sliderContentRef = useRef(null);
     const sliderThumbRef = useRef(null);
     const [nav1, setNav1] = useState(null);
@@ -452,19 +454,11 @@ const BusinessSectionFour = () => {
       <section className="section business_sec_4">
         <div className="grid-container">
             <div className="grid-100">
-                <div className="text_center">
-                    <h2 className="heading_title" data-aos="fade-up">
-                        Made for <b>your business</b>
-                    </h2>
-                    <div className="content" data-aos="fade-up">
-                        Online business is booming, Vio packs all the tool you need to take your online shop velocity to the next level.
-                    </div>
-                </div>
-
+                <div dangerouslySetInnerHTML={{ __html: t("Made for your business") }} />
                 <div className="slider slider-content" data-aos="fade-up">
                   <Slider {...adjustedSliderContentSettings}>
                     {sliderContent.map((slide, index) => (
-                        <div key={index} dangerouslySetInnerHTML={{ __html: slide.htmlContent }} />
+                        <div key={index} dangerouslySetInnerHTML={{ __html: t(slide.htmlContent) }} />
                     ))}
                   </Slider>
                 </div>

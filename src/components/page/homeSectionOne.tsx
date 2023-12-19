@@ -45,10 +45,7 @@ const HomeSectionOne = () => {
           <div className="grid-container">
               <div className="grid-100">
                   <div className="text_center">
-                      <h1 className="heading_title" data-aos="fade-in">
-                          Vio<br/>
-                          <div dangerouslySetInnerHTML={{ __html: t('Smart Booking') }} />
-                      </h1>
+                          <div style={{marginBottom: "20px"}} dangerouslySetInnerHTML={{ __html: t('Smart Booking') }} /> 
                       <div className="slider_top" data-aos="fade-in">
                             <Slider {...settings}>
                                 {slidesData.map((slide, index) => (

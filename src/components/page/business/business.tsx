@@ -1,9 +1,17 @@
 import business_img_sec_2 from '../../../assets/images/business_img_sec_2.png';
-import IMG4 from '../../../assets/images/IMG-4.png';
-import IMG41 from '../../../assets/images/IMG-4-1.png';
-import IMG42 from '../../../assets/images/IMG-4-2.png';
-import IMG43 from '../../../assets/images/IMG-4-3.png';
 import bg_mail from '../../../assets/images/bg_mail.jpeg';
+
+import cr1 from '../../../assets/images/CRBarber_shop.png';
+import cr2 from '../../../assets/images/CRBeauty_salon.png';
+import cr3 from '../../../assets/images/CRFitness.png';
+import cr4 from '../../../assets/images/CRFreelancer.png';
+import cr5 from '../../../assets/images/CRMakeup.png';
+import cr6 from '../../../assets/images/CRNail.png';
+import cr7 from '../../../assets/images/CRNightlife.png';
+import cr8 from '../../../assets/images/CROutdoor.png';
+import cr9 from '../../../assets/images/CRTatoo.png';
+import cr10 from '../../../assets/images/CRVet.png';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,8 +19,12 @@ import { useEffect } from 'react';
 import BusinessSectionOne from './businessSectionOne';
 import BusinessSectionThree from './businessSectionThree';
 import BusinessSectionFour from './businessSectionFour';
+import { useTranslation} from 'react-i18next';
+import BusinessSection4 from './scratch';
+
 
 const Business = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
         delay: 500, // values from 0 to 3000, with step 50ms
@@ -21,82 +33,50 @@ const Business = () => {
         mirror: true
     });
   }, []);
+
+  useEffect(() => {
+    const scrollContainer1 = document.querySelector(".left1") as HTMLElement;
+    const scrollContainer2 = document.querySelector(".right1") as HTMLElement;
+    const scrollContainer3 = document.querySelector(".left2") as HTMLElement;
+    const scrollMain = document.querySelector(".wrapper") as HTMLElement;
+
+    scrollMain.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+
+  // Scroll Container 1
+    scrollContainer1.scrollLeft += evt.deltaY;
+    if (scrollContainer1.scrollLeft >= scrollContainer1.scrollWidth - scrollContainer1.clientWidth) {
+        scrollContainer1.scrollLeft = 0;
+    } else if (scrollContainer1.scrollLeft < 0) {
+        scrollContainer1.scrollLeft = scrollContainer1.scrollWidth - scrollContainer1.clientWidth;
+    }
+
+    // Scroll Container 2
+    scrollContainer2.scrollLeft -= evt.deltaY;
+    if (scrollContainer2.scrollLeft <= 0) {
+        scrollContainer2.scrollLeft = scrollContainer2.scrollWidth - scrollContainer2.clientWidth;
+    } else if (scrollContainer2.scrollLeft > scrollContainer2.scrollWidth - scrollContainer2.clientWidth) {
+        scrollContainer2.scrollLeft = 0;
+    }
+
+    // Scroll Container 3
+    scrollContainer3.scrollLeft += evt.deltaY;
+    if (scrollContainer3.scrollLeft >= scrollContainer3.scrollWidth - scrollContainer3.clientWidth) {
+        scrollContainer3.scrollLeft = 0;
+    } else if (scrollContainer3.scrollLeft < 0) {
+        scrollContainer3.scrollLeft = scrollContainer3.scrollWidth - scrollContainer3.clientWidth;
+    }
+});
+  }, [])
+
   return (
     <>
       <BusinessSectionOne />
       <section className="section business_sec_2 home_sec_2">
           <div className="grid-container">
                 <div className="grid-50 box_content">
-                    <h2 className="heading_title" data-aos="fade-right">
-                        <span>Grow</span> Faster<br/>
-                        with <b>Vio</b>
-                    </h2>
-                    <div className="content"  data-aos="fade-right">
-                        Online business is booming, Vio packs all the tool you need to take your online shop velocity to the next level.
-                    </div>
-                    <ul>
-                        <li  data-aos="fade-right">
-                            <a href="">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                    <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                            <stop stopColor="#7D2EBD"></stop>
-                                            <stop offset="1" stopColor="#C054EE"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                Find more <b>customer</b>
-                            </a>
-                        </li>
-                        <li  data-aos="fade-right">
-                            <a href="">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                    <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                            <stop stopColor="#7D2EBD"></stop>
-                                            <stop offset="1" stopColor="#C054EE"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                Keep <b>track of all your branches</b> in 1 account
-                            </a>
-                        </li>
-                        <li  data-aos="fade-right">
-                            <a href="">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                    <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                            <stop stopColor="#7D2EBD"></stop>
-                                            <stop offset="1" stopColor="#C054EE"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-
-                                Up-scale your <b>customer support</b> game
-                            </a>
-                        </li>
-                        <li  data-aos="fade-right">
-                            <a href="">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                    <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                            <stop stopColor="#7D2EBD"></stop>
-                                            <stop offset="1" stopColor="#C054EE"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                Effortless mange your business
-                            </a>
-                        </li>
-                    </ul>
+                    <div dangerouslySetInnerHTML={{ __html: t("Grow Faster") }} />
+                 
                 </div>
                 <div className="grid-50 box_img"  data-aos="fade-left">
                     <img src={business_img_sec_2} alt="" />
@@ -104,263 +84,178 @@ const Business = () => {
             </div>
       </section>
       <BusinessSectionThree />
-      <BusinessSectionFour />
+      <BusinessSection4 />
       <section className="section business_sec_5">
           <div className="grid-container">
               <div className="grid-100" data-aos="fade-in">
                   <div className="text_center">
-                      <h2 className="heading_title">
-                          <b>
-                              Industry
-                          </b>
-                      </h2>
-                      <div className="content">
-                          Solution for your successful business
-                      </div>
+                    <div dangerouslySetInnerHTML={{ __html: t("Industry") }} />
+                     
                   </div>
               </div>
           </div>
-          <div className="bang_chuyen_project imageSlider"  data-aos="fade-in">
+          <div className='wrapper'>
+          <div className="bang_chuyen_project left1 imageSlider"  data-aos="fade-in">
               <ul className="inner">
                   <li>
                       <a href="#" title="">
-                          <img src={IMG4} alt="" />
+                          <img src={cr1} alt="" />
+                          {/* <h3>Beauty Salon</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr2} alt="" />
+                          {/* <h3>Nail & Eyelash</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr3} alt="" />
+                          {/* <h3>Makeup Artist</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr4} alt="" />
+                          {/* <h3>Veterinarian</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr5} alt="" />
+                          {/* <h3>Beauty Salon</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr6} alt="" />
+                          {/* <h3>Nail & Eyelash</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr1} alt="" />
+                          {/* <h3>Makeup Artist</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr2} alt="" />
+                          {/* <h3>Veterinarian</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr3} alt="" />
+                          {/* <h3>Beauty Salon</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr4} alt="" />
+                          {/* <h3>Nail & Eyelash</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr5} alt="" />
+                          {/* <h3>Makeup Artist</h3> */}
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr6} alt="" />
+                          {/* <h3>Veterinarian</h3> */}
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div className="bang_chuyen_project right1 imageSlider"  data-aos="fade-in">
+              <ul className="inner">
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr1} alt="" />
                           <h3>Beauty Salon</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG41} alt="" />
+                          <img src={cr2} alt="" />
                           <h3>Nail & Eyelash</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG42} alt="" />
+                          <img src={cr7} alt="" />
                           <h3>Makeup Artist</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG43} alt="" />
+                          <img src={cr8} alt="" />
                           <h3>Veterinarian</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG4} alt="" />
+                          <img src={cr9} alt="" />
                           <h3>Beauty Salon</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG41} alt="" />
+                          <img src={cr10} alt="" />
                           <h3>Nail & Eyelash</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG42} alt="" />
+                          <img src={cr3} alt="" />
                           <h3>Makeup Artist</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG43} alt="" />
+                          <img src={cr4} alt="" />
                           <h3>Veterinarian</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG4} alt="" />
+                          <img src={cr5} alt="" />
                           <h3>Beauty Salon</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG41} alt="" />
+                          <img src={cr6} alt="" />
                           <h3>Nail & Eyelash</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG42} alt="" />
+                          <img src={cr7} alt="" />
                           <h3>Makeup Artist</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={IMG43} alt="" />
+                          <img src={cr8} alt="" />
                           <h3>Veterinarian</h3>
                       </a>
                   </li>
               </ul>
           </div>
-          <div className="bang_chuyen_project right imageSlider"  data-aos="fade-in">
-              <ul className="inner">
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-          <div className="bang_chuyen_project imageSlider"  data-aos="fade-in">
-              <ul className="inner">
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG4} alt="" />
-                          <h3>Beauty Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG41} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG42} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={IMG43} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-              </ul>
           </div>
 
       </section>
-      <section className="section business_sec_6" style={{ backgroundImage: `url(${bg_mail})` }}>
+      <section className="section business_sec_6" style={{ backgroundImage: `url(${bg_mail})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
           <div className="grid-container">
               <div className="grid-100">
                   <div className="text_center">
-                      <h2 className="heading_title">
-                          Ready to <b>open</b> your vio <br/>
-                          <b>business’s account?</b>
-                      </h2>
-                      <div className="content">
-                          Be a part of a game changing AI-booking platform.
-                      </div>
+                    <div dangerouslySetInnerHTML={{ __html: t("Ready") }} />
+                      
                       <form action="">
                           <input type="text" placeholder="Your email" />
                           <button type="submit">
