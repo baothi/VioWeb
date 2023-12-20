@@ -11,6 +11,8 @@ import cr7 from '../../../assets/images/CRNightlife.png';
 import cr8 from '../../../assets/images/CROutdoor.png';
 import cr9 from '../../../assets/images/CRTatoo.png';
 import cr10 from '../../../assets/images/CRVet.png';
+import cr11 from '../../../assets/images/CRWorkshop.png';
+import cr12 from '../../../assets/images/CRHair.png';
 
 
 import AOS from 'aos';
@@ -34,40 +36,6 @@ const Business = () => {
     });
   }, []);
 
-  useEffect(() => {
-    const scrollContainer1 = document.querySelector(".left1") as HTMLElement;
-    const scrollContainer2 = document.querySelector(".right1") as HTMLElement;
-    const scrollContainer3 = document.querySelector(".left2") as HTMLElement;
-    const scrollMain = document.querySelector(".wrapper") as HTMLElement;
-
-    scrollMain.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-
-  // Scroll Container 1
-    scrollContainer1.scrollLeft += evt.deltaY;
-    if (scrollContainer1.scrollLeft >= scrollContainer1.scrollWidth - scrollContainer1.clientWidth) {
-        scrollContainer1.scrollLeft = 0;
-    } else if (scrollContainer1.scrollLeft < 0) {
-        scrollContainer1.scrollLeft = scrollContainer1.scrollWidth - scrollContainer1.clientWidth;
-    }
-
-    // Scroll Container 2
-    scrollContainer2.scrollLeft -= evt.deltaY;
-    if (scrollContainer2.scrollLeft <= 0) {
-        scrollContainer2.scrollLeft = scrollContainer2.scrollWidth - scrollContainer2.clientWidth;
-    } else if (scrollContainer2.scrollLeft > scrollContainer2.scrollWidth - scrollContainer2.clientWidth) {
-        scrollContainer2.scrollLeft = 0;
-    }
-
-    // Scroll Container 3
-    scrollContainer3.scrollLeft += evt.deltaY;
-    if (scrollContainer3.scrollLeft >= scrollContainer3.scrollWidth - scrollContainer3.clientWidth) {
-        scrollContainer3.scrollLeft = 0;
-    } else if (scrollContainer3.scrollLeft < 0) {
-        scrollContainer3.scrollLeft = scrollContainer3.scrollWidth - scrollContainer3.clientWidth;
-    }
-});
-  }, [])
 
   return (
     <>
@@ -95,154 +63,154 @@ const Business = () => {
               </div>
           </div>
           <div className='wrapper'>
-          <div className="bang_chuyen_project left1 imageSlider"  data-aos="fade-in">
+          <div className="bang_chuyen_project imageSlider"  data-aos="fade-in">
               <ul className="inner">
                   <li>
                       <a href="#" title="">
                           <img src={cr1} alt="" />
-                          {/* <h3>Beauty Salon</h3> */}
+                          <h3>Barber Shop</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr2} alt="" />
-                          {/* <h3>Nail & Eyelash</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr3} alt="" />
-                          {/* <h3>Makeup Artist</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr4} alt="" />
-                          {/* <h3>Veterinarian</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr5} alt="" />
-                          {/* <h3>Beauty Salon</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr6} alt="" />
-                          {/* <h3>Nail & Eyelash</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr1} alt="" />
-                          {/* <h3>Makeup Artist</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr2} alt="" />
-                          {/* <h3>Veterinarian</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr3} alt="" />
-                          {/* <h3>Beauty Salon</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr4} alt="" />
-                          {/* <h3>Nail & Eyelash</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr5} alt="" />
-                          {/* <h3>Makeup Artist</h3> */}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr6} alt="" />
-                          {/* <h3>Veterinarian</h3> */}
-                      </a>
-                  </li>
-              </ul>
-          </div>
-          <div className="bang_chuyen_project right1 imageSlider"  data-aos="fade-in">
-              <ul className="inner">
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr1} alt="" />
                           <h3>Beauty Salon</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr2} alt="" />
-                          <h3>Nail & Eyelash</h3>
+                          <img src={cr3} alt="" />
+                          <h3>Gym and Fitness</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr7} alt="" />
+                          <img src={cr4} alt="" />
+                          <h3>Freelancer</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr5} alt="" />
                           <h3>Makeup Artist</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
+                          <img src={cr6} alt="" />
+                          <h3>Nail & Eyelash</h3>
+                      </a> 
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr1} alt="" />
+                          <h3>Barber Shop</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr2} alt="" />
+                          <h3>Beauty Salon</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr3} alt="" />
+                          <h3>Gym and Fitness</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr4} alt="" />
+                          <h3>Freelancer</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr5} alt="" />
+                          <h3>Makeup Artist</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr6} alt="" />
+                          <h3>Nail & Eyelash</h3>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div className="bang_chuyen_project right imageSlider"  data-aos="fade-in">
+              <ul className="inner">
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr7} alt="" />
+                          <h3>Nightlife</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
                           <img src={cr8} alt="" />
-                          <h3>Veterinarian</h3>
+                          <h3>Outdoor Activities</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr9} alt="" />
-                          <h3>Beauty Salon</h3>
+                          <h3>Tatoo & Piercing</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr10} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr3} alt="" />
-                          <h3>Makeup Artist</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr4} alt="" />
                           <h3>Veterinarian</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr5} alt="" />
-                          <h3>Beauty Salon</h3>
+                          <img src={cr11} alt="" />
+                          <h3>Workshop</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr6} alt="" />
-                          <h3>Nail & Eyelash</h3>
+                          <img src={cr12} alt="" />
+                          <h3>Hair Salon</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr7} alt="" />
-                          <h3>Makeup Artist</h3>
+                          <h3>Nightlife</h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr8} alt="" />
+                          <h3>Outdoor Activities</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr9} alt="" />
+                          <h3>Tatoo & Piercing</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr10} alt="" />
                           <h3>Veterinarian</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr11} alt="" />
+                          <h3>Workshop</h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr12} alt="" />
+                          <h3>Hair Salon</h3>
                       </a>
                   </li>
               </ul>
