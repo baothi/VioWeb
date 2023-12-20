@@ -20,9 +20,13 @@ const BusinessSectionOne = () => {
   }, []);
     const settings = {
         centerMode: true,
-        centerPadding: '0px',
+        centerPadding: '10px',
         slidesToShow: 3,
-        arrows: true,
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 2000,
+        speed: 3000,
+        arrows: false,
         responsive: [
           {
             breakpoint: 768,

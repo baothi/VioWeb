@@ -7,12 +7,12 @@ import slider_content_3 from '../../../assets/images/slider_content_3.png';
 import slider_content_4 from '../../../assets/images/slider_content_4.png';
 import slider_content_5 from '../../../assets/images/slider_content_5.png';
 import slider_content_6 from '../../../assets/images/slider_content_6.png';
-import shoppingbag03 from '../../../assets/images/shopping-bag.svg';
-import calendarcheck02 from '../../../assets/images/calendar-check.svg';
-import setting02 from '../../../assets/images/settings-02.svg';
-import setting04 from '../../../assets/images/settings-04.svg';
-import bellringing from '../../../assets/images/bell-ringing-03.svg';
-import calendardate from '../../../assets/images/calendar-date.svg';
+import shoppingbag03 from '../../../assets/images/shopping-bag-03.png';
+import calendarcheck02 from '../../../assets/images/calendar1.png';
+import setting02 from '../../../assets/images/settings-02.png';
+import setting04 from '../../../assets/images/settings-04.png';
+import bellringing from '../../../assets/images/bell-ringing-04.png';
+import calendardate from '../../../assets/images/calendar-date.png';
 import img_nav_1 from '../../../assets/images/img_nav_1.png';
 import img_nav_2 from '../../../assets/images/img_nav_2.png';
 import img_nav_3 from '../../../assets/images/img_nav_3.png';
@@ -23,7 +23,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation} from 'react-i18next';
 import AOS from 'aos';
 
-const BusinessSection4 = () => {
+const BusinessSectionFour = () => {
     const { t } = useTranslation();
     const sliderContentRef = useRef(null);
     const sliderThumbRef = useRef(null);
@@ -45,8 +45,8 @@ const BusinessSection4 = () => {
         focusOnSelect: true,
         arrows: false,
         autoplay: true,
-        speed: 8000,
-        autoplaySpeed: 8000,
+        speed: 6000,
+        autoplaySpeed: 3000,
         // cssEase: "linear",
         responsive: [
           {
@@ -244,4 +244,4 @@ const BusinessSection4 = () => {
     );
 };
 
-export default BusinessSection4;
+export default BusinessSectionFour;

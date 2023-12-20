@@ -14,7 +14,8 @@ const HomeSectionSix = () => {
         arrows: false,
         autoplay: true,
         infinite: true,
-        autoplaySpeed: 2000, //auto play every 3 seconds
+        speed: 3000,
+        autoplaySpeed: 2000, //auto play every 2 seconds
         responsive: [
           {
             breakpoint: 768,
