@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
         <div className="grid-container">
-            <div className="grid-35">
+            <div className="grid-35 icon_download">
                 <div className="logo_footer">
                     <img src={logo_footer} alt="" />
                 </div>
@@ -29,6 +29,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+           
             <div className="grid-20 footer_2">
                 <ul>
                     {/* <li>
@@ -89,6 +90,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
+            
         </div>
         <div className="grid-container footer_nav">
             <div className="wrap">

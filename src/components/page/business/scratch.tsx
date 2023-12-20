@@ -39,6 +39,7 @@ const BusinessSection4 = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         asNavFor: sliderContentRef.current,
+        infinite: true,
         dots: false,
         centerMode: false,
         focusOnSelect: true,
@@ -68,7 +69,7 @@ const BusinessSection4 = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
-        infinite: false,
+        infinite: true,
         // asNavFor: nav2,
         arrows: false,
         ref: sliderContentRef,
@@ -172,18 +173,18 @@ const BusinessSection4 = () => {
     ]
     
     const slidesData = [
-        { imgSrc: img_nav_1, title: "Online Store" },
-        { imgSrc: img_nav_2, title: "Appointment Scheduling" },
-        { imgSrc: img_nav_3, title: "Manage Team Member" },
-        { imgSrc: img_nav_4, title: "Notification" },
-        { imgSrc: img_nav_5, title: "Inventory Management" },
-        { imgSrc: img_nav_6, title: "Calendar" },
-        { imgSrc: img_nav_1, title: "Online Store" },
-        { imgSrc: img_nav_2, title: "Appointment Scheduling" },
-        { imgSrc: img_nav_3, title: "Manage Team Member" },
-        { imgSrc: img_nav_4, title: "Notification" },
-        { imgSrc: img_nav_5, title: "Inventory Management" },
-        { imgSrc: img_nav_6, title: "Calendar" },
+        { imgSrc: img_nav_1, title: "Thumbnail Online Store" },
+        { imgSrc: img_nav_2, title: "Thumbnail Appointment Scheduling" },
+        { imgSrc: img_nav_3, title: "Thumbnail Manage Team Member" },
+        { imgSrc: img_nav_4, title: "Thumbnail Notification" },
+        { imgSrc: img_nav_5, title: "Thumbnail Inventory Management" },
+        { imgSrc: img_nav_6, title: "Thumbnail Calendar" },
+        { imgSrc: img_nav_1, title: "Thumbnail Online Store" },
+        { imgSrc: img_nav_2, title: "Thumbnail Appointment Scheduling" },
+        { imgSrc: img_nav_3, title: "Thumbnail Manage Team Member" },
+        { imgSrc: img_nav_4, title: "Thumbnail Notification" },
+        { imgSrc: img_nav_5, title: "Thumbnail Inventory Management" },
+        { imgSrc: img_nav_6, title: "Thumbnail Calendar" },
     ];
 
     const SlideItem: React.FC<{ slide: Slide }> = ({ slide }) => {
@@ -221,7 +222,7 @@ const BusinessSection4 = () => {
                 <div className="slider slider-content" data-aos="fade-up">
                   <Slider {...adjustedSliderContentSettings}>
                     {slides.map((slide, index) => (
-                        <SlideItem slide={slide}/>
+                        <SlideItem key={index} slide={slide}/>
 
                     ))}
                   </Slider>
@@ -231,7 +232,8 @@ const BusinessSection4 = () => {
                       {slidesData.map((slide, index) => (
                             <div className="item" key={index}>
                                 <img src={slide.imgSrc} alt=""/>
-                                <h3>{slide.title}</h3>
+                                <div dangerouslySetInnerHTML={{ __html: t(slide.title) }} />
+                                
                             </div>
                         ))}
                     </Slider>

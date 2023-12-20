@@ -1,11 +1,16 @@
 import React from 'react'
-
+import './404.scss'
 const Page404 = () => {
   return (
-    <div style={{marginTop: "10rem", marginBottom: "10rem"}}>
-        <h1 className="heading_title"  >404 Not Found</h1>
-        <h3 className='heading_title'>The page your searched for does not exist</h3>
-       </div>
+    <div class="grid-container">
+        <div className='title_404 grid-100'>
+          <h1>404 Not Found</h1>
+        </div>
+        <div className='text_404 grid-100'>
+          The page you searched for does not exist.
+        </div>
+        
+    </div>
   )
 }
 

@@ -10,7 +10,7 @@ const BusinessSectionThree = () => {
     const { t } = useTranslation();
     const settings = {
       centerMode: true,
-      centerPadding: '0px',
+      centerPadding: '10px',
       slidesToShow: 3,
       arrows: false,
       responsive: [
@@ -65,11 +65,11 @@ const BusinessSectionThree = () => {
                     
                 </div>
 
-                <div className="slider_banner" data-aos="fade-in">
+                <div className="slider_banner" data-aos="fade-left" >
                     <Slider {...settings}>
                       {slidesData.map((slide, index) => (
-                          <div className="item" key={index}>
-                              <img src={slide.imgSrc} alt=""/>
+                          <div className="item"  key={index}>
+                              <img src={slide.imgSrc}  alt=""/>
                           </div>
                       ))}
                   </Slider>

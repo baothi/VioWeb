@@ -14,7 +14,7 @@ const resources = {
                         Vio
                         Smart <b>Booking</b>
                         </h1>
-                        <div class="content" >
+                        <div class="content" data-aos="fade-in">
                         Vio is the <b>only booking experience</b> you’ll ever need, and <b>your #1 source</b> to find the best services & events nearby!
                         </div>`
                         ,
@@ -27,7 +27,7 @@ const resources = {
                                     <div class='box-scroll-text'>
                                         <b>Beauty and Spa</b>
                                     </div>
-                                </div>                                                                  
+                                </div>                                                                    
                               </h2>`,
       "Anywhere, anytime" : ` <h3 class="heading_title"  data-aos="fade-right">
                                   Anywhere<br/>
@@ -293,8 +293,15 @@ const resources = {
                                     Inventory <b> Management</b>
                                 `, 
     "Calendar title" : ` 
-                    <b> Calendar </b>
+                    <b> Calendar</b>
                     `,           
+    "Thumbnail Online Store" : `<h3>Online Store</h3>`,
+    "Thumbnail Appointment Scheduling" : `<h3>Appointment Scheduling</h3>`,
+    "Thumbnail Manage Team Member" : `<h3>Manage Team Member</h3>`,
+    "Thumbnail Notification" : `<h3>Notification</h3>`,
+    "Thumbnail Calendar" : `<h3>Calendar</h3>`,
+    "Thumbnail Inventory Management" : `<h3>Inventory Management</h3>`,
+
     // Made for your business:
     // Section 5:
     "Industry": `<h2 class="heading_title">
@@ -307,7 +314,7 @@ const resources = {
                 </div>`,
      //Section 6:
      "Ready" : `<h2 class="heading_title">
-                    Ready to <b>open</b> your vio <br/>
+                    Ready to <b>open</b> your Vio <br/>
                     <b>business’s account?</b>
                 </h2>
                 <div class="content">
@@ -495,7 +502,7 @@ const resources = {
                             </h1>`,
     //Section 2:
     "Grow Faster": `   <h2 class="heading_title" data-aos="fade-right">
-                            <span>Tăng trưởng </span> thần tốc <br/>
+                            <span>Tăng trưởng </span> <br/>thần tốc <br/>
                             với <b>Vio</b>
                         </h2>
                         <div class="content"  data-aos="fade-right">
@@ -573,7 +580,7 @@ const resources = {
                                     Dành riêng cho <b>Cửa hàng của bạn</b>
                                     </h2>
                                     <div class="content" data-aos="fade-up">
-                                    Việc kinh doanh trực tuyến ngày càng phát triển, <b>Vio cung cấp tất cả công cụ số hoá  </b>to take your online shop velocity to the next level.
+                                    Việc kinh doanh trực tuyến ngày càng phát triển, <b>Vio cung cấp tất cả công cụ số hoá  </b>để đưa cửa hàng của bạn lên một tầm cao mới.
                                     </div>
                                 </div>`,
    
@@ -607,6 +614,12 @@ const resources = {
                             <b>Lịch trình</b>
                            `,
     "All in one calendar to stay in the loop, keep track of your bookings, your event, promotion and your staff time.": `Tất cả mọi hoạt động cửa hàng bạn và nhân viên đều được quản lý trên lịch Vio`,
+    "Thumbnail Online Store" : `<h3>Cửa hàng trực tuyến</h3>`,
+    "Thumbnail Appointment Scheduling" : `<h3>Đặt hẹn trực tuyến</h3>`,
+    "Thumbnail Manage Team Member" : `<h3>Quản lý nhân sự</h3>`,
+    "Thumbnail Notification" : `<h3>Hệ thống thông báo</h3>`,
+    "Thumbnail Calendar" : `<h3>Lịch trình</h3>`,
+    "Thumbnail Inventory Management" : `<h3>Quản lý hàng hóa</h3>`,
     //Section 5:
     "Industry": `<h2 class="heading_title">
                     <b>
@@ -614,7 +627,7 @@ const resources = {
                     </b>
                 </h2>
                 <div class="content">
-                Giải pháp cho một doanh nghiệp thành công
+                Giải pháp cho sự thành công của doanh nghiệp
                 </div>`,
     //Section 6:
     "Ready" : `<h2 class="heading_title">
