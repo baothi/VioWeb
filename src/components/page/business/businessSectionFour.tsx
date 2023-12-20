@@ -27,13 +27,17 @@ const BusinessSectionFour = () => {
     const { t } = useTranslation();
     const sliderContentRef = useRef(null);
     const sliderThumbRef = useRef(null);
-    const [nav1, setNav1] = useState(null);
-    const [nav2, setNav2] = useState(null);
+    const [nav1, setNav1] = useState<Slider | undefined>(undefined);
+    const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
     useEffect(() => {
-        setNav1(sliderContentRef.current);
-        setNav2(sliderThumbRef.current);
-    }, [sliderContentRef.current, sliderThumbRef.current]);
+        if (sliderContentRef.current !== null) {
+            setNav1(sliderContentRef.current);
+        }
+        if (sliderThumbRef.current !== null) {
+            setNav2(sliderThumbRef.current);
+        }
+    }, [sliderContentRef, sliderThumbRef]);
 
     const sliderThumbSettings = {
         slidesToShow: 6,
@@ -82,12 +86,12 @@ const BusinessSectionFour = () => {
       // Adjust the settings within the render method
     const adjustedSliderContentSettings = {
       ...sliderContentSettings,
-      asNavFor: nav2, // This will be either `null` or the slider instance
+      asNavFor: nav2 ? nav2 : undefined, // This will be either `null` or the slider instance
     };
 
     const adjustedSliderThumbSettings = {
         ...sliderThumbSettings,
-        asNavFor: nav1, // This will be either `null` or the slider instance
+        asNavFor: nav1 ? nav1 : undefined, // This will be either `null` or the slider instance
     };
 
     type Slide = {
