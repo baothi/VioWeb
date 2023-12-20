@@ -55,7 +55,8 @@ const Home = () => {
           </div>
           <img src={banner_sec_4} alt="" data-aos="fade-left"/>
       </section>
-      <section className="section home_sec_5" style={{backgroundImage: `url(${bg_sec_5})`}}>
+      {/* Our Partner Section */}
+      {/* <section className="section home_sec_5" style={{backgroundImage: `url(${bg_sec_5})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
           <div className="grid-container">
               <div className="grid-100">
                   <div className="text_center">
@@ -80,7 +81,7 @@ const Home = () => {
                   </div>
               </div>
           </div>
-      </section>
+      </section> */}
       <HomeSectionSix />
       <section className="section home_sec_7">
           <div className="grid-container">

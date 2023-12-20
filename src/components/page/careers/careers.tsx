@@ -71,7 +71,7 @@ const CareerItem: React.FC<{ item: CareerType }> = ({ item }) => {
       />
     <div
         className="career-column career-content"
-        data-aos="fade-right"
+        data-aos="fade-left"
         dangerouslySetInnerHTML={{__html: item.content}}
       />
     {/* <div className="column column1">{item.content}</div> */}
@@ -81,7 +81,7 @@ const CareerItem: React.FC<{ item: CareerType }> = ({ item }) => {
 
 const Career: React.FC = () => {
   return (
-    <section className="section home_sec_1">
+    <section className="section career_sec">
       <div className="grid-container">
         <div className="grid-100">
           <h1>Careers</h1>

@@ -3,9 +3,11 @@ import 'slick-carousel/slick/slick.css';
 import Mockup_1 from '../../../assets/images/Mockup_1.png';
 import Mockup_2 from '../../../assets/images/Mockup_2.png';
 import Mockup_3 from '../../../assets/images/Mockup_3.png';
+import { useTranslation} from 'react-i18next';
 
 
 const BusinessSectionThree = () => {
+    const { t } = useTranslation();
     const settings = {
       centerMode: true,
       centerPadding: '0px',
@@ -34,6 +36,8 @@ const BusinessSectionThree = () => {
       };
 
 
+
+
     const slidesData = [
         { imgSrc: Mockup_1, title: "Open Your Online Store" },
         { imgSrc: Mockup_2, title: "Appointment Scheduling" },
@@ -57,9 +61,8 @@ const BusinessSectionThree = () => {
         <div className="grid-container">
             <div className="grid-100">
                 <div className="text_center">
-                    <h2 className="heading_title" data-aos="fade-in">
-                        How it <b>works</b>
-                    </h2>
+                    <div dangerouslySetInnerHTML={{ __html: t("How it works") }} />
+                    
                 </div>
 
                 <div className="slider_banner" data-aos="fade-in">

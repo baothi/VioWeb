@@ -31,13 +31,13 @@ const Footer = () => {
             </div>
             <div className="grid-20 footer_2">
                 <ul>
-                    <li>
+                    {/* <li>
                         <a href="">
                             Why Vio
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="">For Business</a>
+                        <Link to="/business">For Business</Link>
                     </li>
                     <li>
                         <Link to="/careers" className="">Careers</Link>
@@ -53,13 +53,13 @@ const Footer = () => {
             </span>
                 <ul className="footer_menu">
                     <li>
-                        <a href="">
+                        <Link to="">
                             About us
-                        </a>
+                        </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/ourteam" className="">Our team</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="">
                             Mobile app
@@ -73,17 +73,17 @@ const Footer = () => {
             </span>
                 <ul className="footer_menu">
                     <li>
-                        <a href="">
+                        <a href="mailto:contact@prismtechinc.io">
                             Contact us
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="mailto:support@prismtechinc.io">
                             Support
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="mailto:someone@example.com">
                             Report issue
                         </a>
                     </li>

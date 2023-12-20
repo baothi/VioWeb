@@ -46,7 +46,7 @@ const OurTeam = () => {
                       </span>
                       <h1 className="heading_title" data-aos="fade-in">
                           <b>Meet</b> the team<br/>
-                          behindb <b>PrismTech</b>
+                          behind <b>PrismTech</b>
                       </h1>
                       <div className="content" data-aos="fade-in">
                           We’re a small team that loves to create great experiences and make meaningful connections between builders and customers.

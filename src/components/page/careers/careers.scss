@@ -1,19 +1,27 @@
-.container {
-    display: flex;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
-    margin-bottom: 15px !important;
-
-    .career-column {
-        flex: 1; /* Each column takes up an equal portion of the container */
-        padding: 10px;
-    }
-
-    .career-content {
-        margin-top: 0;
-        flex: 2; /* Adjust the value based on your requirements */
-    }
+.career_sec {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 2.375rem;
+    margin-bottom: 5rem;
+    .container {
+        display: flex;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+        margin-bottom: 15px !important;
     
+        .career-column {
+            flex: 1; /* Each column takes up an equal portion of the container */
+            padding: 10px;
+        }
+    
+        .career-content {
+            margin-top: 0;
+            flex: 2; /* Adjust the value based on your requirements */
+        }
+        
+    }
+
 }
 
 
