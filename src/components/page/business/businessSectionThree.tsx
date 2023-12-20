@@ -12,6 +12,10 @@ const BusinessSectionThree = () => {
       centerMode: true,
       centerPadding: '10px',
       slidesToShow: 3,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 2000,
+      speed: 3000,
       arrows: false,
       responsive: [
           {

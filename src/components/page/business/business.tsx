@@ -20,9 +20,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import BusinessSectionOne from './businessSectionOne';
 import BusinessSectionThree from './businessSectionThree';
-import BusinessSectionFour from './businessSectionFour';
 import { useTranslation} from 'react-i18next';
-import BusinessSection4 from './scratch';
+import BusinessSectionFour from './businessSectionFour';
 
 
 const Business = () => {
@@ -52,7 +51,7 @@ const Business = () => {
             </div>
       </section>
       <BusinessSectionThree />
-      <BusinessSection4 />
+      <BusinessSectionFour />
       <section className="section business_sec_5">
           <div className="grid-container">
               <div className="grid-100" data-aos="fade-in">
