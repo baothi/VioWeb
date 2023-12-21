@@ -1,5 +1,5 @@
 import banner_sec_4 from '../../assets/images/banner_sec_4.png';
-import qr_code from '../../assets/images/qr_code.png';
+import qr_code from '../../assets/images/QR2.png';
 import Google from '../../assets/images/Google.png';
 import Apple from '../../assets/images/Apple.png';
 import img_iphone from '../../assets/images/img_iphone.png';
