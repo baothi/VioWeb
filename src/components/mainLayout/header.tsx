@@ -18,7 +18,7 @@ const Header = () => {
 
   const changeLanguage = (languageImage: string) => {
     console.log(languageImage);
-    const newLang = languageImage === '/src/assets/images/USA.png' ? 'en' : 'vi';
+    const newLang = languageImage === `${USA}` ? 'en' : 'vi';
     i18n.changeLanguage(newLang);
     setCurrentLanguage(languageImage);
     setShowSubMenu(false);
@@ -32,7 +32,7 @@ const Header = () => {
   useEffect(() => {
     const storedLanguage = localStorage.getItem('language');
     if (storedLanguage) {
-      const langCode = storedLanguage === '/src/assets/images/USA.png' ? 'en' : 'vi';
+      const langCode = storedLanguage === `${USA}` ? 'en' : 'vi';
       i18n.changeLanguage(langCode);
     }
   }, [i18n]);
