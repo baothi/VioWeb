@@ -25,7 +25,7 @@ jobs:
 
       - name: Prepare shared environment variables
         run: |
-          export GIT_HASH_TAG=$(git rev-parse --short "$GITHUB_SHA")
+          export GIT_HASH_TAG=$GITHUB_SHA
           echo "GIT_HASH_TAG=$GIT_HASH_TAG" >> $GITHUB_ENV
           echo "ARTIFACTS_BUCKET_NAME=vio-web-landing-page-releases" >> $GITHUB_ENV
 
@@ -101,7 +101,9 @@ jobs:
         run: |
           npm i
           npm run build
-          zip -r -j ${BUILD_TAG}.zip dist/*
+          cd dist
+          zip -r ../${BUILD_TAG}.zip .
+          cd ..
 
       - name: Upload artifact to Google Cloud storage
         id: upload-artifact-gcs
