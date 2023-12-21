@@ -11,11 +11,12 @@ const HomeSectionSix = () => {
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         infinite: true,
-        speed: 3000,
-        autoplaySpeed: 2000, //auto play every 2 seconds
+        slidesToScroll: 1,
+        // speed: 4000,
+        // autoplaySpeed: 3000, //auto play every 2 seconds
         responsive: [
           {
             breakpoint: 768,

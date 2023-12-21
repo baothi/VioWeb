@@ -55,7 +55,7 @@ ul.change_language {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-width: 4.583rem;
+    min-width: 2.583rem;
     box-sizing: border-box;
     margin-right: 0.833rem;
 }
@@ -526,12 +526,12 @@ img {
 .slider_business .item h3:before {
     position: absolute;
     content: '';
-    background-image: url(../images/hea.svg);
+    background-image: url(../images/Heart.png);
     width: 21.09375rem;
     height: 29.21875rem;
     left: 50%;
     top: 50%;
-    transform: translate(calc(-50% + 0.15625rem), -50%);
+    transform: translate(calc(-50% + 0.15625rem), -34%);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
@@ -1120,7 +1120,7 @@ footer .footer_nav .wrap {
 ul.change_language img {
     display: block;
 }
-ul.change_language:before{
+/* ul.change_language:before{
     position: absolute;
     background-image: url(../images/arrow.svg);
     width: 1.25rem;
@@ -1130,7 +1130,7 @@ ul.change_language:before{
     z-index: 2;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .particles_ani {
     position: fixed;
     width: 100%;
