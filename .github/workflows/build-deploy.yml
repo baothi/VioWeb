@@ -1,0 +1,154 @@
+name: landing-web-build-deploy
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*.*.*
+
+env:
+  GIT_BRANCH: ${{ github.ref_name }}
+
+jobs:
+  prepare-env-vars:
+    runs-on: self-hosted
+    container:
+      image: asia-southeast1-docker.pkg.dev/vio-devops/ops/runner-ubuntu-node18:jammy-vio-r1
+      credentials:
+        username: ${{ secrets.GHA_GCP_GAR_USER }}
+        password: ${{ secrets.GHA_GCP_GAR_PASSWORD }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Prepare shared environment variables
+        run: |
+          export GIT_HASH_TAG=$(git rev-parse --short "$GITHUB_SHA")
+          echo "GIT_HASH_TAG=$GIT_HASH_TAG" >> $GITHUB_ENV
+          echo "ARTIFACTS_BUCKET_NAME=vio-web-landing-page-releases" >> $GITHUB_ENV
+
+      - name: Prepare environment variables (dev)
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo "ENV=dev" >> $GITHUB_ENV
+          echo "BUILD_TAG=$GIT_HASH_TAG" >> $GITHUB_ENV
+          echo "BUCKET_NAME=dev-web-landing-page" >> $GITHUB_ENV
+          echo "LB_NAME=dev-web-landing-page-load-balancer" >> $GITHUB_ENV
+          echo "GCP_PROJECT_NAME=vio-dev-392717" >> $GITHUB_ENV
+
+      - name: Prepare environment variables (prod)
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          echo "ENV=prod" >> $GITHUB_ENV
+          echo "BUILD_TAG=$GIT_BRANCH" >> $GITHUB_ENV
+          echo "BUCKET_NAME=prod-web-landing-page" >> $GITHUB_ENV
+          echo "LB_NAME=prod-web-landing-page-load-balancer" >> $GITHUB_ENV
+          echo "GCP_PROJECT_NAME=vio-prod" >> $GITHUB_ENV
+
+      - name: Export environment variables
+        id: export-envs
+        run: |
+          echo "ARTIFACTS_BUCKET_NAME=$ARTIFACTS_BUCKET_NAME" >> $GITHUB_OUTPUT
+          echo "ENV=$ENV" >> $GITHUB_OUTPUT
+          echo "BUILD_TAG=$BUILD_TAG" >> $GITHUB_OUTPUT
+          echo "BUCKET_NAME=$BUCKET_NAME" >> $GITHUB_OUTPUT
+          echo "LB_NAME=$LB_NAME" >> $GITHUB_OUTPUT
+          echo "GCP_PROJECT_NAME=$GCP_PROJECT_NAME" >> $GITHUB_OUTPUT
+
+    outputs:
+      ARTIFACTS_BUCKET_NAME: ${{ steps.export-envs.outputs.ARTIFACTS_BUCKET_NAME }}
+      ENV: ${{ steps.export-envs.outputs.ENV }}
+      BUILD_TAG: ${{ steps.export-envs.outputs.BUILD_TAG }}
+      BUCKET_NAME: ${{ steps.export-envs.outputs.BUCKET_NAME }}
+      LB_NAME: ${{ steps.export-envs.outputs.LB_NAME }}
+      GCP_PROJECT_NAME: ${{ steps.export-envs.outputs.GCP_PROJECT_NAME }}
+
+  build-push-gcs:
+    needs: [prepare-env-vars]
+    runs-on: self-hosted
+    container:
+      image: asia-southeast1-docker.pkg.dev/vio-devops/ops/runner-ubuntu-node18:jammy-vio-r1
+      credentials:
+        username: ${{ secrets.GHA_GCP_GAR_USER }}
+        password: ${{ secrets.GHA_GCP_GAR_PASSWORD }}
+
+    permissions:
+      id-token: write
+      contents: read
+
+    env:
+      ARTIFACTS_BUCKET_NAME: ${{ needs.prepare-env-vars.outputs.ARTIFACTS_BUCKET_NAME }}
+      ENV: ${{ needs.prepare-env-vars.outputs.ENV }}
+      BUILD_TAG: ${{ needs.prepare-env-vars.outputs.BUILD_TAG }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - id: auth_gcp
+        name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          token_format: access_token
+          workload_identity_provider: ${{ secrets.GHA_GCP_WORKLOAD_IDP }}
+          service_account: ${{ secrets.GHA_GCP_GAR_SA }}
+          access_token_lifetime: 3600s
+
+      - name: Build and compress artifact
+        id: build-push-gcs
+        run: |
+          npm i
+          npm run build
+          zip -r -j ${BUILD_TAG}.zip dist/*
+
+      - name: Upload artifact to Google Cloud storage
+        id: upload-artifact-gcs
+        run: |
+          gcloud storage cp ${BUILD_TAG}.zip gs://${ARTIFACTS_BUCKET_NAME}/
+
+
+  deploy:
+    runs-on: self-hosted
+    needs: [prepare-env-vars, build-push-gcs]
+    container:
+      image: asia-southeast1-docker.pkg.dev/vio-devops/ops/runner-ubuntu-node18:jammy-vio-r1
+      credentials:
+        username: ${{ secrets.GHA_GCP_GAR_USER }}
+        password: ${{ secrets.GHA_GCP_GAR_PASSWORD }}
+
+    permissions:
+      id-token: write
+      contents: read
+
+    env:
+      ARTIFACTS_BUCKET_NAME: ${{ needs.prepare-env-vars.outputs.ARTIFACTS_BUCKET_NAME }}
+      BUILD_TAG: ${{ needs.prepare-env-vars.outputs.BUILD_TAG }}
+      BUCKET_NAME: ${{ needs.prepare-env-vars.outputs.BUCKET_NAME }}
+      LB_NAME: ${{ needs.prepare-env-vars.outputs.LB_NAME }}
+      GCP_PROJECT_NAME: ${{ needs.prepare-env-vars.outputs.GCP_PROJECT_NAME }}
+
+    steps:
+      - id: auth_gcp
+        name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          token_format: access_token
+          workload_identity_provider: ${{ secrets.GHA_GCP_WORKLOAD_IDP }}
+          service_account: ${{ secrets.GHA_GCP_GAR_SA }}
+          access_token_lifetime: 3600s
+
+      - name: Get artifacts from GCS
+        run: |
+          gcloud storage cp gs://${ARTIFACTS_BUCKET_NAME}/${BUILD_TAG}.zip ${BUILD_TAG}.zip
+
+      - name: Unzip and replace existing GCS bucket with new contents
+        run: |
+          mkdir dist
+          unzip ${BUILD_TAG}.zip -d dist
+          gcloud storage rsync dist gs://${BUCKET_NAME} --recursive --delete-unmatched-destination-objects
+
+      - name: Perform cache invalidation for Cloud GSLB CDN
+        run: |
+          gcloud compute url-maps invalidate-cdn-cache ${LB_NAME} --project ${GCP_PROJECT_NAME} --path "/*"
