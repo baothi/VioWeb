@@ -1,6 +1,6 @@
-import img_change_1 from '../../assets/images/img_change_1.png';
-import booking_anywhere from '../../assets/images/booking_anywhere.png';
-import keep_track_of_calendar from '../../assets/images/keep_track_of_calendar.png';
+import HS3_Mockup1 from '../../assets/images/HS3_Mockup1.png'
+import HS3_Mockup2 from '../../assets/images/HS3_Mockup2.png'
+import HS3_Mockup3 from '../../assets/images/HS3_Mockup3.png'
 import { useState } from 'react';
 import { useTranslation} from 'react-i18next';
 
@@ -13,9 +13,9 @@ const HomeSectionThree = () => {
     }
     
     const tabItems: ITabItem[] = [
-      { id: 1, title: "Find your favorite service", image: `${img_change_1}` },
-      { id: 2, title: "Booking anywhere, anytime", image: `${booking_anywhere}` },
-      { id: 3, title: "Keep track of your calendar", image: `${keep_track_of_calendar}` }
+      { id: 1, title: "Find your favorite service", image: `${HS3_Mockup1}` },
+      { id: 2, title: "Booking anywhere, anytime", image: `${HS3_Mockup2}` },
+      { id: 3, title: "Keep track of your calendar", image: `${HS3_Mockup3}` }
     ];
     const [activeTab, setActiveTab] = useState<number>(1);
 

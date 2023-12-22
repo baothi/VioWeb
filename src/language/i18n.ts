@@ -167,6 +167,7 @@ const resources = {
     "Open Your Online Store": "Open Your Online Store",
     "Appointment Scheduling": "Appointment Scheduling",
     "Manage Team Member": "Manage Team Member",
+    "CRM System" : "CRM System" ,
 
 
     //section 7
@@ -292,6 +293,7 @@ const resources = {
     "Inventory Management" : ` 
                                     Inventory <b> Management</b>
                                 `, 
+    
     "Calendar title" : ` 
                     <b> Calendar</b>
                     `,           
@@ -609,6 +611,7 @@ const resources = {
                             Hệ thống lời nhắn thông báo đến khách hàng để giảm tỷ lệ huỷ lịch.
                             `,
     "Inventory Management" : `Quản lý <b>cửa hàng</b>`,
+    "CRM System" : "Quản lý cửa hàng",
     "Track product, services slot and manage them among your branches.": `Thiết lập cửa hàng, dịch vụ và quản lý tất cả chi nhánh của bạn`,
     "Calendar title": `
                             <b>Lịch trình</b>
@@ -661,9 +664,10 @@ const resources = {
      "Contact us": "Liên hệ",
      "Mobile app": "Ứng dụng Vio",
      "Support": "Hỗ trợ",
-     "Report issue": "Báo cáo sự cố",
+     "Report issue": "Báo cáo sự cố ",
      "Terms & Condition": "Thoả thuận người dùng",
      "Privacy Policy": "Chính sách bảo mật",
+     "Get In Touch": "Gửi yêu cầu",
     }
   }
 }

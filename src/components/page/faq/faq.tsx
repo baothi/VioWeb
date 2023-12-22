@@ -366,7 +366,7 @@ const FAQ= () => {
                                 {item.content.map((single_content, index) => (
                                   <li>
                                     <div style={{ paddingRight: "10px"}}>{index+1}.</div>
-                                    <div className="test-element" dangerouslySetInnerHTML={{__html: single_content}}/>
+                                    <div className="highlighted-element" dangerouslySetInnerHTML={{__html: single_content}}/>
       
                                     </li>
                                 ))}  
@@ -374,7 +374,7 @@ const FAQ= () => {
                             </div>     
                             <div className='content_image'>                   
                               {item.image?.map((img, i) => (
-                                <img key={i} src={img}/>
+                                <img key={i} src={img} style={{}}/>
                               )
                               )}
                             </div>

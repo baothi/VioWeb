@@ -1,8 +1,11 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import img_phone_1 from '../../../assets/images/img_phone_1.png';
-import img_phone_2 from '../../../assets/images/img_phone_2.png';
-import img_phone_3 from '../../../assets/images/img_phone_3.png';
+import BS1_Mockup1 from '../../../assets/images/BS1_Mockup1.png'
+import BS1_Mockup2 from '../../../assets/images/BS1_Mockup2.png'
+import BS1_Mockup3 from '../../../assets/images/BS1_Mockup3.png'
+import BS1_Mockup4 from '../../../assets/images/BS1_Mockup4.png'
+import BS1_Mockup5 from '../../../assets/images/BS1_Mockup5.png'
+import BS1_Mockup6 from '../../../assets/images/BS1_Mockup6.png'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -51,15 +54,12 @@ const BusinessSectionOne = () => {
 
 
     const slidesData = [
-        { imgSrc: img_phone_1, title: "Open Your Online Store" },
-        { imgSrc: img_phone_2, title: "Appointment Scheduling" },
-        { imgSrc: img_phone_3, title: "Manage Team Member" },
-        { imgSrc: img_phone_1, title: "Open Your Online Store" },
-        { imgSrc: img_phone_2, title: "Appointment Scheduling" },
-        { imgSrc: img_phone_3, title: "Manage Team Member" },
-        { imgSrc: img_phone_1, title: "Open Your Online Store" },
-        { imgSrc: img_phone_2, title: "Appointment Scheduling" },
-        { imgSrc: img_phone_3, title: "Manage Team Member" },
+        { imgSrc: BS1_Mockup1, title: "Open Your Online Store" },
+        { imgSrc: BS1_Mockup2, title: "Appointment Scheduling" },
+        { imgSrc: BS1_Mockup3, title: "Manage Team Member" },
+        { imgSrc: BS1_Mockup4, title: "Open Your Online Store" },
+        { imgSrc: BS1_Mockup5, title: "Appointment Scheduling" },
+        { imgSrc: BS1_Mockup6, title: "Manage Team Member" },
     ];
 
     return (
