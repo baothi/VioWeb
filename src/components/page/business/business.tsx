@@ -67,74 +67,78 @@ const Business = () => {
                   <li>
                       <a href="#" title="">
                           <img src={cr1} alt="" />
-                          <h3>Barber Shop</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Barber shop") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr2} alt="" />
-                          <h3>Beauty Salon</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Beauty salon") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr3} alt="" />
-                          <h3>Gym and Fitness</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Gym and fitness") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr4} alt="" />
-                          <h3>Freelancer</h3>
+                          <img src={cr4} alt="" />                       
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Freelancer") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr5} alt="" />
-                          <h3>Makeup Artist</h3>
+                          <h3></h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Make-up artist") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr6} alt="" />
-                          <h3>Nail & Eyelash</h3>
+                        
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nail & eyelash") }} /></h3>
                       </a> 
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr1} alt="" />
-                          <h3>Barber Shop</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Barber shop") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr2} alt="" />
-                          <h3>Beauty Salon</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Beauty salon") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr3} alt="" />
-                          <h3>Gym and Fitness</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Gym and fitness") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr4} alt="" />
-                          <h3>Freelancer</h3>
+                          <img src={cr4} alt="" />                       
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Freelancer") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr5} alt="" />
-                          <h3>Makeup Artist</h3>
+                          <h3></h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Makeup artist") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr6} alt="" />
                           <h3>Nail & Eyelash</h3>
-                      </a>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nail & eyelash") }} /></h3>
+                      </a> 
                   </li>
               </ul>
           </div>
@@ -142,74 +146,74 @@ const Business = () => {
               <ul className="inner">
                   <li>
                       <a href="#" title="">
-                          <img src={cr7} alt="" />
-                          <h3>Nightlife</h3>
+                          <img src={cr7} alt="" />                         
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nightlife") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
-                          <img src={cr8} alt="" />
-                          <h3>Outdoor Activities</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr9} alt="" />
-                          <h3>Tatoo & Piercing</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr10} alt="" />
-                          <h3>Veterinarian</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr11} alt="" />
-                          <h3>Workshop</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr12} alt="" />
-                          <h3>Hair Salon</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr7} alt="" />
-                          <h3>Nightlife</h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr8} alt="" />
-                          <h3>Outdoor Activities</h3>
+                          <img src={cr8} alt="" />                         
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Outdoor activities") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr9} alt="" />
-                          <h3>Tatoo & Piercing</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Tatoo") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr10} alt="" />
-                          <h3>Veterinarian</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Veterinarian") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr11} alt="" />
-                          <h3>Workshop</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Workshop") }} /></h3>
                       </a>
                   </li>
                   <li>
                       <a href="#" title="">
                           <img src={cr12} alt="" />
-                          <h3>Hair Salon</h3>
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Hair salon") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr7} alt="" />                         
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nightlife") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr8} alt="" />                         
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Outdoor activities") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr9} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Tattoo") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr10} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Veterinarian") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr11} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Workshop") }} /></h3>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" title="">
+                          <img src={cr12} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t("Hair salon") }} /></h3>
                       </a>
                   </li>
               </ul>

@@ -1,17 +1,15 @@
 import iphone14pro from '../../../assets/images/iPhone 14 Pro.png'
+import qrcode from '../../../assets/images/qr_code.png'
 import { useState } from 'react';
-import { useTranslation} from 'react-i18next';
 import './faq.scss'
 
 const FAQ= () => {
-    const { t } = useTranslation();
     type FAQ = {
       question: string;
       answer: string;
     };
     
     const faqs: FAQ[] = [
-      
       {
         question: "What is Vio?",
         answer: "Vio is a global visual schedule aggregator that connects you to the rest of the world from a personal, professional, and social standpoint."
@@ -32,7 +30,6 @@ const FAQ= () => {
         question: "Where can I find Vio?",
         answer:"Vio is currently available for download in Vietnam on both the App Store and Google Play. We are in our U.S. beta test and the Vio app will be available on both Google Play and the App Store in the U.S. and Canada upon our U.S. launch."
       },
-     
       {
         question:  "Will Vio charge a fee?",
         answer: "Creating a \"personal\" user account is free and end-users may leverage all features and functionality available. If you're a business entity and/or corporation and would like to promote an event using our platform, please contact us for more information.",
@@ -51,32 +48,57 @@ const FAQ= () => {
       },
     ];
     
+    
+    const FAQItem: React.FC<{ faq: FAQ }> = ({ faq }) => {
+
+      const [isOpen, setIsOpen] = useState(false);
+    
+      const toggle = () => {       
+        setIsOpen(!isOpen);
+      };
+
+      return (
+        <div className="faq-section" >
+          <p className="faq-question" onClick={toggle}>
+            {isOpen ? `- ${faq.question}` : `+ ${faq.question}`}
+          </p>
+          {isOpen && <div className="faq-answer" >{faq.answer}</div>}
+        </div>
+      );
+    };
+    
+    
+    
+    
     interface UserManualItem {
       id: number;
       main_title?: string ;
       sub_title?: string;
-      sub_title_child?: string
+      sub_title_child?: string;
       image?: string[];
       content?: string[];
       step_title1?: string;
       step_title2?: string;
+      content_1?: string[];
+      image_1?: string[];
     }
     interface MenuItem {
       name: string;
       id: number;
     }
     const tabItems: UserManualItem[] = [
-      { id: 1, main_title:"I. Tài khoản cửa hàng" , sub_title: "", image: ["iphone14pro","iphone14pro","iphone14pro",], content: ""  },
+      { id: 1, main_title:"I. Tài khoản cửa hàng" , sub_title: "", image: ["iphone14pro","iphone14pro","iphone14pro",], content: [""]  },
       { id: 2, main_title: "", sub_title: "1. Đăng ký tài khoản", 
-      image: [iphone14pro,iphone14pro,iphone14pro], 
-      content: ["Tải ngay ứng dụng Vio – đặt lịch thông minh trên Appstore hoặc Playstore.", 
+      image: [iphone14pro,iphone14pro,qrcode ], 
+      content: ["Tải ngay <b>ứng dụng Vio </b> – đặt lịch thông minh trên Appstore hoặc Playstore.", 
                 "Chọn Tài khoản cửa hàng và nhấn Xác nhận.",
                 "Nhập số điện thoại hoặc email.​",
                 "Nhập mã xác nhận​ (*) và tiếp tục.",
                 "Thêm thông tin cửa hàng, mật khẩu và xác nhận mật khẩu.",
                 "Tick vào ô chọn, nếu bạn đã đọc và đồng ý với các điều khoản sử dụng của Vio.",
                 "Chọn Tạo cửa hàng để hoàn tất."
-    ] },
+    ],
+  content_1: []},
     {id: 3, main_title: "", sub_title: "2. Tạo chi nhánh", image: [iphone14pro,iphone14pro,iphone14pro], 
     content: ["Chạm vào ảnh đại diện ở góc trái để mở menu phụ.",
               "Chạm vào biểu tượng​",
@@ -95,7 +117,7 @@ const FAQ= () => {
             "Chạm vào ảnh đại diện cửa hàng bạn để mở Giao diện cửa hàng.",
             "Chạm vào Chỉnh sửa hồ sơ để thay đổi thông tin hiển thị.",
             "Thiết lập thông tin về hồ sơ cửa hàng bạn.",
-            `Chọn danh mục kinh doanh phù hợp.\n​ 
+            `Chọn danh mục kinh doanh phù hợp.
              Lưu ý: điều này ảnh hưởng đến cách khách hàng có thể tìm thấy cửa hàng bạn. `,
              "Nhấn Lưu để xác nhận các thay đổi."
 
@@ -124,11 +146,12 @@ const FAQ= () => {
     },
   {id: 10, sub_title_child: "ii. Thiết lập các ngày làm việc trong tuần", image: [iphone14pro,iphone14pro,iphone14pro],
   content: [`Chạm vào ngày trong tuần bạn muốn điều chỉnh, ví dụ bạn điều chỉnh giờ mở cửa cho chủ nhận hãy chạm vào Sun, sau đó: 
-            Để đóng cửa cả chủ nhật, chọn <b> Đóng cửa cả ngày </b>​. 
-            Để xóa một khung giờ, nhấn <ICON>​. 
-            Để thay đổi một khung giờ, nhấn​ <ICON>. 
-            Nhấn <b>Lưu</b> để xác nhận thay đổi​`
-
+            <ul>
+            <li>Để đóng cửa cả chủ nhật, chọn <b> &#160 Đóng cửa cả ngày </b>​.  </li>
+            <li>Để xóa một khung giờ, nhấn <ICON>​.  </li>
+            <li>Để thay đổi một khung giờ, nhấn​ <ICON>.  </li>
+            <li>Nhấn <b>&#160Lưu&#160</b> để xác nhận thay đổi​ </li>
+            <ul>`
   ]},
   {id: 11, sub_title_child: "iii. Thiết lập ngày nghỉ đặc biệt", image: [iphone14pro,iphone14pro,iphone14pro],
   content: ["Chạm Thêm ngày và giờ trong mục ngày nghỉ đặc biệt.",
@@ -246,8 +269,8 @@ const FAQ= () => {
     ]}
     ];
 
-    const menuItems: MenuItem[] = [{name: "faq",id:1},{name: "manual",id:2}]
-    const [activeTab, setActiveTab] = useState<number>(1);
+    const menuItems: MenuItem[] = [{name: "User Manual",id:1},{name: "Frequently Asked Questions",id:2}]
+    const [activeTab, setActiveTab] = useState<number>(2);
     const [activeMenu, setActiveMenu] = useState<number>(1)
 
     const handleTabClick = (id: number) => {
@@ -258,36 +281,28 @@ const FAQ= () => {
       setActiveMenu(id)
     }
 
+  
+
     return (
       <section className="section home_sec_3">
-        <div className='grid-100' style={{display: "flex", flexDirection:'column', alignItems: "center", justifyContent: "center"}}>
+        <div className='grid-100 faq-title' >
               <h3 className='heading_title'><b>VIO</b> FAQ</h3>
               <h3 style={{color: "white"}}>If you’re new to Vio or looking for replatform your business, this guide will help you learn more about the platform
                 and its features.</h3>
         </div>
-        <div className='faq-btn' style={{display: "flex", justifyContent: "center"}}>
-          <button className={activeMenu === 1 ? 'active' : ''} onClick={() =>handleMenuClick(1)}>Frequently Asked Questions</button>
-          <button className={activeMenu === 2 ? 'active' : ''} onClick={() =>handleMenuClick(2)}>User Manual</button>
+        <div className='faq-btn' >
+          {menuItems.map(menuItem => (
+            <button className={activeMenu === menuItem.id ? 'active' : ''} onClick={() =>handleMenuClick(menuItem.id)}>{menuItem.name}</button>
+          ) )}
+    
         </div>
         {activeMenu === 2 &&
         <div className="grid-container">
             <div className="menu_list grid-30 tablet-grid-50">  
-                <ul className="tab_content" data-aos-duration="3000">
-                {tabItems.map(item => (
-                  <li
-                    key={item.id}
-                    className={activeTab === item.id ? 'active' : ''}
-                    data-id={item.id}
-                    // data-aos="fade-left"
-                    onClick={() => handleTabClick(item.id)}
-                  >
-                    {item.main_title ? 
-                            <b><div style={{fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.main_title }} /> </b> :
-                      item.sub_title ?
-                            <b><div style={{paddingLeft: "10px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.sub_title }} /> </b> :
-                            <b><div style={{paddingLeft: "20px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.sub_title_child }} /> </b>}
-                  </li>
-                ))}
+                <ul className="tab_content" data-aos-duration="3000">            
+                  <li className='active'>
+                           <b> <div style={{fontSize: "24px"}} >Getting Started With Vio </div> </b>
+                            </li>
                 </ul>
             </div>
 
@@ -296,35 +311,16 @@ const FAQ= () => {
                   {tabItems.map(item => (
                     <li key={item.id} className={activeTab === item.id ? 'active' : ''}>
                       {(item.content && activeTab === item.id) && 
-                        <div className='container_content'>
-                            {/* <img src={item.image} /> */}
-                          {/* <div className="inner_content_wrapper" dangerouslySetInnerHTML={{ __html: item.content }} />  */}
-                          <h3>{item.sub_title && item.sub_title }</h3>
-                          <h4>{ item.sub_title_child &&  item.sub_title_child}</h4>
-                          <div className="grid-100 inner_content">
-                            {item.step_title1 && <div className='step_title1'>
-                              {item.step_title1}
-                            </div>}
+                        <div className='container_content'>                      
+                          <h4 className='heading_title'>Getting Started With Vio</h4>
+                          <div className="grid-100 inner_content">                      
                             <div className='content_text'>
-                              <ul>
-                                {item.content.map((single_content, index) => (
-                                  <li>
-                                    <div style={{ paddingRight: "10px"}}>{index+1}.</div>
-                                    {single_content}
-                                    </li>
-                                ))}  
-                              </ul>
-                            </div>     
-                            <div className='content_image'>                   
-                              {item.image?.map((img, i) => (
-                                <img key={i} src={img}/>
-                              )
-                              )}
-                            </div>
+                            {faqs.map((faq, index) => (
+                              <FAQItem key={index} faq={faq} />
+                            ))}                 
+                            </div>                            
                           </div>
-
-                        </div> }
-                      
+                        </div> }                      
                     </li>
                   ))}
                 </ul>
@@ -347,7 +343,7 @@ const FAQ= () => {
                             <b><div style={{fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.main_title }} /> </b> :
                       item.sub_title ?
                             <b><div style={{paddingLeft: "10px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.sub_title }} /> </b> :
-                            <b><div style={{paddingLeft: "20px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.sub_title_child }} /> </b>}
+                            <b><div style={{paddingLeft: "20px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: typeof item.sub_title_child === 'string' && item.sub_title_child }} /> </b>}
                   </li>
                 ))}
                 </ul>
@@ -370,7 +366,8 @@ const FAQ= () => {
                                 {item.content.map((single_content, index) => (
                                   <li>
                                     <div style={{ paddingRight: "10px"}}>{index+1}.</div>
-                                    {single_content}
+                                    <div className="test-element" dangerouslySetInnerHTML={{__html: single_content}}/>
+      
                                     </li>
                                 ))}  
                               </ul>

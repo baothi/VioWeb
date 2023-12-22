@@ -352,7 +352,7 @@ ul.tab_content:before {
     z-index: 0;
 }
 
-.home_sec_3 h2.heading_title span:before {
+/* .home_sec_3 h2.heading_title span:before {
     width: 10.3125rem;
     height: 8.125rem;
     background-size: contain;
@@ -364,7 +364,7 @@ ul.tab_content:before {
     background-image: url(../images/line_text.svg);
     position: absolute;
     z-index: -1;
-}
+} */
 .home_sec_4 {
     padding: 6.771rem 0 13.021rem;
     position: relative;
@@ -386,7 +386,7 @@ ul.tab_content:before {
 .home_sec_4 h2.heading_title .box b{
     position: relative;
 }
-.home_sec_4 h2.heading_title .box b:before{
+/* .home_sec_4 h2.heading_title .box b:before{
     content: '';
     position: absolute;
     background-image: url(../images/arrow_title_sec_4.svg);
@@ -396,7 +396,7 @@ ul.tab_content:before {
     background-repeat: no-repeat;
     right: 0;
     transform: translate(101%,-0.729rem) rotate(-6deg);
-}
+} */
 
 .home_sec_4 .list {
     color: #fff;
@@ -417,6 +417,14 @@ ul.tab_content:before {
 }
 .home_sec_4 .list .content {
     font-size: 16px;
+}
+
+.home_sec_4  h3 {
+    background: var(--gradient-gold, linear-gradient(180deg, #E0AA3D 0%, #F7EF8A 46.88%, #E0AA3E 100%));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .home_sec_4 .list .content b {
@@ -458,12 +466,12 @@ img {
     padding: 4.6875rem 0 0.78125rem;
 }
 
-.home_sec_6 h2.heading_title b {
+/* .home_sec_6 h2.heading_title b {
     display: inline-block;
     transform: translateY(0.78125rem);
     position: relative;
-}
-.home_sec_6 h2.heading_title b:before{
+} */
+/* .home_sec_6 h2.heading_title b:before{
     content: '';
     background-image: url(../images/arrow_sec_6.svg);
     width: 5.26rem;
@@ -472,7 +480,7 @@ img {
     left: 0;
     bottom: 0.365rem;
     transform: translateX(-65%);
-}
+} */
 
 .home_sec_6 .content.top {
     color: #fff;
@@ -683,16 +691,16 @@ h2.heading_title span {
     padding: 5.208rem 0 2.083rem;
 }
 
-.business_sec_4 .heading_title b {
+/* .business_sec_4 .heading_title b {
     transform: translateY(0.729rem);
     display: inline-block;
     position: relative;
     z-index: -1;
-}
+} */
 .business_sec_4 h2.heading_title b:before{
     position: absolute;
     content: '';
-    background-image: url(../images/arrow_xoan.svg);
+    /* background-image: url(../images/arrow_xoan.svg); */
     width: 5.26rem;
     height: 2.8125rem;
     background-repeat: no-repeat;
@@ -816,10 +824,10 @@ h2.heading_title span {
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-weight: 400;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
     -webkit-line-clamp: 1;
-    display: -webkit-box;
+    /* display: -webkit-box; */
     -webkit-box-orient: vertical;
     margin: 0;
     position: absolute;
@@ -998,6 +1006,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 600;
 }
 
 footer ul {
@@ -1046,7 +1055,7 @@ span.title_footer {
 }
 
 ul.footer_menu li {
-    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 ul.footer_menu li a {
@@ -1117,6 +1126,15 @@ footer .footer_nav .wrap {
 .grid-50.copyright a {
     margin-left: 7.5rem;
 }
+
+.grid-70.copyright {
+    display: flex;
+}
+
+.grid-70.copyright a {
+    margin-left: 7.5rem;
+}
+
 ul.change_language img {
     display: block;
 }
@@ -1179,7 +1197,7 @@ button.slick-next.slick-arrow {
 }
 .business_sec_1 .box b:before,.business_sec_3 b:before {
     content: '';
-    background-image: url(../images/line_title_bs.svg);
+    /* background-image: url(../images/line_title_bs.svg); */
     position: absolute;
     top: 1.75rem;
     left: -0.042rem;
@@ -1196,7 +1214,7 @@ button.slick-next.slick-arrow {
 .business_sec_2 .heading_title b:before{
     background-repeat: no-repeat;
     content: '';
-    background-image: url(../images/icon_tang.svg);
+    /* background-image: url(../images/icon_tang.svg); */
     position: absolute;
     width: 12.135rem;
     height: 11.302rem;
@@ -1661,7 +1679,7 @@ section.section.home_sec_1 .sub {
     }
 
     .business_sec_4 .slider-thumb .item h3 {
-        display: none;
+        font-size: 10px ;
     }
 
     .business_sec_4 .slider {
