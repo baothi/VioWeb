@@ -1,8 +1,8 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import Mockup_1 from '../../../assets/images/Mockup_1.png';
-import Mockup_2 from '../../../assets/images/Mockup_2.png';
-import Mockup_3 from '../../../assets/images/Mockup_3.png';
+import Mockup_1 from '../../../assets/images/BS3_Mockup1.png';
+import Mockup_2 from '../../../assets/images/BS3_Mockup2.png';
+import Mockup_3 from '../../../assets/images/BS3_Mockup3.png';
 import { useTranslation} from 'react-i18next';
 
 
@@ -14,7 +14,7 @@ const BusinessSectionThree = () => {
       slidesToShow: 3,
       autoplay: true,
       infinite: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1500,
       speed: 3000,
       arrows: false,
       responsive: [
@@ -43,15 +43,6 @@ const BusinessSectionThree = () => {
 
 
     const slidesData = [
-        { imgSrc: Mockup_1, title: "Open Your Online Store" },
-        { imgSrc: Mockup_2, title: "Appointment Scheduling" },
-        { imgSrc: Mockup_3, title: "Manage Team Member" },
-        { imgSrc: Mockup_1, title: "Open Your Online Store" },
-        { imgSrc: Mockup_2, title: "Appointment Scheduling" },
-        { imgSrc: Mockup_3, title: "Manage Team Member" },
-        { imgSrc: Mockup_1, title: "Open Your Online Store" },
-        { imgSrc: Mockup_2, title: "Appointment Scheduling" },
-        { imgSrc: Mockup_3, title: "Manage Team Member" },
         { imgSrc: Mockup_1, title: "Open Your Online Store" },
         { imgSrc: Mockup_2, title: "Appointment Scheduling" },
         { imgSrc: Mockup_3, title: "Manage Team Member" },

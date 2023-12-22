@@ -1,4 +1,4 @@
-import business_img_sec_2 from '../../../assets/images/business_img_sec_2.png';
+import BS2_Mockup from '../../../assets/images/BS2_Mockup.png'
 import bg_mail from '../../../assets/images/bg_mail.jpeg';
 
 import cr1 from '../../../assets/images/CRBarber_shop.png';
@@ -46,7 +46,7 @@ const Business = () => {
                  
                 </div>
                 <div className="grid-50 box_img"  data-aos="fade-left">
-                    <img src={business_img_sec_2} alt="" />
+                    <img src={BS2_Mockup} alt="" />
                 </div>
             </div>
       </section>
@@ -144,6 +144,7 @@ const Business = () => {
           </div>
           <div className="bang_chuyen_project right imageSlider"  data-aos="fade-in">
               <ul className="inner">
+                
                   <li>
                       <a href="#" title="">
                           <img src={cr7} alt="" />                         
@@ -230,7 +231,7 @@ const Business = () => {
                       <form action="">
                           <input type="text" placeholder="Your email" />
                           <button type="submit">
-                              Get Started
+                          <div dangerouslySetInnerHTML={{ __html: t("Get In Touch") }} />
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                   <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                               </svg>

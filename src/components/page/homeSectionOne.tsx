@@ -1,8 +1,12 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import Mockup_1_slider from '../../assets/images/Mockup_1_slider.png';
-import Mockup_2_slider from '../../assets/images/Mockup_2_slider.png';
-import Mockup_3_slider from '../../assets/images/Mockup_3_slider.png';
+import Mockup1_slider from '../../assets/images/HS1_Mockup1.png'
+import Mockup2_slider from '../../assets/images/HS1_Mockup2.png'
+import Mockup3_slider from '../../assets/images/HS1_Mockup3.png'
+import Mockup4_slider from '../../assets/images/HS1_Mockup4.png'
+import Mockup5_slider from '../../assets/images/HS1_Mockup5.png'
+import Mockup6_slider from '../../assets/images/HS1_Mockup6.png'
+
 // the hook
 import { useTranslation} from 'react-i18next';
 
@@ -31,12 +35,12 @@ const HomeSectionOne = () => {
 
 
     const slidesData = [
-        { imgSrc: Mockup_1_slider },
-        { imgSrc: Mockup_2_slider },
-        { imgSrc: Mockup_3_slider },
-        { imgSrc: Mockup_1_slider },
-        { imgSrc: Mockup_2_slider },
-        { imgSrc: Mockup_3_slider },
+        { imgSrc: Mockup1_slider },
+        { imgSrc: Mockup2_slider },
+        { imgSrc: Mockup3_slider },
+        { imgSrc: Mockup4_slider },
+        { imgSrc: Mockup5_slider },
+        { imgSrc: Mockup6_slider },
        
     ];
 

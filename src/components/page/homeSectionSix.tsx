@@ -3,6 +3,9 @@ import 'slick-carousel/slick/slick.css';
 import IMG3 from '../../assets/images/IMG-3.png';
 import IMG31 from '../../assets/images/IMG-3-1.png';
 import IMG32 from '../../assets/images/IMG-3-2.png';
+import IMG33 from '../../assets/images/IMG-3-3.png'
+import IMG34 from '../../assets/images/IMG-3-4.png'
+import IMG35 from '../../assets/images/IMG-3-5.png'
 import { useTranslation} from 'react-i18next';
 
 const HomeSectionSix = () => {
@@ -44,9 +47,9 @@ const HomeSectionSix = () => {
         { imgSrc: IMG3, title: "Open Your Online Store" },
         { imgSrc: IMG31, title: "Appointment Scheduling" },
         { imgSrc: IMG32, title: "Manage Team Member" },
-        { imgSrc: IMG3, title: "Open Your Online Store" },
-        { imgSrc: IMG31, title: "Appointment Scheduling" },
-        { imgSrc: IMG32, title: "Manage Team Member" },
+        { imgSrc: IMG33, title: "CRM System" },
+        { imgSrc: IMG34, title: "Notification" },
+        { imgSrc: IMG35, title: "Calendar title" },
     ];
 
     return (

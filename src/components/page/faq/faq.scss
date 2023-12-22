@@ -65,10 +65,7 @@
         }
     }
     
-    .container_content img {
-        max-width: 240px;
-        max-height: 490px;
-    }
+    
     .container_content h4 {
         background: var(--gradient-gold, linear-gradient(180deg, #E0AA3D 0%, #F7EF8A 46.88%, #E0AA3E 100%));
         background-clip: text;
@@ -77,7 +74,7 @@
         font-size: 40px;
     }
 
-    .test-element b {
+    .highlighted-element b {
         color: #7D2EBD;
     }
 

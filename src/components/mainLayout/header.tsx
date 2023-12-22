@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Vio_Logo from '../../assets/images/Vio_Logo.svg';
+import Vio_Logo from '../../assets/images/Vio Full Logo_2.svg';
 import USA from '../../assets/images/USA.png';
 import vietnam from '../../assets/images/VietNam.png';
 import { Link } from 'react-router-dom';
