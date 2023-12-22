@@ -18,7 +18,6 @@ const Footer = () => {
                     <div className="box">
                         <b>
                         <div dangerouslySetInnerHTML={{ __html: t("GET IT ON") }} />
-                        <div>Velocity meets perfection</div>
                         </b>
                         <ul>
                             <li>
@@ -40,7 +39,6 @@ const Footer = () => {
                     <div className="box">
                         <b>
                         <div dangerouslySetInnerHTML={{ __html: t("GET IT ON") }}/>
-                        <div>Velocity meets perfection</div>
                         </b>
                         <ul>
                             <li>
