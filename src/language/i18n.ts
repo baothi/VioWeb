@@ -89,8 +89,8 @@ const resources = {
 
       //section 3      
       "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" data-aos-duration="3000">
-                                      <b>Vio</b> simplifies<br/>
-                                      your <span>Life</span>
+                                      Vio simplifies<br/>
+                                      your <b>life</b>
                                   </h2>`,
       "Find your favorite service": "Find your favorite service",
       "Booking anywhere, anytime": "Booking anywhere, anytime",
@@ -98,7 +98,7 @@ const resources = {
       
       //section 4
       "All in one platform": `<h2 class="heading_title" data-aos="fade-right">
-                                  All<b>-</b>in<b>-</b>one <br/>
+                                  All-in-one <br/>
                                   <div class="box"><b>Platform</b></div>
                               </h2>`,
       "Marketplace": ` <h3>
@@ -147,7 +147,7 @@ const resources = {
                                     Social Network Platform
                                   </h3>
                                   <div class="content">
-                                  Social media integrated:<b> Feed, chat, livestream, review system.</b>
+                                  <b>Social media integrated: </b> Feed, chat, livestream, review system.
                                   </div>`,
 
     //section 5
@@ -222,32 +222,32 @@ const resources = {
                             </li>
                             <li  data-aos="fade-right">
                                 <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stopColor="#7D2EBD"></stop>
-                                                <stop offset="1" stopColor="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
+                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
 
                                     Up-scale your <b>customer support</b> game
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
                                 <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stopColor="#7D2EBD"></stop>
-                                                <stop offset="1" stopColor="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
+                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                                     Effortlessly <b> manage </b> your business
                                 </a>
                             </li>
@@ -334,8 +334,8 @@ const resources = {
                             Đặt Lịch <b>Thông Minh</b>
                             </h1>
                             <div class=content>
-                            Vio là <b> trải nghiệm duy nhất </b>mà bạn từng biết đến, và là <b>nguồn tìm kiếm số 1 </b> cho những dịch vụ tốt nhất chung quanh bạn!
-                            </div>`,
+                            Vio, Nền tảng đặt lịch thông minh, mang đến <b>trải nghiệm đặt lịch hẹn tốt nhất </b>mà bạn cần! 
+                            `,
 
       //section 2
       "Book Beauty and Spa": 
@@ -364,7 +364,7 @@ const resources = {
                                                     </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <span><b>Không bỏ lỡ </b> bất kỳ <b> trải nghiệm nào</b></span> 
+                                            <span><b>Không bỏ lỡ </b> bất kỳ trải nghiệm nào</span> 
                                             </div>
                                           </a>`,
       "Fast and smooth booking" : `  <a href="">
@@ -378,7 +378,7 @@ const resources = {
                                               </linearGradient>
                                           </defs>
                                       </svg>
-                                      <span><b>Nhanh chóng </b> với <b> đặt lịch </b> một chạm </span>
+                                      <span>Nhanh chóng với <b> đặt lịch một chạm </b>  </span>
                                     </a>`, 
                                     
       "Gorgeous design to match you" : `  <a href="">
@@ -392,7 +392,7 @@ const resources = {
                                                     </linearGradient>
                                                 </defs>
                                             </svg>
-                                           <span> <b>Thiết kế </b> hướng đến bạn <span>
+                                           <span> Thiết kế  <b> hướng đến bạn </b><span>
                                           </a>`,    
       "Automate scheduling" : `  <a href="">
                                   <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -410,8 +410,8 @@ const resources = {
     
     //section 3
     "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" data-aos-duration="3000">
-                                      <b>Đơn giản hoá </b><br/>
-                                      đặt <span>lịch</span>
+                                      Đơn giản hoá <br/>
+                                      <b>đặt lịch</b>
                                   </h2>`,
     "Find your favorite service": "Tìm kiếm dịch vụ bạn yêu thích",  
     "Booking anywhere, anytime": "Đặt lịch mọi lúc, mọi nơi",
@@ -419,8 +419,9 @@ const resources = {
     
     //section 4
     "All in one platform": `<h2 class="heading_title" data-aos="fade-right">
-                                  Tất<b>-</b> cả <b>-</b>trong </b> <br/>
-                                  <div class="box"><b>Một Nền tảng</b></div>
+                                  
+                                  Một nền tảng
+                                  <div class="box"><b>Đa tiện ích</b></div>
                               </h2>`,
     "Marketplace": ` <h3>
                           <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -436,7 +437,7 @@ const resources = {
                           Marketplace
                       </h3>
                     <div class="content">
-                    <b>Khám phá </b> cửa hàng, dịch vụ và tận hưởng muôn vàn khuyến mãi trong <b>Marketplace của Vio.</b>
+                    <b>Khám phá </b> cửa hàng, dịch vụ và tận hưởng <b>muôn vàn khuyến mãi</b> trong Marketplace của Vio.
                     </div>`,
     "Calendar": ` <h3>
                       <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -449,10 +450,10 @@ const resources = {
                               </linearGradient>
                           </defs>
                       </svg>
-                      Lịch
+                      <b>Lịch thông minh</b>
                   </h3>
                   <div class="content">
-                  <b>Lịch trình của bạn đều tập trung một nơi,</b> luôn luôn kiểm soát được lịch hẹn, sự kiện, hoạt động và đồng bộ với lịch trình hàng ngày của bạn
+                  Lịch trình của bạn đều <b>tập trung một nơi,</b> luôn luôn kiểm soát được lịch hẹn, sự kiện, hoạt động và <b>đồng bộ với lịch trình hàng ngày</b> của bạn
                   </div>`,
     "Social Network Platform": ` <h3>
                                   <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -468,7 +469,7 @@ const resources = {
                                   Mạng xã hội
                                 </h3>
                                 <div class="content">
-                                Nền tảng tích hợp mạng xã hội dành riêng cho bạn: <b>khám phá, chat, phát trực tiếp và hơn thế nữa. </b>
+                                <b>Nền tảng mạng xã hội</b> dành riêng cho bạn: khám phá, chat, phát trực tiếp và hơn thế nữa.
                                 </div>`,
                                 
     //section 5
@@ -483,7 +484,7 @@ const resources = {
                                     Tăng trưởng cửa hàng <b> với Vio </b>
                                   </h2>
                                   <div class="content top" data-aos="fade-up">
-                                  Việc kinh doanh trực tuyến ngày càng phát triển, <b>Vio cung cấp các công cụ số hoá </b> để đưa cửa hàng của bạn lên một tầm cao mới
+                                  Việc kinh doanh trực tuyến bùng nổ mạnh mẽ và ngày càng gia tăng, <b>Vio cung cấp tất cả  công cụ số hoá </b> để tối ưu hoá việc kinh doanh của mình. 
                                     </div>`,
     "Open Your Online Store": "Mở cửa hàng trực tuyến",
     "Appointment Scheduling": "Đặt hẹn trực tuyến",
@@ -497,16 +498,16 @@ const resources = {
     // ********************************BUSINESS PAGE ******************************************
     //Section 1: 
     "Be Seen, Be Visible" : ` <h1 class="heading_title" data-aos="zoom-in">
-                            Dễ dàng <b>được</b> <div class="box"><b>tìm thấy </b></div>,<br/>
+                            Dễ dàng được tìm thấy,<br/>
                                 <b>Thu hút </b> khách hàng mới!
                             </h1>`,
     //Section 2:
     "Grow Faster": `   <h2 class="heading_title" data-aos="fade-right">
-                            <span>Tăng trưởng </span> <br/>thần tốc <br/>
+                            <span>Số hoá </span>  <br/>
                             với <b>Vio</b>
                         </h2>
                         <div class="content"  data-aos="fade-right">
-                        Việc kinh doanh trực tuyến ngày càng phát triển, <b> Vio cung cấp tất cả công cụ số hoá </b> để đưa cửa hàng của bạn lên một tầm cao mới.
+                        Số hoá cửa hàng, muôn vàn tiện ích
                         </div>
                         <ul>
                             <li  data-aos="fade-right">
@@ -526,47 +527,47 @@ const resources = {
                             </li>
                             <li  data-aos="fade-right">
                                 <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stopColor="#7D2EBD"></stop>
-                                                <stop offset="1" stopColor="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    Kiểm soát <b> các chi nhánh của bạn </b> trong 1 tài khoản
+                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            Quản trị <b> tất cả  chi nhánh </b> của bạn <b> trong 1 tài khoản </b>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
                                 <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stopColor="#7D2EBD"></stop>
-                                                <stop offset="1" stopColor="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
+                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
                                     Nâng cấp <b>trải nghiệm khách hàng </b>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
                                 <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stopColor="#7D2EBD"></stop>
-                                                <stop offset="1" stopColor="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    Dễ dàng <b> quản lý </b>cửa hàng của bạn
+                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                                    <b>Dễ dàng quản lý </b>cửa hàng của bạn
                                 </a>
                             </li>
                         </ul>`,
@@ -577,11 +578,10 @@ const resources = {
     //Section 4: 
     "Made for your business" : `  <div class="text_center">
                                     <h2 class="heading_title" data-aos="fade-up">
-                                    Dành riêng cho <b>Cửa hàng của bạn</b>
+                                    Dành cho <b>Cửa hàng của bạn</b>
                                     </h2>
                                     <div class="content" data-aos="fade-up">
-                                    Việc kinh doanh trực tuyến ngày càng phát triển, <b>Vio cung cấp tất cả công cụ số hoá  </b>để đưa cửa hàng của bạn lên một tầm cao mới.
-                                    </div>
+                                    Việc kinh doanh trực tuyến bùng nổ mạnh mẽ và ngày càng gia tăng, <b>Vio cung cấp tất cả  công cụ số hoá </b> để tối ưu hoá việc kinh doanh của mình.                                     </div>
                                 </div>`,
    
     "Open Online Store" : `  
@@ -623,20 +623,47 @@ const resources = {
     //Section 5:
     "Industry": `<h2 class="heading_title">
                     <b>
-                        Industry
+                    Đa dịch vụ, đa ngành nghề
                     </b>
                 </h2>
                 <div class="content">
-                Giải pháp cho sự thành công của doanh nghiệp
+                Vio cung cấp các công cụ số hoá phù hợp với bất kỳ ngành nghề nào.
                 </div>`,
+    "Barber shop": "Cắt tóc nam",
+    "Beauty salon": "Dịch vụ làm đẹp",
+    "Hair salon": "Salon tóc",
+    "Nail & eyelash": "Mi & móng",
+    "Make-up artist": "Trang điểm",
+    "Gym and fitness": "Gym và fitness",
+    "Outdoor activities": "Hoạt động ngoài trời",
+    "Nightlife": "Nightlife",
+    "Veterinarian": "Chăm sóc thú cưng",
+    "Freelancer": "Freelancer",
+    "Tattoo": "Xăm nghệ thuật",
+    "Workshop ": "Workshop ",
     //Section 6:
     "Ready" : `<h2 class="heading_title">
-                    Bạn <b> đã sẵn sàng </b> để mở cửa hàng <b>với Vio? </b>
+                    
+                    Hơn cả một nền tảng <b>số hoá</b>
                 </h2>
                 <div class="content">
-                Trở thành một phần của công nghệ đặt lịch với AI
-                </div>` 
-    
+                Bạn cần tư vấn?, Vio sẵn sàng trả lời.
+                </div>`, 
+    //**********************HEADER********************************************* */
+    "FOR BUSINESS": "DOANH NGHIỆP",
+
+     //**********************HEADER********************************************* */
+     "GET IT ON": "TẢI NGAY",
+     "For business": "Doanh nghiệp",
+     "Careers": "Nghề nghiệp",
+     "Guidelines": "Hướng dẫn",
+     "About us": "Về Vio",
+     "Contact us": "Liên hệ",
+     "Mobile app": "Ứng dụng Vio",
+     "Support": "Hỗ trợ",
+     "Report issue": "Báo cáo sự cố",
+     "Terms & Condition": "Thoả thuận người dùng",
+     "Privacy Policy": "Chính sách bảo mật",
     }
   }
 }

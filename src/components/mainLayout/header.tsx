@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   // Retrieve the language from localStorage or default to USA
+  const { t } = useTranslation();
   const initialLanguage = localStorage.getItem('language') || USA;
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState(initialLanguage);
@@ -60,7 +61,10 @@ const Header = () => {
                     )}
                   </li>
                 </ul>
-                <Link to="/business" className="button_link">FOR BUSINESS</Link>
+                <Link to="/business" className="button_link">
+                <div dangerouslySetInnerHTML={{ __html: t("FOR BUSINESS") }} />
+                  
+                  </Link>
               </div>
             </div>
           </div>

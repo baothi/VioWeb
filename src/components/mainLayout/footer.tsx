@@ -1,8 +1,9 @@
 import logo_footer from '../../assets/images/logo_footer.svg'
 import { Link } from 'react-router-dom';
 import { isAndroid, isIOS, isBrowser } from 'react-device-detect';
-
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
+    const { t } = useTranslation();
   return (
     <footer>
         <div className="grid-container">
@@ -13,7 +14,9 @@ const Footer = () => {
                 {isAndroid && 
                   <a href="https://play.google.com/store/apps/details?id=vio.app" target="_blank" rel="noopener noreferrer">
                     <div className="box">
-                        <b>GET IT ON</b>
+                        <b>
+                        <div dangerouslySetInnerHTML={{ __html: t("GET IT ON") }} />
+                        </b>
                         <ul>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -32,7 +35,9 @@ const Footer = () => {
                 {isIOS && 
                   <a href="https://apps.apple.com/us/app/vio-smart-booking/id6470902258" target="_blank" rel="noopener noreferrer">
                     <div className="box">
-                        <b>GET IT ON</b>
+                        <b>
+                        <div dangerouslySetInnerHTML={{ __html: t("GET IT ON") }}/>
+                        </b>
                         <ul>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -50,7 +55,7 @@ const Footer = () => {
                 }
                 {isBrowser && 
                   <div className="box">
-                      <b>GET IT ON </b>
+                      <b><div dangerouslySetInnerHTML={{ __html: t("GET IT ON") }} /> </b>
                       <ul>
                           <li>
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -76,54 +81,52 @@ const Footer = () => {
                         </a>
                     </li> */}
                     <li>
-                        <Link to="/business">For Business</Link>
+                        <Link onClick={e => e.preventDefault()} to="/business">
+                        <div dangerouslySetInnerHTML={{ __html: t("For business") }}/>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/careers" className="">Careers</Link>
+                        <Link onClick={e => e.preventDefault()} to='/faq' >
+                        <div dangerouslySetInnerHTML={{ __html: t("Careers") }}/>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/faqs" className="">FAQ</Link>
+                        <Link to="/faq" className="">
+                        <div dangerouslySetInnerHTML={{ __html: t("Guidelines") }}/>
+                        </Link>
                     </li>
                 </ul>
             </div>
             <div className="grid-20 footer_3">
-            <span className="title_footer">
-                About Vio
-            </span>
                 <ul className="footer_menu">
                     <li>
                         <Link to="">
-                            About us
+                        <div dangerouslySetInnerHTML={{ __html: t("About us") }}/>
                         </Link>
                     </li>
-                    {/* <li>
-                        <Link to="/ourteam" className="">Our team</Link>
-                    </li> */}
                     <li>
                         <a href="">
-                            Mobile app
+                        <div dangerouslySetInnerHTML={{ __html: t("Mobile app") }}/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@prismtechinc.io">
+                        <div dangerouslySetInnerHTML={{ __html: t("Contact us") }}/>
                         </a>
                     </li>
                 </ul>
             </div>
             <div className="grid-20 footer_4">
-            <span className="title_footer">
-                Contact
-            </span>
                 <ul className="footer_menu">
-                    <li>
-                        <a href="mailto:contact@prismtechinc.io">
-                            Contact us
-                        </a>
-                    </li>
+                    
                     <li>
                         <a href="mailto:support@prismtechinc.io">
-                            Support
+                        <div dangerouslySetInnerHTML={{ __html: t("Support") }}/>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:someone@example.com">
-                            Report issue
+                        <div dangerouslySetInnerHTML={{ __html: t("Report issue") }}/>
                         </a>
                     </li>
                 </ul>
@@ -132,11 +135,16 @@ const Footer = () => {
         </div>
         <div className="grid-container footer_nav">
             <div className="wrap">
-                <div className="grid-50 copyright">
+                <div className="grid-70 copyright">
                     Copyright © 2023 Prismtechinc. All rights reserved
-                    <Link to="/terms-of-service" className="chinh_sach">Terms &amp; Privacy</Link>
+                    <Link to="/terms-of-service" className="chinh_sach">
+                    <div dangerouslySetInnerHTML={{ __html: t("Terms & Condition") }}/>
+                    </Link>
+                    <Link to="/privacy-policy" className="chinh_sach">
+                    <div dangerouslySetInnerHTML={{ __html: t("Privacy Policy") }}/>
+                    </Link>
                 </div>
-                <div className="grid-50">
+                <div className="grid-30">
                     <ul className="socials">
                         <li>
                             <a href="#" target="_blank">
