@@ -43,10 +43,11 @@ header .nav  a.logo img {
 }
 
 ul.change_language {
+    position: absolute;
     list-style: none;
     margin: 0;
     border-radius: 0.417rem;
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.10); 
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15.600000381469727px);
     padding: 0 0.833rem;
@@ -56,11 +57,21 @@ ul.change_language {
     justify-content: flex-start;
     min-width: 2.583rem;
     box-sizing: border-box;
-    margin-right: 0.833rem;
+    
+}
+.expanded_menu {
+    margin-top: 1rem !important;
+   height: 75px !important;
+    display: block !important;
+}
+
+.expanded_menu li {
+    top: 20% !important;
 }
 
 ul.change_language:hover .sub_menu {
     opacity: 1;
+
 }
 
 
@@ -106,6 +117,7 @@ ul.change_language>li:hover ul {
     padding: 0.729rem 0.833rem;
     font-size: 0.833rem;
     font-weight: 600;
+    margin-left: 3.833rem;
 }
 .text_center {
     text-align: center;
@@ -177,7 +189,7 @@ b {}
     align-items: center;
 }
 .vertical-word-carousel {
-    width: 800px; /* Adjust the width as needed */
+    width: max-content; /* Adjust the width as needed */
     margin-left: 1rem;
   }
   
@@ -1067,7 +1079,13 @@ footer .box {
 footer .box ul {
     display: flex;
     align-items: center;
+    margin-left: 0.5rem;
 }
+
+footer .box li {
+    padding-top: 5px;
+ }
+
 
 footer .box b {
     margin-right: 0.417rem;
@@ -1163,12 +1181,14 @@ footer .footer_nav .wrap {
     margin-left: 7.5rem;
 }
 
-.grid-70.copyright {
+.grid-80.copyright {
+
     display: flex;
+    justify-content: space-between;
 }
 
-.grid-70.copyright a {
-    margin-left: 7.5rem;
+.grid-80.copyright a {
+    margin-right: 40px;
 }
 
 ul.change_language img {
@@ -1423,16 +1443,29 @@ section.section.home_sec_1 .sub {
         display: inline-grid;
     }
 
+    .expanded_menu {
+        margin-top: 1rem !important;
+       height: 65px !important;
+        display: block !important;
+        /* background-color: red !important; */
+    }
+    
+    .expanded_menu li {
+        top: 15% !important;
+    }
+
     .home_sec_2 .wrap {
         flex-wrap: wrap;
     }
     
-   
+    .home_sec_2 .vertical_carousel_wrapper {
+        display: inline-block;
+    }
     .vertical-word-carousel .slick-list {
         height: 40px !important;
     }
     .vertical-word-carousel {
-        margin-left: 0.5rem;
+        margin-left: 0;
     }
 
     .home_sec_2 .wrap .box_content {
@@ -1545,9 +1578,9 @@ section.section.home_sec_1 .sub {
         margin: 0 0 2rem 0;
         width: 100%;
     }
-    footer a {
-        display: contents;
-        
+
+    .grid-80.copyright a {
+        margin-right: 15px;
     }
     footer .socials {
       margin-top: 2rem;
@@ -1567,6 +1600,7 @@ section.section.home_sec_1 .sub {
         left: 15%;
     }
 
+    
     footer .footer_2 {
         width: 35% !important;
     }

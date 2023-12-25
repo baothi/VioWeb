@@ -18,8 +18,6 @@ const HomeSectionSix = () => {
         autoplay: true,
         infinite: true,
         slidesToScroll: 1,
-        // speed: 4000,
-        // autoplaySpeed: 3000, //auto play every 2 seconds
         responsive: [
           {
             breakpoint: 768,
