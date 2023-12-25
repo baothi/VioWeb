@@ -20,15 +20,25 @@ const resources = {
                         ,
 
       //section 2
-      "Book Beauty and Spa": 
+      "Book": 
       `<h2 class='heading_title' data-aos='fade-right'>
                                 Book
-                                <div class='heading-box'>
-                                    <div class='box-scroll-text'>
-                                        <b>Beauty and Spa</b>
-                                    </div>
-                                </div>                                                                    
+                                                                                                  
                               </h2>`,
+     "Spa": ` <b>Spa</b>`,
+     "Car Maintainance": `<b>Car Maintainance</b>`,
+     "Hair Salon":`<b>Hair Salon</b>`,
+     "Make-up artist hs1":`<b>Make-up artist</b>`,
+     "Personal Trainer":`<b>Personal Trainer</b>`,
+     "Photographer":`<b>Photographer</b>`,
+     "Nail & eyelash hs1":`<b>Nail & eyelash</b>`,
+     "Badminton court":`<b>Badminton court</b>`,
+     "Karaoke":`<b>Karaoke</b>`,
+     "Restaurants":`<b>Restaurants</b>`,
+     "Pet care":`<b>Pet care</b>`,
+
+
+    
       "Anywhere, anytime" : ` <h3 class="heading_title"  data-aos="fade-right">
                                   Anywhere<br/>
                                   Anytime!
@@ -90,7 +100,7 @@ const resources = {
       //section 3      
       "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" data-aos-duration="3000">
                                       Vio simplifies<br/>
-                                      your <b>life</b>
+                                      your <span><div data-aos="flip-up"><b >life</b></div></span>
                                   </h2>`,
       "Find your favorite service": "Find your favorite service",
       "Booking anywhere, anytime": "Booking anywhere, anytime",
@@ -340,15 +350,24 @@ const resources = {
                             `,
 
       //section 2
-      "Book Beauty and Spa": 
+      "Book": 
       `<h2 class='heading_title' data-aos='fade-right'>
                                 Đặt 
-                                <div class='heading-box'>
-                                    <div class='box-scroll-text'>
-                                        <b>Làm Đẹp và Spa</b>
-                                    </div>
-                                </div>                                                                  
+                                                                                              
                               </h2>`,
+                              
+    "Spa": ` <b>Spa</b>`,
+    "Car Maintainance": `<b>Chăm sóc xe</b>`,
+    "Hair Salon":`<b>Salon tóc</b>`,
+    "Make-up artist hs1":`<b>Trang điểm</b>`,
+    "Personal Trainer":`<b>HLV cá nhân</b>`,
+    "Photographer":`<b>Nhiếp ảnh gia</b>`,
+    "Nail & eyelash hs1":`<b>Mi và móng</b>`,
+    "Badminton court":`<b>Sân cầu lông</b>`,
+    "Karaoke":`<b>Karaoke</b>`,
+    "Restaurants":`<b>Nhà hàng</b>`,
+    "Pet care":`<b>Chăm sóc thú cưng</b>`,
+
 
       "Anywhere, anytime" : ` <h3 class="heading_title"  data-aos="fade-right">
                                   Tại mọi lúc,<br/>
