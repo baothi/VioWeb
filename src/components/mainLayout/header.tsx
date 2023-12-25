@@ -46,17 +46,20 @@ const Header = () => {
             <div className="nav">
               <Link to="/" className="logo"><img src={Vio_Logo} alt="" /></Link>
               <div className="nav_right">
-                <ul className="change_language">
+                <ul className={showSubMenu ?"change_language expanded_menu" : "change_language"}>
                   <li onClick={toggleSubMenu}>
                     <img src={currentLanguage} alt="" />
                     {showSubMenu && (
-                      <ul className="sub_menu">
-                        <li onClick={() => changeLanguage(USA)}>
-                          <img src={USA} alt="USA" />
-                        </li>
+                      <ul className="sub_menu">                     
+                        {currentLanguage === `${USA}` ?
                         <li onClick={() => changeLanguage(vietnam)}>
-                          <img src={vietnam} alt="Vietnam" />
-                        </li>
+                        <img src={vietnam} alt="Vietnam" />
+                      </li>
+                        :
+                        <li onClick={() => changeLanguage(USA)}>
+                        <img src={USA} alt="USA" />
+                      </li> 
+                        }
                       </ul>
                     )}
                   </li>

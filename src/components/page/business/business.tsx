@@ -28,8 +28,8 @@ const Business = () => {
   const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
-        delay: 500, // values from 0 to 3000, with step 50ms
-        duration: 700, // values from 0 to 3000, with step 50ms
+        delay: 50, // values from 0 to 3000, with step 50ms
+        duration: 50, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         mirror: true
     });

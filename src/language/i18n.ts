@@ -352,14 +352,14 @@ const resources = {
       //section 2
       "Book": 
       `<h2 class='heading_title' data-aos='fade-right'>
-                                Đặt 
+                                Đặt lịch
                                                                                               
                               </h2>`,
                               
     "Spa": ` <b>Spa</b>`,
     "Car Maintainance": `<b>Chăm sóc xe</b>`,
     "Hair Salon":`<b>Salon tóc</b>`,
-    "Make-up artist hs1":`<b>Trang điểm</b>`,
+    "Make-up artist hs1":`<b> Trang điểm</b>`,
     "Personal Trainer":`<b>HLV cá nhân</b>`,
     "Photographer":`<b>Nhiếp ảnh gia</b>`,
     "Nail & eyelash hs1":`<b>Mi và móng</b>`,
@@ -370,7 +370,7 @@ const resources = {
 
 
       "Anywhere, anytime" : ` <h3 class="heading_title"  data-aos="fade-right">
-                                  Tại mọi lúc,<br/>
+                                  Tại mọi lúc, <br>
                                   ở mọi ơi!
                               </h3>`,
       "Never miss another experience": `  <a href="" >
