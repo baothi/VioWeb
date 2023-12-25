@@ -1,17 +1,83 @@
 import 'slick-carousel/slick/slick.css';
+import { default as Slider } from "react-slick";
 import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
 // the hook
 import { useTranslation} from 'react-i18next';
 import './homeSectionTwo.scss'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const HomeSectionTwo = () => {
     const { t } = useTranslation();
+    const settings = {
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed:2000,
+        speed: 500,
+        slidesToShow: 1,
+        
+        arrows: false,
+        slidesToScroll: -1,
+        vertical: true, // Set to true for vertical sliding
+        verticalSwiping: false, // Enable vertical swiping
+      };
+    
+    type TitleSlide = {
+        title: string
+    }
+
+    const titleSlides: TitleSlide[] = [
+        {title: "Spa"},
+        {title: "Hair Salon"},
+        {title: "Personal Trainer"},
+        {title: "Make-up artist hs1"},
+        {title: "Nail & eyelash hs1"},
+        {title: "Badminton court"},
+        {title: "Photographer"},
+        {title: "Karaoke"},
+        {title: "Restaurants"},
+        {title: "Pet care"},
+        {title: "Car Maintainance"},
+    ]
+
+    const SlideItem = () => {
+        useEffect(() => {
+          AOS.init({
+              delay: 300, // values from 0 to 3000, with step 50ms
+              duration: 700, // values from 0 to 3000, with step 50ms
+              easing: 'ease', // default easing for AOS animations
+              mirror: true, //
+          });
+        }, []);
+        return (
+            <div className="vertical-word-carousel" data-aos="fade-left">
+      <Slider {...settings}>
+        {titleSlides.map((titleSlide, index) => (
+          <div key={index} className="word-slide">
+            
+        <h2 className='heading_title'>
+            <div dangerouslySetInnerHTML={{ __html: t(titleSlide.title) }} />
+        </h2>
+          </div>
+        ))}
+      </Slider>
+    </div>
+            
+          
+        )
+    }
     return (
       <section className="section home_sec_2">
         <div className="grid-container">
             <div className="grid-100">
-                <div dangerouslySetInnerHTML={{ __html: t("Book Beauty and Spa") }} />
+                <div className="vertical_carousel_wrapper">
+                    <div dangerouslySetInnerHTML={{ __html: t("Book") }} />
+                    <SlideItem/>
+                </div>
+                
                 <div className="wrap">
                     <div className="box_content">
                         <div dangerouslySetInnerHTML={{ __html: t("Anywhere, anytime") }} />                     

@@ -14,6 +14,7 @@ import Page404 from './components/page/404/404';
 import ScrollToTop from './scroll';
 import FAQ from './components/page/faq/faq';
 
+
 function App() {
 
   return (
@@ -31,7 +32,6 @@ function App() {
           <Route path="/careers" element={<Career/>}></Route>
           <Route path="/faq" element={<FAQ/>}></Route>
           <Route path="/*" element={<Page404/>}/>
-          
         </Route>
       </Routes>
     </Router>

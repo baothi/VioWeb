@@ -12,6 +12,7 @@ import HomeSectionThree from './homeSectionThree';
 import HomeSectionOne from './homeSectionOne';
 import HomeSectionTwo from './homeSectionTwo'
 import { useTranslation} from 'react-i18next';
+import { isIOS, isBrowser } from 'react-device-detect';
 
 
 
@@ -21,7 +22,7 @@ const Home = () => {
     useEffect(() => {
         AOS.init({
             delay: 500, // values from 0 to 3000, with step 50ms
-            duration: 2000, // values from 0 to 3000, with step 50ms
+            duration: 700, // values from 0 to 3000, with step 50ms
             easing: 'ease', // default easing for AOS animations
         });
       }, []);
@@ -82,21 +83,31 @@ const Home = () => {
               <div className="box" style={{ backgroundImage: `url(${bg_app})` }}>
                   <div className="left" data-aos="fade-right">
                       <div className="wrap_title">
-                      <div dangerouslySetInnerHTML={{ __html: t("Download Vio mobile app") }} />
+                        <div dangerouslySetInnerHTML={{ __html: t("Download Vio mobile app") }} />
                           <img src={qr_code} alt=""/>
                       </div>
-                      <ul className="link_app">
+                      {isBrowser ? <ul className="link_app">
                           <li>
-                              <a href="">
+                                  <img src={Apple} alt=""/>
+                              
+                          </li>
+                          <li>
+                                  <img src={Google} alt=""/>
+
+                          </li>
+                      </ul> : isIOS ? <ul className="link_app">
+                          <li>
+                              <a href="https://vioapp.page.link/?efr=0&ibi=vio.app&isi=6470902258&apn=vio.app&link=https%3A%2F%2Fvioapp.page.link%3Ftype%3Dinvite_friend">
                                   <img src={Apple} alt=""/>
                               </a>
                           </li>
+                          </ul> :  <ul>
                           <li>
-                              <a href="">
+                              <a href="https://vioapp.page.link/?efr=0&ibi=vio.app&isi=6470902258&apn=vio.app&link=https%3A%2F%2Fvioapp.page.link%3Ftype%3Dinvite_friend">
                                   <img src={Google} alt=""/>
                               </a>
                           </li>
-                      </ul>
+                          </ul>}
                   </div>
                   <div className="right" data-aos="fade-left">
                       <img src={img_iphone} alt=""/>
