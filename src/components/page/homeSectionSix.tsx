@@ -1,11 +1,11 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import IMG3 from '../../assets/images/IMG-3.png';
-import IMG31 from '../../assets/images/IMG-3-1.png';
-import IMG32 from '../../assets/images/IMG-3-2.png';
-import IMG33 from '../../assets/images/IMG-3-3.png'
-import IMG34 from '../../assets/images/IMG-3-4.png'
-import IMG35 from '../../assets/images/IMG-3-5.png'
+import HS6_Mockup1 from '../../assets/images/HS6_Mockup1.png';
+import HS6_Mockup2 from '../../assets/images/HS6_Mockup2.png';
+import HS6_Mockup3 from '../../assets/images/HS6_Mockup3.png';
+import HS6_Mockup4 from '../../assets/images/HS6_Mockup4.png'
+import HS6_Mockup5 from '../../assets/images/HS6_Mockup5.png'
+import HS6_Mockup6 from '../../assets/images/HS6_Mockup6.png'
 import { useTranslation} from 'react-i18next';
 
 const HomeSectionSix = () => {
@@ -42,12 +42,12 @@ const HomeSectionSix = () => {
 
 
     const slidesData = [
-        { imgSrc: IMG3, title: "Open Your Online Store" },
-        { imgSrc: IMG31, title: "Appointment Scheduling" },
-        { imgSrc: IMG32, title: "Manage Team Member" },
-        { imgSrc: IMG33, title: "CRM System" },
-        { imgSrc: IMG34, title: "Notification" },
-        { imgSrc: IMG35, title: "Calendar title" },
+        { imgSrc: HS6_Mockup1, title: "Open Your Online Store" },
+        { imgSrc: HS6_Mockup2, title: "Appointment Scheduling" },
+        { imgSrc: HS6_Mockup3, title: "Manage Team Member" },
+        { imgSrc: HS6_Mockup4, title: "CRM System" },
+        { imgSrc: HS6_Mockup5, title: "Notification" },
+        { imgSrc: HS6_Mockup6, title: "Calendar title" },
     ];
 
     return (

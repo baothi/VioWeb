@@ -2,7 +2,8 @@ import banner_sec_4 from '../../assets/images/banner_sec_4.png';
 import qr_code from '../../assets/images/QR2.png';
 import Google from '../../assets/images/Google.png';
 import Apple from '../../assets/images/Apple.png';
-import img_iphone from '../../assets/images/img_iphone.png';
+import HS7_Mockup_vn from '../../assets/images/HS7_Mockup_vn.png';
+import HS7_Mockup_en from '../../assets/images/HS7_Mockup_en.png';
 import bg_app from '../../assets//images/bg_app.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,6 +14,7 @@ import HomeSectionOne from './homeSectionOne';
 import HomeSectionTwo from './homeSectionTwo'
 import { useTranslation} from 'react-i18next';
 import { isIOS, isBrowser } from 'react-device-detect';
+import { detectlanguage } from '../utils/langDetect';
 
 
 
@@ -21,11 +23,13 @@ const Home = () => {
     const { t } = useTranslation();
     useEffect(() => {
         AOS.init({
-            delay: 50, // values from 0 to 3000, with step 50ms
-            duration: 50, // values from 0 to 3000, with step 50ms
+            delay: 500, // values from 0 to 3000, with step 50ms
+            duration: 700, // values from 0 to 3000, with step 50ms
             easing: 'ease', // default easing for AOS animations
         });
       }, []);
+
+      let HS7_Mockup = detectlanguage(HS7_Mockup_vn, HS7_Mockup_en)
   return (
     <>
       <HomeSectionOne />
@@ -110,7 +114,7 @@ const Home = () => {
                           </ul>}
                   </div>
                   <div className="right" data-aos="fade-left">
-                      <img src={img_iphone} alt=""/>
+                      <img src={HS7_Mockup} alt=""/>
                   </div>
               </div>
           </div>

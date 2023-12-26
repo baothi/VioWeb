@@ -1,12 +1,12 @@
 import { default as Slider } from "react-slick";
 // import Slider from '../slider'
 import 'slick-carousel/slick/slick.css';
-import slider_content_1 from '../../../assets/images/slider_content_1.png';
-import slider_content_2 from '../../../assets/images/slider_content_2.png';
-import slider_content_3 from '../../../assets/images/slider_content_3.png';
-import slider_content_4 from '../../../assets/images/slider_content_4.png';
-import slider_content_5 from '../../../assets/images/slider_content_5.png';
-import slider_content_6 from '../../../assets/images/slider_content_6.png';
+import slider_content_1 from '../../../assets/images/BS4_slider_content_1.png';
+import slider_content_2 from '../../../assets/images/BS4_slider_content_2.png';
+import slider_content_3 from '../../../assets/images/BS4_slider_content_3.png';
+import slider_content_4 from '../../../assets/images/BS4_slider_content_4.png';
+import slider_content_5 from '../../../assets/images/BS4_slider_content_5.png';
+import slider_content_6 from '../../../assets/images/BS4_slider_content_6.png';
 import shoppingbag03 from '../../../assets/images/shopping-bag-03.png';
 import calendarcheck02 from '../../../assets/images/calendar1.png';
 import setting02 from '../../../assets/images/settings-02.png';
@@ -150,7 +150,7 @@ const BusinessSectionFour = () => {
     const SlideItem: React.FC<{ slide: Slide }> = ({ slide }) => {
         useEffect(() => {
           AOS.init({
-              delay: 300, // values from 0 to 3000, with step 50ms
+              delay: 500, // values from 0 to 3000, with step 50ms
               duration: 700, // values from 0 to 3000, with step 50ms
               easing: 'ease', // default easing for AOS animations
               mirror: true, //

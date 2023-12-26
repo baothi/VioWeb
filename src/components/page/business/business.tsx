@@ -1,4 +1,5 @@
-import BS2_Mockup from '../../../assets/images/BS2_Mockup.png'
+import BS2_Mockup_vn from '../../../assets/images/BS2_Mockup_vn.png'
+import BS2_Mockup_en from '../../../assets/images/BS2_Mockup_en.png'
 import bg_mail from '../../../assets/images/bg_mail.jpeg';
 
 import cr1 from '../../../assets/images/CRBarber_shop.png';
@@ -22,18 +23,22 @@ import BusinessSectionOne from './businessSectionOne';
 import BusinessSectionThree from './businessSectionThree';
 import { useTranslation} from 'react-i18next';
 import BusinessSectionFour from './businessSectionFour';
+import { detectlanguage } from '~/components/utils/langDetect';
 
 
 const Business = () => {
   const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
-        delay: 50, // values from 0 to 3000, with step 50ms
-        duration: 50, // values from 0 to 3000, with step 50ms
+        delay: 500, // values from 0 to 3000, with step 50ms
+        duration: 700, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         mirror: true
     });
   }, []);
+
+  let BS2_Mockup = detectlanguage(BS2_Mockup_vn, BS2_Mockup_en)
+
 
 
   return (

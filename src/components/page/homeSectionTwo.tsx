@@ -1,12 +1,14 @@
 import 'slick-carousel/slick/slick.css';
 import { default as Slider } from "react-slick";
-import home_img_sec_2 from '../../assets/images/img_home_sec_2.png';
+import Mockup1_en from '../../assets/images/HS2_Mockup1_en.png';
+import Mockup1_vn from '../../assets/images/HS2_Mockup1_vn.png'
 // the hook
 import { useTranslation} from 'react-i18next';
 import './homeSectionTwo.scss'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { detectlanguage } from '../utils/langDetect';
 
 
 const HomeSectionTwo = () => {
@@ -24,6 +26,8 @@ const HomeSectionTwo = () => {
         vertical: true, // Set to true for vertical sliding
         verticalSwiping: false, // Enable vertical swiping
       };
+    
+    let mockup1 = detectlanguage(Mockup1_vn, Mockup1_en);
     
     type TitleSlide = {
         title: string
@@ -46,7 +50,7 @@ const HomeSectionTwo = () => {
     const SlideItem = () => {
         useEffect(() => {
           AOS.init({
-              delay: 300, // values from 0 to 3000, with step 50ms
+              delay: 500, // values from 0 to 3000, with step 50ms
               duration: 700, // values from 0 to 3000, with step 50ms
               easing: 'ease', // default easing for AOS animations
               mirror: true, //
@@ -97,7 +101,7 @@ const HomeSectionTwo = () => {
                         </ul>
                     </div>
                     <div className="box_img"  data-aos="fade-left">
-                        <img src={home_img_sec_2} alt=""/>
+                        <img src={mockup1} alt=""/>
                     </div>
                 </div>
             </div>

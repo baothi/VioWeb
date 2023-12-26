@@ -185,7 +185,7 @@ const terms: TermType[] = [
 const TermItem: React.FC<{ term: TermType }> = ({ term }) => {
   useEffect(() => {
     AOS.init({
-        delay: 300, // values from 0 to 3000, with step 50ms
+        delay: 500, // values from 0 to 3000, with step 50ms
         duration: 700, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         mirror: true, //

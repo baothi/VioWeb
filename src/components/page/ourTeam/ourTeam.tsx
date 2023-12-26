@@ -29,7 +29,7 @@ import Hieu_QC from '../../../assets/images/Hieu_QC.jpg'
 const OurTeam = () => {
   useEffect(() => {
     AOS.init({
-        delay: 300, // values from 0 to 3000, with step 50ms
+        delay: 500, // values from 0 to 3000, with step 50ms
         duration: 700, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         mirror: true, //
@@ -670,7 +670,7 @@ const OurTeam = () => {
                   <div className="text_center">
                       <h2 className="heading_title">
                           Ready to <b>open</b> your vio <br/>
-                          <b>business’s account?</b>
+                          <b>business account?</b>
                       </h2>
                       <div className="content">
                           Be a part of a game changing AI-booking platform.

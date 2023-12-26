@@ -7,8 +7,17 @@ import Mockup4_slider from '../../assets/images/HS1_Mockup4.png'
 import Mockup5_slider from '../../assets/images/HS1_Mockup5.png'
 import Mockup6_slider from '../../assets/images/HS1_Mockup6.png'
 
+import Mockup1_slider_en from '../../assets/images/HS1_Mockup1_en.png'
+import Mockup2_slider_en from '../../assets/images/HS1_Mockup2_en.png'
+import Mockup3_slider_en from '../../assets/images/HS1_Mockup3_en.png'
+import Mockup4_slider_en from '../../assets/images/HS1_Mockup4_en.png'
+import Mockup5_slider_en from '../../assets/images/HS1_Mockup5_en.png'
+import Mockup6_slider_en from '../../assets/images/HS1_Mockup6_en.png'
+
+
 // the hook
 import { useTranslation} from 'react-i18next';
+import { detectlanguage } from '../utils/langDetect';
 
 
 const HomeSectionOne = () => {
@@ -32,9 +41,22 @@ const HomeSectionOne = () => {
             }
         ]
       };
+    
+    type ImageSlide = {
+        imgSrc: string
+    }
+    let slidesData: ImageSlide[] = []
 
+    const slidesData_en = [
+        {imgSrc: Mockup1_slider_en},
+        {imgSrc: Mockup2_slider_en},
+        {imgSrc: Mockup3_slider_en},
+        {imgSrc: Mockup4_slider_en},
+        {imgSrc: Mockup5_slider_en},
+        {imgSrc: Mockup6_slider_en},
 
-    const slidesData = [
+    ]
+    const slidesData_vn = [
         { imgSrc: Mockup1_slider },
         { imgSrc: Mockup2_slider },
         { imgSrc: Mockup3_slider },
@@ -43,6 +65,8 @@ const HomeSectionOne = () => {
         { imgSrc: Mockup6_slider },
        
     ];
+
+   slidesData = detectlanguage(slidesData_vn, slidesData_en)
 
     return (
         <section className="section home_sec_1">
@@ -55,7 +79,8 @@ const HomeSectionOne = () => {
                                 {slidesData.map((slide, index) => (
                                     <div className="item" key={index}>
                                         <div className="box_img">
-                                            <img src={slide.imgSrc} alt="" />
+                                             <img src={slide.imgSrc} alt="" /> 
+                                            
                                         </div>
                                     </div>
                                 ))}
