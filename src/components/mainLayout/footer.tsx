@@ -1,7 +1,7 @@
-import logo_footer from '../../assets/images/logo_footer.svg'
 import appstore from '../../assets/images/Icon_Appstore.png'
 import googleplay from '../../assets/images/Icon_google_play.png'
 import { Link } from 'react-router-dom';
+import logo_slogan from '../../assets/images/Logo_with_Slogan.svg'
 import { isAndroid, isIOS, isBrowser } from 'react-device-detect';
 import { useTranslation } from 'react-i18next';
 
@@ -12,9 +12,9 @@ const Footer = () => {
         <div className="grid-container">
             <div className="grid-35 icon_download">
                 <div className="logo_footer">
-                    <img src={logo_footer} alt="" />
+                    <img src={logo_slogan} alt="" />
                 </div>
-                <div className='velocity_text'>Velocity meets perfection</div>
+                
                 {isAndroid && 
                   <a href="https://play.google.com/store/apps/details?id=vio.app" target="_blank" rel="noopener noreferrer">
                     <div className="box">

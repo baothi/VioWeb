@@ -98,7 +98,7 @@ const resources = {
                                   </a>`,
 
       //section 3      
-      "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" data-aos-duration="3000">
+      "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" >
                                       Vio simplifies<br/>
                                       your <span><div data-aos="flip-up"><b >life</b></div></span>
                                   </h2>`,
@@ -116,7 +116,7 @@ const resources = {
                               <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                               <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               <defs>
-                                  <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                  <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                       <stop stop-color="#7D2EBD"/>
                                       <stop offset="1" stop-color="#C054EE"/>
                                   </linearGradient>
@@ -132,7 +132,7 @@ const resources = {
                           <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                           <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                           <defs>
-                              <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                              <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                   <stop stop-color="#7D2EBD"/>
                                   <stop offset="1" stop-color="#C054EE"/>
                               </linearGradient>
@@ -148,7 +148,7 @@ const resources = {
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <defs>
-                                            <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                            <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="useSpaceOnUse">
                                                 <stop stop-color="#7D2EBD"/>
                                                 <stop offset="1" stop-color="#C054EE"/>
                                             </linearGradient>
@@ -207,7 +207,7 @@ const resources = {
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                                 <stop stop-color="#7D2EBD"></stop>
                                                 <stop offset="1" stop-color="#C054EE"></stop>
                                             </linearGradient>
@@ -222,7 +222,7 @@ const resources = {
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="user-space-on-use">
+                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
                                                 <stop stop-color="#7D2EBD"></stop>
                                                 <stop offset="1" stop-color="#C054EE"></stop>
                                             </linearGradient>
@@ -237,7 +237,7 @@ const resources = {
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                         <stop stop-color="#7D2EBD"></stop>
                                         <stop offset="1" stop-color="#C054EE"></stop>
                                     </linearGradient>
@@ -253,7 +253,7 @@ const resources = {
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                         <stop stop-color="#7D2EBD"></stop>
                                         <stop offset="1" stop-color="#C054EE"></stop>
                                     </linearGradient>
@@ -324,19 +324,45 @@ const resources = {
                 <div class="content">
                     Solution for your successful business
                 </div>`,
+    "Barber shop":"Barber shop",
+    "Beauty salon": "Beauty salon",
+    "Hair salon": "Hair salon",
+    "Nail & eyelash":"Nail & eyelash",
+    "Make-up artist":"Make-up artist",
+    "Gym and fitness": "Gym and fitness",
+    "Outdoor activities":"Outdoor activities",
+    "Nightlife":"Nightlife",
+    "Veterinarian":"Veterinarian",
+    "Freelancer":"Freelancer",
+    "Tattoo":"Tattoo",
+    "Workshop ":"Workshop",
+
      //Section 6:
      "Ready" : `<h2 class="heading_title">
                     Ready to <b>open</b> your Vio <br/>
-                    <b>business’s account?</b>
+                    <b>business account?</b>
                 </h2>
                 <div class="content">
                     Be a part of a game changing AI-booking platform.
-                </div>`                      
+                </div>`,
+    //**********************HEADER********************************************* */
+    "FOR BUSINESS": "FOR BUSINESS",
+    //***************************** & FOOTER******************************* */
+    "GET IT ON": "GET IT ON",
+    "For business": "For Business",
+    "Careers": "Careers",
+    "Guidelines": "Guidelines",
+    "About us": "About us",
+    "Contact us": "Contact us",
+    "Mobile app": "Mobile app",
+    "Support": "Support",
+    "Report issue": "Report issue",
+    "Terms & Condition": "Terms & Condition",
+    "Privacy Policy": "Privacy Policy",
+    "Get In Touch": "Get In Touch",                      
 
 
     },
-    //   "Smart Booking": "Smart <b>Booking</b>",
-    //   "homeSectionBook": "<h2 className='heading_title' data-aos='fade-right'>Book <div className='box'><div className='box-scroll-text'><b>Beauty and Spa</b></div></div></h2>"
   },
   vi: {
     translation: {
@@ -371,7 +397,7 @@ const resources = {
 
       "Anywhere, anytime" : ` <h3 class="heading_title"  data-aos="fade-right">
                                   Tại mọi lúc, <br>
-                                  ở mọi ơi!
+                                  ở mọi nơi!
                               </h3>`,
       "Never miss another experience": `  <a href="" >
                                            
@@ -430,9 +456,9 @@ const resources = {
                                 </a>`,   
     
     //section 3
-    "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left" data-aos-duration="3000">
+    "Vio simplifies your life": `<h2 class="heading_title" data-aos="fade-left">
                                       Đơn giản hoá <br/>
-                                      <b>đặt lịch</b>
+                                      <span><div data-aos="flip-up"><b>đặt lịch</b></div></span>
                                   </h2>`,
     "Find your favorite service": "Tìm kiếm dịch vụ bạn yêu thích",  
     "Booking anywhere, anytime": "Đặt lịch mọi lúc, mọi nơi",
@@ -449,7 +475,7 @@ const resources = {
                               <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                               <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               <defs>
-                                  <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                  <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                       <stop stop-color="#7D2EBD"/>
                                       <stop offset="1" stop-color="#C054EE"/>
                                   </linearGradient>
@@ -465,7 +491,7 @@ const resources = {
                           <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                           <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                           <defs>
-                              <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                              <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                   <stop stop-color="#7D2EBD"/>
                                   <stop offset="1" stop-color="#C054EE"/>
                               </linearGradient>
@@ -481,7 +507,7 @@ const resources = {
                                       <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6499_25456)"/>
                                       <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                       <defs>
-                                          <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                          <linearGradient id="paint0_linear_6499_25456" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                               <stop stop-color="#7D2EBD"/>
                                               <stop offset="1" stop-color="#C054EE"/>
                                           </linearGradient>
@@ -524,7 +550,7 @@ const resources = {
                             </h1>`,
     //Section 2:
     "Grow Faster": `   <h2 class="heading_title" data-aos="fade-right">
-                            <span>Số hoá </span>  <br/>
+                            <span>Số   </span>hoá  <br/>
                             với <b>Vio</b>
                         </h2>
                         <div class="content"  data-aos="fade-right">
@@ -537,7 +563,7 @@ const resources = {
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                                 <stop stop-color="#7D2EBD"></stop>
                                                 <stop offset="1" stop-color="#C054EE"></stop>
                                             </linearGradient>
@@ -552,7 +578,7 @@ const resources = {
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                         <stop stop-color="#7D2EBD"></stop>
                                         <stop offset="1" stop-color="#C054EE"></stop>
                                     </linearGradient>
@@ -567,7 +593,7 @@ const resources = {
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                         <stop stop-color="#7D2EBD"></stop>
                                         <stop offset="1" stop-color="#C054EE"></stop>
                                     </linearGradient>
@@ -582,7 +608,7 @@ const resources = {
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="user-space-on-use">
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
                                         <stop stop-color="#7D2EBD"></stop>
                                         <stop offset="1" stop-color="#C054EE"></stop>
                                     </linearGradient>
@@ -669,12 +695,12 @@ const resources = {
                     Hơn cả một nền tảng <b>số hoá</b>
                 </h2>
                 <div class="content">
-                Bạn cần tư vấn?, Vio sẵn sàng trả lời.
+                Bạn cần tư vấn? Vio sẵn sàng trả lời.
                 </div>`, 
     //**********************HEADER********************************************* */
     "FOR BUSINESS": "DOANH NGHIỆP",
 
-     //**********************HEADER********************************************* */
+     //**********************FOOTER********************************************* */
      "GET IT ON": "TẢI NGAY",
      "For business": "Doanh nghiệp",
      "Careers": "Nghề nghiệp",
@@ -694,10 +720,10 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    lng: "vi", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
     // if you're using a language detector, do not define the lng option
-    fallbackLng: 'en',
+    fallbackLng: 'vi',
 
     interpolation: {
       escapeValue: false // react already safes from xss

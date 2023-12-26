@@ -1,9 +1,15 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import Mockup_1 from '../../../assets/images/BS3_Mockup1.png';
-import Mockup_2 from '../../../assets/images/BS3_Mockup2.png';
-import Mockup_3 from '../../../assets/images/BS3_Mockup3.png';
+import Mockup_1_vn from '../../../assets/images/BS3_Mockup1_vn.png';
+import Mockup_2_vn from '../../../assets/images/BS3_Mockup2_vn.png';
+import Mockup_3_vn from '../../../assets/images/BS3_Mockup3_vn.png';
+
+import Mockup_1_en from '../../../assets/images/BS3_Mockup1_en.png';
+import Mockup_2_en from '../../../assets/images/BS3_Mockup2_en.png';
+import Mockup_3_en from '../../../assets/images/BS3_Mockup3_en.png';
+
 import { useTranslation} from 'react-i18next';
+import { detectlanguage } from '~/components/utils/langDetect';
 
 
 const BusinessSectionThree = () => {
@@ -39,17 +45,31 @@ const BusinessSectionThree = () => {
       ]
       };
 
+    type SlideItem = {
+        imgSrc: string,
+        title: string
+    }
 
 
-
-    const slidesData = [
-        { imgSrc: Mockup_1, title: "Open Your Online Store" },
-        { imgSrc: Mockup_2, title: "Appointment Scheduling" },
-        { imgSrc: Mockup_3, title: "Manage Team Member" },
-        { imgSrc: Mockup_1, title: "Open Your Online Store" },
-        { imgSrc: Mockup_2, title: "Appointment Scheduling" },
-        { imgSrc: Mockup_3, title: "Manage Team Member" },
+    const slidesData_vn: SlideItem[] = [
+        { imgSrc: Mockup_1_vn, title: "Open Your Online Store" },
+        { imgSrc: Mockup_2_vn, title: "Appointment Scheduling" },
+        { imgSrc: Mockup_3_vn, title: "Manage Team Member" },
+        { imgSrc: Mockup_1_vn, title: "Open Your Online Store" },
+        { imgSrc: Mockup_2_vn, title: "Appointment Scheduling" },
+        { imgSrc: Mockup_3_vn, title: "Manage Team Member" },
     ];
+
+    const slidesData_en: SlideItem[] = [
+        { imgSrc: Mockup_1_en, title: "Open Your Online Store" },
+        { imgSrc: Mockup_2_en, title: "Appointment Scheduling" },
+        { imgSrc: Mockup_3_en, title: "Manage Team Member" },
+        { imgSrc: Mockup_1_en, title: "Open Your Online Store" },
+        { imgSrc: Mockup_2_en, title: "Appointment Scheduling" },
+        { imgSrc: Mockup_3_en, title: "Manage Team Member" },
+    ];
+
+    let slidesData = detectlanguage(slidesData_vn, slidesData_en);
 
     return (
       <section className="section business_sec_3">
@@ -62,7 +82,7 @@ const BusinessSectionThree = () => {
 
                 <div className="slider_banner" data-aos="fade-left" >
                     <Slider {...settings}>
-                      {slidesData.map((slide, index) => (
+                      {slidesData.map((slide:any, index:any) => (
                           <div className="item"  key={index}>
                               <img src={slide.imgSrc}  alt=""/>
                           </div>

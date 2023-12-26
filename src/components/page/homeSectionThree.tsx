@@ -1,8 +1,12 @@
-import HS3_Mockup1 from '../../assets/images/HS3_Mockup1.png'
-import HS3_Mockup2 from '../../assets/images/HS3_Mockup2.png'
-import HS3_Mockup3 from '../../assets/images/HS3_Mockup3.png'
+import HS3_Mockup1_vn from '../../assets/images/HS3_Mockup1_vn.png'
+import HS3_Mockup2_vn from '../../assets/images/HS3_Mockup2_vn.png'
+import HS3_Mockup3_vn from '../../assets/images/HS3_Mockup3_vn.png'
+import HS3_Mockup1_en from '../../assets/images/HS3_Mockup1_en.png'
+import HS3_Mockup2_en from '../../assets/images/HS3_Mockup2_en.png'
+import HS3_Mockup3_en from '../../assets/images/HS3_Mockup3_en.png'
 import { useState } from 'react';
 import { useTranslation} from 'react-i18next';
+import { detectlanguage } from '../utils/langDetect'
 
 const HomeSectionThree = () => {
     const { t } = useTranslation();
@@ -12,11 +16,21 @@ const HomeSectionThree = () => {
       image: string;
     }
     
-    const tabItems: ITabItem[] = [
-      { id: 1, title: "Find your favorite service", image: `${HS3_Mockup1}` },
-      { id: 2, title: "Booking anywhere, anytime", image: `${HS3_Mockup2}` },
-      { id: 3, title: "Keep track of your calendar", image: `${HS3_Mockup3}` }
+    let tabItems: ITabItem[] = []
+    const tabItems_vn: ITabItem[] = [
+      { id: 1, title: "Find your favorite service", image: `${HS3_Mockup1_vn}` },
+      { id: 2, title: "Booking anywhere, anytime", image: `${HS3_Mockup2_vn}` },
+      { id: 3, title: "Keep track of your calendar", image: `${HS3_Mockup3_vn}` }
     ];
+
+    const tabItems_en: ITabItem[] = [
+      { id: 1, title: "Find your favorite service", image: `${HS3_Mockup1_en}` },
+      { id: 2, title: "Booking anywhere, anytime", image: `${HS3_Mockup2_en}` },
+      { id: 3, title: "Keep track of your calendar", image: `${HS3_Mockup3_en}` }
+    ];
+
+    tabItems = detectlanguage(tabItems_vn, tabItems_en);
+
     const [activeTab, setActiveTab] = useState<number>(1);
 
     const handleTabClick = (id: number) => {
@@ -37,7 +51,7 @@ const HomeSectionThree = () => {
             </div>
             <div className="grid-50 tablet-grid-50">
               <div dangerouslySetInnerHTML={{ __html: t("Vio simplifies your life") }} /> 
-                <ul className="tab_content" data-aos="fade-left" data-aos-duration="3000">
+                <ul className="tab_content" data-aos="fade-left">
                 {tabItems.map(item => (
                   <li
                     key={item.id}

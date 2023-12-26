@@ -8,9 +8,10 @@ import { useTranslation } from 'react-i18next';
 const Header = () => {
   // Retrieve the language from localStorage or default to USA
   const { t } = useTranslation();
-  const initialLanguage = localStorage.getItem('language') || USA;
+  const initialLanguage = localStorage.getItem('language') || 'vi';
+
   const [showSubMenu, setShowSubMenu] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState(initialLanguage);
+  const [currentLanguage, setCurrentLanguage] = useState<string>(initialLanguage);
   const { i18n } = useTranslation();
 
   const toggleSubMenu = () => {
@@ -18,22 +19,22 @@ const Header = () => {
   };
 
   const changeLanguage = (languageImage: string) => {
-    console.log(languageImage);
     const newLang = languageImage === `${USA}` ? 'en' : 'vi';
     i18n.changeLanguage(newLang);
-    setCurrentLanguage(languageImage);
+    setCurrentLanguage(newLang);
     setShowSubMenu(false);
 
     // Store the selected language in localStorage
-    localStorage.setItem('language', languageImage);
+    localStorage.setItem('language', newLang);
   };
 
   // This effect runs when the component mounts and updates the language
   // based on the stored value in localStorage.
   useEffect(() => {
     const storedLanguage = localStorage.getItem('language');
+    console.log("StoredLanguage: " , storedLanguage);
     if (storedLanguage) {
-      const langCode = storedLanguage === `${USA}` ? 'en' : 'vi';
+      const langCode = storedLanguage === 'en' ? 'en' : 'vi';
       i18n.changeLanguage(langCode);
     }
   }, [i18n]);
@@ -48,10 +49,10 @@ const Header = () => {
               <div className="nav_right">
                 <ul className={showSubMenu ?"change_language expanded_menu" : "change_language"}>
                   <li onClick={toggleSubMenu}>
-                    <img src={currentLanguage} alt="" />
+                    <img src={ currentLanguage === 'en' ? USA : vietnam} alt="" />
                     {showSubMenu && (
                       <ul className="sub_menu">                     
-                        {currentLanguage === `${USA}` ?
+                        {currentLanguage === 'en' ?
                         <li onClick={() => changeLanguage(vietnam)}>
                         <img src={vietnam} alt="Vietnam" />
                       </li>

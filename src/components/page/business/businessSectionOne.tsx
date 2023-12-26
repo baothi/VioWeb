@@ -1,15 +1,24 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import BS1_Mockup1 from '../../../assets/images/BS1_Mockup1.png'
-import BS1_Mockup2 from '../../../assets/images/BS1_Mockup2.png'
-import BS1_Mockup3 from '../../../assets/images/BS1_Mockup3.png'
-import BS1_Mockup4 from '../../../assets/images/BS1_Mockup4.png'
-import BS1_Mockup5 from '../../../assets/images/BS1_Mockup5.png'
-import BS1_Mockup6 from '../../../assets/images/BS1_Mockup6.png'
+import BS1_Mockup1_vn from '../../../assets/images/BS1_Mockup1_vn.png'
+import BS1_Mockup2_vn from '../../../assets/images/BS1_Mockup2_vn.png'
+import BS1_Mockup3_vn from '../../../assets/images/BS1_Mockup3_vn.png'
+import BS1_Mockup4_vn from '../../../assets/images/BS1_Mockup4_vn.png'
+import BS1_Mockup5_vn from '../../../assets/images/BS1_Mockup5_vn.png'
+import BS1_Mockup6_vn from '../../../assets/images/BS1_Mockup6_vn.png'
+
+import BS1_Mockup1_en from '../../../assets/images/BS1_Mockup1_en.png'
+import BS1_Mockup2_en from '../../../assets/images/BS1_Mockup2_en.png'
+import BS1_Mockup3_en from '../../../assets/images/BS1_Mockup3_en.png'
+import BS1_Mockup4_en from '../../../assets/images/BS1_Mockup4_en.png'
+import BS1_Mockup5_en from '../../../assets/images/BS1_Mockup5_en.png'
+import BS1_Mockup6_en from '../../../assets/images/BS1_Mockup6_en.png'
+
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation} from 'react-i18next';
+import { detectlanguage } from '~/components/utils/langDetect.jsx';
 
 const BusinessSectionOne = () => {
   const { t } = useTranslation();
@@ -51,16 +60,31 @@ const BusinessSectionOne = () => {
           }
         ]
       };
-
-
-    const slidesData = [
-        { imgSrc: BS1_Mockup1, title: "Open Your Online Store" },
-        { imgSrc: BS1_Mockup2, title: "Appointment Scheduling" },
-        { imgSrc: BS1_Mockup3, title: "Manage Team Member" },
-        { imgSrc: BS1_Mockup4, title: "Open Your Online Store" },
-        { imgSrc: BS1_Mockup5, title: "Appointment Scheduling" },
-        { imgSrc: BS1_Mockup6, title: "Manage Team Member" },
+    type SlideItem = {
+      imgSrc: string, 
+      title: string
+    }
+    let slidesData : SlideItem[] = []
+    
+    const slidesData_vn: SlideItem[] = [
+        { imgSrc: BS1_Mockup1_vn, title: "Open Your Online Store" },
+        { imgSrc: BS1_Mockup2_vn, title: "Appointment Scheduling" },
+        { imgSrc: BS1_Mockup3_vn, title: "Manage Team Member" },
+        { imgSrc: BS1_Mockup4_vn, title: "Open Your Online Store" },
+        { imgSrc: BS1_Mockup5_vn, title: "Appointment Scheduling" },
+        { imgSrc: BS1_Mockup6_vn, title: "Manage Team Member" },
     ];
+
+    const slidesData_en: SlideItem[] = [
+      { imgSrc: BS1_Mockup1_en, title: "Open Your Online Store" },
+      { imgSrc: BS1_Mockup2_en, title: "Appointment Scheduling" },
+      { imgSrc: BS1_Mockup3_en, title: "Manage Team Member" },
+      { imgSrc: BS1_Mockup4_en, title: "Open Your Online Store" },
+      { imgSrc: BS1_Mockup5_en, title: "Appointment Scheduling" },
+      { imgSrc: BS1_Mockup6_en, title: "Manage Team Member" },
+  ];
+
+    slidesData = detectlanguage(slidesData_vn, slidesData_en);
 
     return (
         <section className="section business_sec_1">
