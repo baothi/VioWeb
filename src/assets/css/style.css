@@ -85,7 +85,7 @@ ul.sub_menu {
     padding: 0;
     list-style: none;
     pointer-events: none;
-    opacity: 0;
+    /* opacity: 0; */
     transition: .5s all;
 }
 
@@ -933,13 +933,14 @@ h2.heading_title span {
 
 .bang_chuyen_project .inner {
     display: flex;
-    animation: slideLeft 30s linear infinite;
+    /* animation: slideLeft 30s linear infinite; */
+
     width: 100%;
 }
 .bang_chuyen_project.right .inner {
-    width: calc(100% / 4.8);
+    width: calc(100% / 4.8) ;
     display: flex;
-    animation: slideRight 30s linear infinite;
+    /* animation: slideRight 30s linear infinite; */
     width: 100%;
     justify-content: flex-end;
 }
@@ -1416,6 +1417,10 @@ section.section.home_sec_1 .sub {
     position: relative;
 }
 
+.slider_top .slick-center {
+    transform: scale(1.2,1.2) translateY(-32px) translateX(-15px) ;
+}
+
 .slider_top .slick-list {
     padding-top: 90px !important;
 }
@@ -1447,7 +1452,6 @@ section.section.home_sec_1 .sub {
         margin-top: 1rem !important;
        height: 65px !important;
         display: block !important;
-        /* background-color: red !important; */
     }
     
     .expanded_menu li {
