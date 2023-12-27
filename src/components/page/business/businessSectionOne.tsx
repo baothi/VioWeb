@@ -36,8 +36,8 @@ const BusinessSectionOne = () => {
         slidesToShow: 3,
         autoplay: true,
         infinite: true,
-        autoplaySpeed: 3000,
-        speed: 3000,
+        autoplaySpeed: 4000,
+        speed: 2000,
         arrows: false,
         responsive: [
           {

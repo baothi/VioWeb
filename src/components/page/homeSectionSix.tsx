@@ -17,6 +17,8 @@ const HomeSectionSix = () => {
         arrows: true,
         autoplay: true,
         infinite: true,
+        autoPlaySpeed: 4000,
+        speed: 2000,
         slidesToScroll: 1,
         responsive: [
           {
@@ -24,6 +26,8 @@ const HomeSectionSix = () => {
             settings: {
               arrows: false,
               centerMode: true,
+              autoPlaySpeed: 4000,
+              speed: 2000,
               centerPadding: '40px',
               slidesToShow: 3
             }

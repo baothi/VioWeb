@@ -23,14 +23,14 @@ import { detectlanguage } from '../utils/langDetect';
 const HomeSectionOne = () => {
     const { t } = useTranslation();
     const settings = {
-        draggable: true,
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3,
         arrows: false,
         autoplay: true,
         focusOnSelect: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
+        speed: 2000,
         responsive: [
             {
                 breakpoint: 768,
