@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import IReport from '~/type/auth.type';
 import authService from './authServices';
 
 
@@ -62,11 +63,11 @@ const initialState: AuthState = {
 }
 
 
-export const login = createAsyncThunk<IAuthResponse, IAuth>(
-    'auth/login',
-    async (userAuth: IAuth, thunkAPI) => {
+export const report = createAsyncThunk<IReport>(
+    'auth/report',
+    async (report: IReport, thunkAPI) => {
         try {
-            return await authService.handleLoginApi(userAuth);
+            return await authService.handleReportAPI(report);
         } catch (error) {
             return thunkAPI.rejectWithValue(error);
         }
@@ -80,19 +81,16 @@ const userSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(login.pending, (state) => {
+    builder.addCase(report.pending, (state) => {
       state.loading = true;
     });
-    builder.addCase(login.fulfilled, (state, action: PayloadAction<IAuthResponse>) => {
-      localStorage.setItem('access_token', action.payload.access);
-      localStorage.setItem('firebase_token', action.payload.firebase_token);
-      localStorage.setItem('refresh_token', action.payload.refresh);
-      
-      state.users = action.payload.user;
+    builder.addCase(report.fulfilled, (state, action: PayloadAction<IReport>) => {
+      console.log(action.payload);
+      state.report = action.payload;
       state.loading = false;
       state.isLoginSuccess = true;
     });
-    builder.addCase(login.rejected, (state) => {
+    builder.addCase(report.rejected, (state) => {
         state.isError= false,
         state.loading = false;
     });
