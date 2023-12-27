@@ -20,8 +20,8 @@ const BusinessSectionThree = () => {
       slidesToShow: 3,
       autoplay: true,
       infinite: true,
-      autoPlaySpeed: 3000,
-      speed: 3000,
+      autoPlaySpeed: 4000,
+      speed: 2000,
       delay: false,
       arrows: false,
       responsive: [

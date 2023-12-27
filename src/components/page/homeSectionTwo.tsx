@@ -17,8 +17,8 @@ const HomeSectionTwo = () => {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed:2000,
-        speed: 500,
+        autoplaySpeed:4000,
+        speed: 2000,
         slidesToShow: 1,
         
         arrows: false,

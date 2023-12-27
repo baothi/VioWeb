@@ -33,10 +33,9 @@ const Business = () => {
   const settings1 = {
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 0,
-    speed: 4000,
+    autoplaySpeed: 0 ,
+    speed: 3000,
     cssEase: "linear",
-    pauseOnHover: true,
     slidesToShow: 5,
     responsive: [
         {
@@ -44,7 +43,7 @@ const Business = () => {
             settings: {
                 arrows: false,
                 centerMode: false,
-                slidesToShow: 1
+                slidesToShow: 2
             }
         }
     ]
@@ -54,7 +53,7 @@ const Business = () => {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 4000,
+    speed: 3000,
     cssEase: "linear",
     pauseOnHover: false,
     slidesToShow: 5,
@@ -65,7 +64,7 @@ const Business = () => {
             settings: {
                 arrows: false,
                 centerMode: false,
-                slidesToShow: 1
+                slidesToShow: 2,
             }
         }
     ]
