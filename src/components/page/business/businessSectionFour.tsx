@@ -78,8 +78,8 @@ const BusinessSectionFour = () => {
         arrows: false,
         ref: sliderContentRef,
         autoplay: true,
-        speed: 5000,
-        autoplaySpeed: 10000,
+        speed: 4000,
+        autoplaySpeed: 8000,
         cssEase: "linear",
       };
 

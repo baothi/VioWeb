@@ -1,3 +1,5 @@
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
 import BS2_Mockup_vn from '../../../assets/images/BS2_Mockup_vn.png'
 import BS2_Mockup_en from '../../../assets/images/BS2_Mockup_en.png'
 import bg_mail from '../../../assets/images/bg_mail.jpeg';
@@ -28,6 +30,71 @@ import { detectlanguage } from '~/components/utils/langDetect';
 
 const Business = () => {
   const { t } = useTranslation();
+
+  const settings1 = {
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    slidesToShow: 5,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        }
+    ]
+  };
+
+  const settings2 = {
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    cssEase: "linear",
+    pauseOnHover: false,
+    slidesToShow: 5,
+    slidesToScroll: -1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        }
+    ]
+  };
+
+  type AutoCarousel = {
+    content: string,
+    imgSrc: string,
+  }
+
+  const carousel1: AutoCarousel[] = [
+    {content: 'Barber shop', imgSrc: cr1},
+    {content: 'Beauty salon', imgSrc: cr2},
+    {content: 'Gym and fitness', imgSrc: cr3},
+    {content: 'Freelancer', imgSrc: cr4},
+    {content: 'Make-up artist', imgSrc: cr5},
+    {content: 'Nail & eyelash', imgSrc: cr6},
+  ]
+
+  const carousel2: AutoCarousel[] = [
+    {content: 'Nightlife', imgSrc: cr7},
+    {content: 'Outdoor activities', imgSrc: cr8},
+    {content: 'Tattoo', imgSrc: cr9},
+    {content: 'Veterinarian', imgSrc: cr10},
+    {content: 'Workshop', imgSrc: cr11},
+    {content: 'Hair salon', imgSrc: cr12},
+  ]
+
   useEffect(() => {
     AOS.init({
         delay: 500, // values from 0 to 3000, with step 50ms
@@ -68,161 +135,37 @@ const Business = () => {
           </div>
           <div className='wrapper'>
           <div className="bang_chuyen_project imageSlider"  data-aos="fade-in">
-              <ul className="inner">
+            
+                  <ul className="inner" style={{display: 'inline'}}>
+                  <Slider {...settings1}>
+                {carousel1.map((slide) => 
                   <li>
-                      <a href="#" title="">
-                          <img src={cr1} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Barber shop") }} /></h3>
+                      <a>
+                          <img src={slide.imgSrc} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t(slide.content) }} /></h3>
                       </a>
                   </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr2} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Beauty salon") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr3} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Gym and fitness") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr4} alt="" />                       
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Freelancer") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr5} alt="" />
-                          <h3></h3>
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Make-up artist") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr6} alt="" />
-                        
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nail & eyelash") }} /></h3>
-                      </a> 
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr1} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Barber shop") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr2} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Beauty salon") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr3} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Gym and fitness") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr4} alt="" />                       
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Freelancer") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr5} alt="" />
-                          <h3></h3>
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Makeup artist") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr6} alt="" />
-                          <h3>Nail & Eyelash</h3>
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nail & eyelash") }} /></h3>
-                      </a> 
-                  </li>
-              </ul>
+                 
+                
+                )}
+            </Slider>
+            </ul>
           </div>
           <div className="bang_chuyen_project right imageSlider"  data-aos="fade-in">
-              <ul className="inner">
+          <ul className="inner" style={{display: 'inline'}}>
+                  <Slider {...settings2}>
+                {carousel2.map((slide) => 
+                  <li>
+                      <a>
+                          <img src={slide.imgSrc} alt="" />
+                          <h3><div dangerouslySetInnerHTML={{ __html: t(slide.content) }} /></h3>
+                      </a>
+                  </li>
+                 
                 
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr7} alt="" />                         
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nightlife") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr8} alt="" />                         
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Outdoor activities") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr9} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Tatoo") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr10} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Veterinarian") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr11} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Workshop") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr12} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Hair salon") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr7} alt="" />                         
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Nightlife") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr8} alt="" />                         
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Outdoor activities") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr9} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Tattoo") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr10} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Veterinarian") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr11} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Workshop") }} /></h3>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" title="">
-                          <img src={cr12} alt="" />
-                          <h3><div dangerouslySetInnerHTML={{ __html: t("Hair salon") }} /></h3>
-                      </a>
-                  </li>
-              </ul>
+                )}
+            </Slider>
+            </ul>
           </div>
           </div>
 
