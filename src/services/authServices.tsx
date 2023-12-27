@@ -1,5 +1,5 @@
 import apiClient from "~/utility/axioconfig";
-import IReport from "../../type/auth.type";
+import IReport from "../type/auth.type";
 
 // const handleLoginApi = async (user: IUser) => {
 //   console.log("========================================")

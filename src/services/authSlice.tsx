@@ -2,101 +2,56 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import IReport from '~/type/auth.type';
 import authService from './authServices';
 
-
-interface IUser {
-  id: number | null;
-  first_name: string | null;
-  middle_name: string | null;
-  last_name: string | null;
-  full_name: string | null;
-  avatar: {
-      origin: {
-          url: string;
-          code: number;
-          filename: string;
-          is_private: boolean;
-      };
-      thumbnail: {
-          url: string;
-          code: number;
-          filename: string;
-          is_private: boolean;
-      };
-  };
-  banner: {};
-  parent_id: number | null;
-  profile_type: number;
-}
-
-
-interface IAuth {
-  // Define user properties here
-    id?: number | null;
-    user_name?: string | null;
-    phone_number?: string | null;
-    email?: string | null;
-    password: string;
-}
-
-
-interface IAuthResponse {
-  user: IUser;
-  refresh: string;
-  access: string;
-  firebase_token: string;
-}
-
-interface AuthState {
-  users: IAuth[];
+// Define the type for the initial state
+interface UserState {
   loading: boolean;
-  isError: boolean,
-  isLoginSuccess: boolean,
-  
+  report?: IReport;
+  isError: boolean;
+  isSuccess: boolean;
 }
 
-// Initial state with types
-const initialState: AuthState = {
-  users: [],
+// Define the initial state with a type
+const initialState: UserState = {
   loading: false,
   isError: false,
-  isLoginSuccess: false
-}
+  isSuccess: false,
+};
 
-
-export const report = createAsyncThunk<IReport>(
-    'auth/report',
-    async (report: IReport, thunkAPI) => {
-        try {
-            return await authService.handleReportAPI(report);
-        } catch (error) {
-            return thunkAPI.rejectWithValue(error);
-        }
+export const report = createAsyncThunk<IReport, IReport, { rejectValue: string }>(
+  'auth/report',
+  async (reportData: IReport, thunkAPI:any) => {
+    try {
+      const response = await authService.handleReportAPI(reportData);
+      // Ensure response is of type IReport
+      return response;
+    } catch (error: any) {
+      // Extract error message from error object
+      const errorMessage = error.response?.data?.message || 'An error occurred';
+      return thunkAPI.rejectWithValue(errorMessage);
     }
+  }
 );
-
 
 // Slice with TypeScript
 const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {},
-  extraReducers: (builder) => {
-    builder.addCase(report.pending, (state) => {
+  extraReducers: (builder:any) => {
+    builder.addCase(report.pending, (state:any) => {
       state.loading = true;
     });
-    builder.addCase(report.fulfilled, (state, action: PayloadAction<IReport>) => {
+    builder.addCase(report.fulfilled, (state:any, action: PayloadAction<IReport>) => {
       console.log(action.payload);
       state.report = action.payload;
       state.loading = false;
-      state.isLoginSuccess = true;
+      state.isSuccess = true;
     });
-    builder.addCase(report.rejected, (state) => {
-        state.isError= false,
-        state.loading = false;
+    builder.addCase(report.rejected, (state:any) => {
+      state.isError = true;
+      state.loading = false;
     });
   },
 });
-
-export const { } = userSlice.actions;
 
 export default userSlice.reducer;
