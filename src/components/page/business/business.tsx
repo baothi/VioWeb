@@ -2,8 +2,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import BS2_Mockup_vn from '../../../assets/images/BS2_Mockup_vn.png'
 import BS2_Mockup_en from '../../../assets/images/BS2_Mockup_en.png'
-import bg_mail from '../../../assets/images/bg_mail.jpeg';
-
 import cr1 from '../../../assets/images/CRBarber_shop.png';
 import cr2 from '../../../assets/images/CRBeauty_salon.png';
 import cr3 from '../../../assets/images/CRFitness.png';
@@ -26,6 +24,7 @@ import BusinessSectionThree from './businessSectionThree';
 import { useTranslation} from 'react-i18next';
 import BusinessSectionFour from './businessSectionFour';
 import { detectlanguage } from '~/components/utils/langDetect';
+import BusinessSectionSix from './businessSectionSix';
 
 
 const Business = () => {
@@ -170,25 +169,7 @@ const Business = () => {
           </div>
 
       </section>
-      <section className="section business_sec_6" style={{ backgroundImage: `url(${bg_mail})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-          <div className="grid-container">
-              <div className="grid-100">
-                  <div className="text_center">
-                    <div dangerouslySetInnerHTML={{ __html: t("Ready") }} />
-                      
-                      <form action="">
-                          <input type="text" placeholder="Your email" />
-                          <button type="submit">
-                          <div dangerouslySetInnerHTML={{ __html: t("Get In Touch") }} />
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                              </svg>
-                          </button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </section>
+      <BusinessSectionSix />
     </>
   )
 }
