@@ -193,8 +193,23 @@ export const vi = {
                         </div>
                         <ul>
                             <li  data-aos="fade-right">
-                                <a>
-                                    <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class='grid-100'>
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="grid-90">Tìm kiếm <b>khách hàng</b></div>
+                                </a>
+                            </li>
+                            <li  data-aos="fade-right">
+                                <a class='grid-100'>
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         <defs>
@@ -204,52 +219,37 @@ export const vi = {
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    Tìm kiếm <b>khách hàng</b>
+                                    <div class="grid-90"> Quản trị <b> tất cả  chi nhánh </b> của bạn trong <b>  1 tài khoản </b> </div>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
-                                <a>
-                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
-                                        <stop stop-color="#7D2EBD"></stop>
-                                        <stop offset="1" stop-color="#C054EE"></stop>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            Quản trị <b> tất cả  chi nhánh </b> của bạn <b> trong 1 tài khoản </b>
+                                <a class='grid-100'>
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
+                                                <stop stop-color="#7D2EBD"></stop>
+                                                <stop offset="1" stop-color="#C054EE"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="grid-90">  Nâng cấp <b>trải nghiệm khách hàng </b> </div>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
-                                <a>
-                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
-                                        <stop stop-color="#7D2EBD"></stop>
-                                        <stop offset="1" stop-color="#C054EE"></stop>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                                    Nâng cấp <b>trải nghiệm khách hàng </b>
-                                </a>
-                            </li>
-                            <li  data-aos="fade-right">
-                                <a>
-                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <defs>
-                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
-                                        <stop stop-color="#7D2EBD"></stop>
-                                        <stop offset="1" stop-color="#C054EE"></stop>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                                    <b>Dễ dàng quản lý </b>cửa hàng của bạn
+                                <a class='grid-100'>
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
+                                                <stop stop-color="#7D2EBD"></stop>
+                                                <stop offset="1" stop-color="#C054EE"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="grid-90"><b>Dễ dàng quản lý </b>cửa hàng của bạn</div>
                                 </a>
                             </li>
                         </ul>`,

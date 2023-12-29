@@ -189,12 +189,12 @@ export const en =  {
                             with <b>Vio</b>
                         </h2>
                         <div class="content"  data-aos="fade-right">
-                            Online business is booming, <b> Vio packs all the tool you need </b>to take your online shop velocity to the next level.
+                        Most trusted booking app for your business
                         </div>
                         <ul>
-                            <li  data-aos="fade-right">
-                                <a href="">
-                                    <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <li  data-aos="fade-right" >
+                                <a class='grid-100' href="">
+                                    <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                         <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                         <defs>
@@ -204,27 +204,27 @@ export const en =  {
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    Find more <b>customer</b>
+                                <div class="grid-90">Find more <b>customer</b></div>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
-                                <a href="">
-                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
-                                        <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#7D2EBD"></stop>
-                                                <stop offset="1" stop-color="#C054EE"></stop>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    Keep <b>track of all your branches</b> in 1 account
+                                <a class='grid-100' href="">
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
+                                <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <defs>
+                                    <linearGradient id="paint0_linear_6563_2174" x1="4.68629" y1="27.3137" x2="24.563" y2="7.7037" gradient-units="userSpaceOnUse">
+                                        <stop stop-color="#7D2EBD"></stop>
+                                        <stop offset="1" stop-color="#C054EE"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                                    <div class="grid-90">  Keep <b>track of all your branches</b> in <b>1 account </b></div>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
-                                <a href="">
-                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class='grid-100' href="">
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
@@ -235,12 +235,12 @@ export const en =  {
                                 </defs>
                             </svg>
 
-                                    Up-scale your <b>customer support</b> game
+                            <div class="grid-90"> Up-scale your <b>customer support</b> game </div>
                                 </a>
                             </li>
                             <li  data-aos="fade-right">
-                                <a href="">
-                                <svg width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class='grid-100' href="">
+                                <svg class="grid-10" width="32" height="32" view-box="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="32" height="32" rx="8" fill="url(#paint0_linear_6563_2174)"></rect>
                                 <path d="M13 22L19 16L13 10" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <defs>
@@ -250,7 +250,7 @@ export const en =  {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                                    Effortlessly <b> manage </b> your business
+                                   <div class="grid-90"><b> Effortlessly  manage </b> your business</div>
                                 </a>
                             </li>
                         </ul>`,

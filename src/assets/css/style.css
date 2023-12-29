@@ -118,6 +118,9 @@ ul.change_language>li:hover ul {
     font-size: 0.833rem;
     font-weight: 600;
     margin-left: 3.833rem;
+    width: 155px !important;
+    display: flex;
+    justify-content: center;
 }
 .text_center {
     text-align: center;
@@ -197,8 +200,7 @@ b {}
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Adjust the height as needed */
-    /* border: 1px solid black; */
+    height: 100px; 
     
   }
   
@@ -267,7 +269,7 @@ b {}
 
 .home_sec_2 .box_content ul svg {
     flex: 0 0 auto;
-    margin-right: 0.417rem;
+    
 }
 
 .home_sec_2 .box_content ul li a {
@@ -283,6 +285,7 @@ b {}
 .home_sec_2 .box_content ul li:not(:last-child) {
     margin-bottom: 1.042rem;
 }
+
 
 .home_sec_2 .box_content ul  b {
     background: var(--gradient-gold, linear-gradient(180deg, #E0AA3D 0%, #F7EF8A 46.88%, #E0AA3E 100%));
@@ -675,9 +678,12 @@ h2.heading_title span {
 .business_sec_2.home_sec_2 .box_content ul li a {
     font-size: 32px;
 }
+.home_sec_2 a svg {
+    transform: translateY(0.2rem);
+}
 
 .business_sec_2.home_sec_2 .box_content ul li a svg {
-    transform: translateY(0.365rem);
+    transform: translateY(0.2rem);
 }
 
 .business_sec_1 {
@@ -697,6 +703,16 @@ h2.heading_title span {
     line-height: 1;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     margin-bottom: 3rem;
+}
+
+.business_sec_2 ul .grid-100 {
+    padding: 0;
+    display: block;
+}
+
+.business_sec_2 ul .grid-100 svg {
+    padding: 0;
+    width: max-content;
 }
 
 .slider_banner img {width: calc(100% - 0.417rem);display: block;margin: 0 0.208rem;}
@@ -1692,11 +1708,24 @@ section.section.home_sec_1 .sub {
     .business_sec_2.home_sec_2 {
         padding-top: 4rem;
     }
+    /* .home_sec_2 a svg {
+        transform: translateY(0.1rem);
+    }
+    
+    .business_sec_2.home_sec_2 .box_content ul li a svg {
+        transform: translateY(-0.2rem);
+    } */
 
     .business_sec_2.home_sec_2 .box_content ul li a {
-        display: block;
+        display: flex;
         line-height: 1.5;
         font-size: 20px;
+    }
+    .business_sec_2.home_sec_2 .box_content ul li a svg {
+        margin-right: 0;
+    }
+    .home_sec_2  ul li a svg{
+        margin-right: 10px;
     }
    
     .business_sec_2.home_sec_2 .grid-50.box_content {
@@ -1808,6 +1837,16 @@ section.section.home_sec_1 .sub {
     .slider_top .slick-list {
         padding-top: 20px !important;
     }
+
+    .faq-title .heading_title {
+        margin-top: 1rem !important;
+    }
+
+    .button_link {
+        width: 130px !important;
+    }
+
+  
 }
 
 @media only screen and (max-width: 767px) {

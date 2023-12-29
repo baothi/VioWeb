@@ -36,6 +36,7 @@ const Business = () => {
     autoplaySpeed: 0 ,
     speed: 3000,
     cssEase: "linear",
+    pauseOnHover: false,
     slidesToShow: 5,
     responsive: [
         {

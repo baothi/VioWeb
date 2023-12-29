@@ -84,7 +84,7 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={e => e.preventDefault()} to="" className="">
+                        <Link to="/faq" className="">
                         <div dangerouslySetInnerHTML={{ __html: t("Guidelines") }}/>
                         </Link>
                     </li>
@@ -93,7 +93,7 @@ const Footer = () => {
             <div className="grid-20 footer_3">
                 <ul className="footer_menu">
                     <li>
-                        <Link to="">
+                        <Link onClick={e => e.preventDefault()} to="">
                         <div dangerouslySetInnerHTML={{ __html: t("About us") }}/>
                         </Link>
                     </li>
