@@ -1,9 +1,20 @@
-.home_sec_3 {
+.home_sec_3_faq {
     .faq-title {
         display: flex;
         flex-direction:column;
         align-items: center;
-        justify-content: center
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    .faq-title .heading_title {
+        color: var(--gray-neutral-50, #FAFAFA);
+        
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.96px;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        line-height: 1.2;
     }
     .faq-btn {
         display: flex; 
@@ -78,7 +89,63 @@
         color: #7D2EBD;
     }
 
-  
-    
+    .main_title1 {
+        font-size: 24px;
+    }
+    .sub_title1 {
+        padding-left: 10px;
+         font-size: 24px
+    }
+
+    .sub_title_child1 {
+        padding-left: 20px;
+         font-size: 24px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .faq-title .heading_title {
+        margin-top: 1rem !important;
+    }
+
+    .home_sec_3_faq .faq-btn button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .main_title1 {
+        font-size: 20px !important;
+    }
+    .sub_title1 {
+        font-size: 18px !important;
+        padding-left: 10px;
+         font-size: 24px
+    }
+
+    .sub_title_child1 {
+        font-size: 18px !important;
+        padding-left: 20px;
+         font-size: 24px;
+    }
+
+    .container_content {
+        width: 350px !important;
+        padding: 10px !important;
+    }
+    .container_content h4 {
+        font-size: 24px !important;
+    }
+
+    .content_text ul{
+        padding-left: 10px !important;
+      
+    }
+    .home_sec_3_faq .grid-70 {
+        padding-left: 0;
+    }
+
+     .home_sec_3_faq {
+        margin-bottom: 25rem;
+        overflow: visible !important;
+    }
 
 }

@@ -1,5 +1,4 @@
 import iphone14pro from '../../../assets/images/iPhone 14 Pro.png'
-import qrcode from '../../../assets/images/qr_code.png'
 import { useState } from 'react';
 import './faq.scss'
 
@@ -89,7 +88,7 @@ const FAQ= () => {
     const tabItems: UserManualItem[] = [
       { id: 1, main_title:"I. Tài khoản cửa hàng" , sub_title: "", image: ["iphone14pro","iphone14pro","iphone14pro",], content: [""]  },
       { id: 2, main_title: "", sub_title: "1. Đăng ký tài khoản", 
-      image: [iphone14pro,iphone14pro,qrcode ], 
+      image: [iphone14pro ], 
       content: ["Tải ngay <b>ứng dụng Vio </b> – đặt lịch thông minh trên Appstore hoặc Playstore.", 
                 "Chọn Tài khoản cửa hàng và nhấn Xác nhận.",
                 "Nhập số điện thoại hoặc email.​",
@@ -99,20 +98,20 @@ const FAQ= () => {
                 "Chọn Tạo cửa hàng để hoàn tất."
     ],
   content_1: []},
-    {id: 3, main_title: "", sub_title: "2. Tạo chi nhánh", image: [iphone14pro,iphone14pro,iphone14pro], 
+    {id: 3, main_title: "", sub_title: "2. Tạo chi nhánh", image: [iphone14pro], 
     content: ["Chạm vào ảnh đại diện ở góc trái để mở menu phụ.",
               "Chạm vào biểu tượng​",
               "Chọn Tạo tài khoản mới.",
               "Chọn và chạm vào loại hình tài khoản bạn muốn tạo. Hãy chọn tài khoản cửa hàng để tạo thêm chi nhánh.",
               "Chọn và chạm vào cách thức đăng ký mà bạn muốn."
             ]},
-    {id: 4, main_title: "", sub_title: "3. Chuyển đổi tài khoản", image:[iphone14pro,iphone14pro,iphone14pro],
+    {id: 4, main_title: "", sub_title: "3. Chuyển đổi tài khoản", image:[iphone14pro],
   content: [ "Chạm vào ảnh đại diện ở góc trái để mở menu phụ.",
               "Chạm vào icon chuyển đổi.​(Hoặc chạm nhanh vào hình đại diện nhỏ ở kế icon chuyển đổi )",
               "Chọn tài khoản bạn muốn sử dụng."
             ]},
     {id: 5, main_title: "II. Cài đặt​ cửa hàng", sub_title: ""},
-    {id: 6, main_title: "", sub_title: "1. Giao diện cửa hàng", image:[iphone14pro,iphone14pro,iphone14pro],
+    {id: 6, main_title: "", sub_title: "1. Giao diện cửa hàng", image:[iphone14pro],
   content: ["Chạm vào ảnh đại diện ở góc trái để mở menu phụ.",
             "Chạm vào ảnh đại diện cửa hàng bạn để mở Giao diện cửa hàng.",
             "Chạm vào Chỉnh sửa hồ sơ để thay đổi thông tin hiển thị.",
@@ -122,7 +121,7 @@ const FAQ= () => {
              "Nhấn Lưu để xác nhận các thay đổi."
 
   ]},
-    {id: 7, main_title: "", sub_title: "2. Cài đặt chung", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 7, main_title: "", sub_title: "2. Cài đặt chung", image: [iphone14pro],
   content: ["Chạm Cài đặt chung.",
             "Tại đây bạn có thể thêm ghi chú cho khách hàng khi đặt lịch hẹn, tiền tệ cũng như múi giờ hoạt động.",
             "Thêm Chính sách huỷ lịch hẹn  cho cửa hàng bạn ",
@@ -135,7 +134,7 @@ const FAQ= () => {
     {id: 8, main_title: "", sub_title: "3. Thời gian hoạt động"},
     {id: 9, 
       sub_title_child: "i. Thiết lập thời gian hoạt động",
-      image: [iphone14pro, iphone14pro, iphone14pro],
+      image: [iphone14pro],
       content: [
         "Nhấn vào Tạo thời gian hoạt động.",
         "Chọn khung giờ bạn muốn rồi nhấn Áp dụng.",
@@ -144,7 +143,7 @@ const FAQ= () => {
         "Nhấn Lưu để xác nhận các thay đổi.",
       ],
     },
-  {id: 10, sub_title_child: "ii. Thiết lập các ngày làm việc trong tuần", image: [iphone14pro,iphone14pro,iphone14pro],
+  {id: 10, sub_title_child: "ii. Thiết lập các ngày làm việc trong tuần", image: [iphone14pro],
   content: [`Chạm vào ngày trong tuần bạn muốn điều chỉnh, ví dụ bạn điều chỉnh giờ mở cửa cho chủ nhận hãy chạm vào Sun, sau đó: 
             <ul>
             <li>Để đóng cửa cả chủ nhật, chọn <b> &#160 Đóng cửa cả ngày </b>​.  </li>
@@ -153,7 +152,7 @@ const FAQ= () => {
             <li>Nhấn <b>&#160Lưu&#160</b> để xác nhận thay đổi​ </li>
             <ul>`
   ]},
-  {id: 11, sub_title_child: "iii. Thiết lập ngày nghỉ đặc biệt", image: [iphone14pro,iphone14pro,iphone14pro],
+  {id: 11, sub_title_child: "iii. Thiết lập ngày nghỉ đặc biệt", image: [iphone14pro],
   content: ["Chạm Thêm ngày và giờ trong mục ngày nghỉ đặc biệt.",
             "Chọn ngày và thời gian bạn muốn nghỉ.",
             "Nhấn Lưu để hoàn tất."
@@ -163,7 +162,7 @@ const FAQ= () => {
   step_title2: "Bạn cũng có chia các khung thời gian dựa vào thời gian cửa hàng bạn hoạt động."
 },
   
-    {id: 12, main_title: "", sub_title: "4. Danh sách nhân sự", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 12, main_title: "", sub_title: "4. Danh sách nhân sự", image: [iphone14pro],
     content: ["Tại cài đặt cửa hàng, chọn Danh sách nhân sự.",
               `Tại đây bạn có thể:
                  - Thêm. bớt hoặc điều chỉnh các nhân sự.​
@@ -178,13 +177,13 @@ const FAQ= () => {
 Đang chờ: Đã gửi lời mời kết nối, đang chờ trả lời `
 
     ]},
-    {id: 13, main_title: "", sub_title_child: "i. Thêm nhân viên ngoài Vio", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 13, main_title: "", sub_title_child: "i. Thêm nhân viên ngoài Vio", image: [iphone14pro],
     content: ["Chạm vào biểu tượng     ở góc phải màn hình để mở trình nhập nhân sự.",
               "Điền thông tin nhân viên của bạn. Số điện thoại và email sẽ chỉ hiện với cửa hàng (không hiện với khách hàng)",
               "Nhấn Lưu để hoàn tất."
 
   ]},
-    {id: 14, main_title: "", sub_title_child: "ii. Thêm nhân viên trong Vio", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 14, main_title: "", sub_title_child: "ii. Thêm nhân viên trong Vio", image: [iphone14pro],
     content: ["Tại trình nhập thông tin nhân sự chạm vào Liên kết.",
               `Tìm thông tin nhân viên, bạn có thể tìm bằng: ​
 
@@ -197,7 +196,7 @@ const FAQ= () => {
               "Nhấn Lưu để hoàn tất."
 
     ]},
-    {id: 15, main_title: "", sub_title_child: "iii. Liên kết nhân viên", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 15, main_title: "", sub_title_child: "iii. Liên kết nhân viên", image: [iphone14pro],
     content: ["Chạm vào nhân viên bạn muốn liên kết ( trạng thái Chưa liên kết)",
               `Tìm thông tin nhân viên, bạn có thể tìm bằng: ​
 
@@ -210,7 +209,7 @@ const FAQ= () => {
               "Nhấn Lưu để hoàn tất."
 
     ]},
-    {id: 16, main_title: "", sub_title_child: "iv. Chỉnh sửa nhân viên", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 16, main_title: "", sub_title_child: "iv. Chỉnh sửa nhân viên", image: [iphone14pro],
     content: ["Chạm vào nhân viên bạn muốn chỉnh sửa",
               "Thay đổi thông tin nhân viên mà bạn cần",
               `Chọn Hủy liên kết nếu bạn muốn bỏ liên kết​
@@ -219,10 +218,10 @@ const FAQ= () => {
               "Nhấn Lưu để hoàn tất"
 
     ]},
-    {id: 17, main_title: "", sub_title: "v. Xóa nhân viên", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 17, main_title: "", sub_title_child: "v. Xóa nhân viên", image: [iphone14pro],
     content: [ "Chọn nhân viên mà bạn muốn xóa, trượt sang trái và nhấn vào Xóa"
     ]},
-    {id: 18, main_title: "", sub_title: "5. Cung ứng", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 18, main_title: "", sub_title: "5. Cung ứng", image: [iphone14pro],
     content: ["Tại cài đặt cửa hàng, chọn Cung ứng.",
               `Phía trên sẽ có 4 thẻ tương ứng với các mô hình mà cửa hàng bạn cung cấp cho khách hàng.​
 
@@ -235,7 +234,7 @@ const FAQ= () => {
               Ưu đãi`
 
     ]},
-    {id: 19, main_title: "", sub_title_child: "i. Dịch vụ", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 19, main_title: "", sub_title_child: "i. Dịch vụ", image: [iphone14pro],
     content: ["Tại thẻ Dịch vụ, Chạm vào icon    ở góc phải màn hình",
               "Nếu cửa hàng của bạn chỉ kinh doanh 1 loại hình dịch vụ bạn nên thêm Tất cả chỗ(*)",
               "Thêm thông tin về dịch vụ mà bạn cung cấp, bạn nên nhập thông tin càng chi tiết càng tốt.",
@@ -244,7 +243,7 @@ const FAQ= () => {
               "Kiểm tra lại thông tin và nhấn Lưu để hoàn tất."
 
     ]},
-    {id: 20, main_title: "", sub_title_child: "ii. Sản phẩm", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 20, main_title: "", sub_title_child: "ii. Sản phẩm", image: [iphone14pro],
     content: ["Tại thẻ sản phẩm, nhấn vào biểu tượng ở góc phải màn hình",
               "Thêm thông tin về sản phẩm của bạn.",
               `Tại phần điền thông tin, thêm số lượng và đơn vị của sản phẩm.​
@@ -253,14 +252,14 @@ const FAQ= () => {
               "Nhấn Lưu để hoàn tất"
 
     ]},
-    {id: 21, main_title: "", sub_title_child: "iii. Bộ sưu tập", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 21, main_title: "", sub_title_child: "iii. Bộ sưu tập", image: [iphone14pro],
     content: ["Tại thẻ bộ sưu tập, nhấn vào biểu tượng ở góc phải màn hình",
               "Thêm tên bộ sưu tập.",
               "Chọn các dịch vụ hoặc/và hoặc các sản phẩm bạn muốn thêm.",
               "Nhấn Lưu để hoàn tất."
 
     ]},
-    {id: 22, main_title: "", sub_title_child: "iv. Ưu đãi", image: [iphone14pro,iphone14pro,iphone14pro],
+    {id: 22, main_title: "", sub_title_child: "iv. Ưu đãi", image: [iphone14pro],
     content: ["Tại thẻ ưu đãi, nhấn vào biểu tượng ở góc phải màn hình",
               "Thêm tên cho ưu đãi của bạn.",
               "Chọn loại ưu đãi bạn muốn: Khuyến mãi hoặc Mua # tặng #",
@@ -284,7 +283,7 @@ const FAQ= () => {
   
 
     return (
-      <section className="section home_sec_3">
+      <section className="section home_sec_3_faq">
         <div className='grid-100 faq-title' >
               <h3 className='heading_title'><b>VIO</b> FAQ</h3>
               <h3 style={{color: "white"}}>If you’re new to Vio or looking for replatform your business, this guide will help you learn more about the platform
@@ -340,10 +339,10 @@ const FAQ= () => {
                     onClick={() => handleTabClick(item.id)}
                   >
                     {item.main_title ? 
-                            <b><div style={{fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.main_title }} /> </b> :
+                            <b><div className="main_title1" dangerouslySetInnerHTML={{ __html: item.main_title }} /> </b> :
                       item.sub_title ?
-                            <b><div style={{paddingLeft: "10px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: item.sub_title }} /> </b> :
-                            <b><div style={{paddingLeft: "20px", fontSize: "24px"}} dangerouslySetInnerHTML={{ __html: typeof item.sub_title_child === 'string' && item.sub_title_child }} /> </b>}
+                            <b><div className='sub_title1' dangerouslySetInnerHTML={{ __html: item.sub_title }} /> </b> :
+                            <b><div  className='sub_title_child1' dangerouslySetInnerHTML={{ __html: typeof item.sub_title_child === 'string' && item.sub_title_child }} /> </b>}
                   </li>
                 ))}
                 </ul>
@@ -355,7 +354,7 @@ const FAQ= () => {
                     <li key={item.id} className={activeTab === item.id ? 'active' : ''}>
                       {(item.content && activeTab === item.id) && 
                         <div className='container_content'>
-                          <h3>{item.sub_title && item.sub_title }</h3>
+                          <h4>{item.sub_title && item.sub_title }</h4>
                           <h4>{ item.sub_title_child &&  item.sub_title_child}</h4>
                           <div className="grid-100 inner_content">
                             {item.step_title1 && <div className='step_title1'>

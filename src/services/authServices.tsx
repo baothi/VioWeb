@@ -13,7 +13,10 @@ import IReport from "../type/auth.type";
 // }
 
 const handleReportAPI = async (report: IReport) => {
+  console.log(report)
+  console.log("=====" , apiClient)
   const response = await apiClient.post<IReport[]>("/reports/",report);
+  console.log(response)
   return response.data;
 }
 
