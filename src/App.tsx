@@ -13,6 +13,7 @@ import Career from './components/page/careers/careers';
 import Page404 from './components/page/404/404';
 import ScrollToTop from './scroll';
 import FAQ from './components/page/faq/faq';
+import Mobile from './components/page/mobile/mobile';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/terms-of-service" element={<Term/>}></Route>
           <Route path="/careers" element={<Career/>}></Route>
           <Route path="/faq" element={<FAQ/>}></Route>
+          <Route path="/mobileapp" element={<Mobile/>}></Route>
           <Route path="/*" element={<Page404/>}/>
         </Route>
       </Routes>

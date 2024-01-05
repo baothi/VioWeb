@@ -98,7 +98,7 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link onClick={e => e.preventDefault()} to="" className="">
+                        <Link to="/mobileapp" className="">
                         <div dangerouslySetInnerHTML={{ __html: t("Mobile app") }}/>
                         </Link>
                     </li>
