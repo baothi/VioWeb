@@ -1,47 +1,60 @@
 import iphone14pro from '../../../assets/images/iPhone 14 Pro.png'
 import { useState } from 'react';
+import up from '../../../assets/images/faq_chevron-up.png';
+import down from '../../../assets/images/faq_chevron-down.png';
 import './faq.scss'
+import Dropdown from '../dropdown/dropdown';
 
 const FAQ= () => {
     type FAQ = {
+      id: number,
       question: string;
       answer: string;
     };
     
     const faqs: FAQ[] = [
       {
+        id: 1,
         question: "What is Vio?",
         answer: "Vio is a global visual schedule aggregator that connects you to the rest of the world from a personal, professional, and social standpoint."
       },
       {
+        id: 2,
         question: "How do you pronounce Vio?",
         answer: "Vio is pronounced as 'Vee-oh'."
       },
       {
+        id: 3,
         question: "Is there any connotation to Vio?",
         answer: "Yes, Vio: pronounced (vee-oh), is a portmanteau for Visual Optimization and a homophone for View. The foundation of our app is based on visual cues, conveying a more thorough story than just words and numbers alone."
       },
       {
+        id: 4,
         question: "Is this app affiliated with Facebook?",
         answer: "No"
       },
       {
+        id: 5,
         question: "Where can I find Vio?",
         answer:"Vio is currently available for download in Vietnam on both the App Store and Google Play. We are in our U.S. beta test and the Vio app will be available on both Google Play and the App Store in the U.S. and Canada upon our U.S. launch."
       },
       {
+        id: 5,
         question:  "Will Vio charge a fee?",
         answer: "Creating a \"personal\" user account is free and end-users may leverage all features and functionality available. If you're a business entity and/or corporation and would like to promote an event using our platform, please contact us for more information.",
       },
       {
+        id: 6,
         question: "Does Vio support multiple languages?",
         answer: "Yes, currently Vio supports Vietnamese and English. We will continue to add additional supported languages as we go.",
       },
       {
+        id: 7,
         question: "Is my information secure?",
         answer: "Vio is dedicated to ensuring your privacy is our number one priority. This includes all of your information on our app.",
       },
       {
+        id: 8,
         question: "Can businesses and corporations use Vio?",
         answer: "Absolutely. You may perform one of the following:\n\nContact our Sales department for more information.\nLeave us your information in the Contact section.",
       },
@@ -58,16 +71,13 @@ const FAQ= () => {
 
       return (
         <div className="faq-section" >
-          <p className="faq-question" onClick={toggle}>
-            {isOpen ? `- ${faq.question}` : `+ ${faq.question}`}
-          </p>
+          <div className="faq-question" onClick={toggle}>
+            {isOpen ? (<div>{faq.id}. {faq.question} <img src={up}/></div> ) : (<div>{faq.id}. {faq.question} <img src={down}/></div>)}
+          </div>
           {isOpen && <div className="faq-answer" >{faq.answer}</div>}
         </div>
       );
     };
-    
-    
-    
     
     interface UserManualItem {
       id: number;
@@ -268,13 +278,13 @@ const FAQ= () => {
     ]}
     ];
 
-    const menuItems: MenuItem[] = [{name: "User Manual",id:1},{name: "Frequently Asked Questions",id:2}]
-    const [activeTab, setActiveTab] = useState<number>(2);
+    const menuItems: MenuItem[] = [{name: "Frequently Asked Questions",id:1}, {name: "User Manual",id:2},]
+    // const [activeTab, setActiveTab] = useState<number>(1);
     const [activeMenu, setActiveMenu] = useState<number>(1)
 
-    const handleTabClick = (id: number) => {
-      setActiveTab(id);
-    };
+    // const handleTabClick = (id: number) => {
+    //   setActiveTab(id);
+    // };
 
     const handleMenuClick = (id: number) => {
       setActiveMenu(id)
@@ -283,110 +293,56 @@ const FAQ= () => {
   
 
     return (
+      <>
       <section className="section home_sec_3_faq">
-        <div className='grid-100 faq-title' >
-              <h3 className='heading_title'><b>VIO</b> FAQ</h3>
-              <h3 style={{color: "white"}}>If you’re new to Vio or looking for replatform your business, this guide will help you learn more about the platform
-                and its features.</h3>
+        <div className='grid-container'>
+          <div className='grid-100 ' >
+              <div className='text_center '>
+                <h3 className='heading_title'><b>How can we help you?</b></h3>
+                <div className='title-sub-text'><h3 >If you’re new to Vio or looking for replatform your business, this guide will help you learn more about the platform
+                  and its features.</h3></div>
+                  <div>
+                    <form>
+                      <input placeholder='Search Information...'/>
+                    </form>
+                  </div>
+                  </div>
+               
+          </div>
         </div>
+        </section>
+
+        <section className='section sec_2_faq'>
         <div className='faq-btn' >
           {menuItems.map(menuItem => (
             <button className={activeMenu === menuItem.id ? 'active' : ''} onClick={() =>handleMenuClick(menuItem.id)}>{menuItem.name}</button>
           ) )}
     
         </div>
-        {activeMenu === 2 &&
+        
+        {activeMenu === 1 &&
         <div className="grid-container">
-            <div className="menu_list grid-30 tablet-grid-50">  
-                <ul className="tab_content" data-aos-duration="3000">            
-                  <li className='active'>
-                           <b> <div style={{fontSize: "24px"}} >Getting Started With Vio </div> </b>
-                            </li>
-                </ul>
-            </div>
-
-            <div className="grid-70">
+            <div className="grid-100 inner-content">
                 <ul className="tab_img">
                   {tabItems.map(item => (
-                    <li key={item.id} className={activeTab === item.id ? 'active' : ''}>
-                      {(item.content && activeTab === item.id) && 
-                        <div className='container_content'>                      
-                          <h4 className='heading_title'>Getting Started With Vio</h4>
-                          <div className="grid-100 inner_content">                      
+                    <li key={item.id} className={activeMenu === item.id ? 'active' : ''}>
+                      {(item.content && activeMenu === item.id) &&                                                                                   
                             <div className='content_text'>
                             {faqs.map((faq, index) => (
                               <FAQItem key={index} faq={faq} />
                             ))}                 
-                            </div>                            
-                          </div>
-                        </div> }                      
+                            </div>                                                   
+                       }                      
                     </li>
                   ))}
                 </ul>
             </div>
         </div>
 }
-{activeMenu === 1 && 
-  <div className="grid-container">
-            <div className="menu_list grid-30 tablet-grid-50">  
-                <ul className="tab_content" data-aos-duration="3000">
-                {tabItems.map(item => (
-                  <li
-                    key={item.id}
-                    className={activeTab === item.id ? 'active' : ''}
-                    data-id={item.id}
-                    // data-aos="fade-left"
-                    onClick={() => handleTabClick(item.id)}
-                  >
-                    {item.main_title ? 
-                            <b><div className="main_title1" dangerouslySetInnerHTML={{ __html: item.main_title }} /> </b> :
-                      item.sub_title ?
-                            <b><div className='sub_title1' dangerouslySetInnerHTML={{ __html: item.sub_title }} /> </b> :
-                            <b><div  className='sub_title_child1' dangerouslySetInnerHTML={{ __html: typeof item.sub_title_child === 'string' && item.sub_title_child }} /> </b>}
-                  </li>
-                ))}
-                </ul>
-            </div>
 
-            <div className="grid-70">
-                <ul className="tab_img">
-                  {tabItems.map(item => (
-                    <li key={item.id} className={activeTab === item.id ? 'active' : ''}>
-                      {(item.content && activeTab === item.id) && 
-                        <div className='container_content'>
-                          <h4>{item.sub_title && item.sub_title }</h4>
-                          <h4>{ item.sub_title_child &&  item.sub_title_child}</h4>
-                          <div className="grid-100 inner_content">
-                            {item.step_title1 && <div className='step_title1'>
-                              {item.step_title1}
-                            </div>}
-                            <div className='content_text'>
-                              <ul>
-                                {item.content.map((single_content, index) => (
-                                  <li>
-                                    <div style={{ paddingRight: "10px"}}>{index+1}.</div>
-                                    <div className="highlighted-element" dangerouslySetInnerHTML={{__html: single_content}}/>
-      
-                                    </li>
-                                ))}  
-                              </ul>
-                            </div>     
-                            <div className='content_image'>                   
-                              {item.image?.map((img, i) => (
-                                <img key={i} src={img} style={{}}/>
-                              )
-                              )}
-                            </div>
-                          </div>
-
-                        </div> }
-                      
-                    </li>
-                  ))}
-                </ul>
-            </div>
-        </div>}
+        {activeMenu === 2 && <Dropdown/>}
       </section>
+      </>
     );
 };
 
