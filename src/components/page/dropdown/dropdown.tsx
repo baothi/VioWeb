@@ -140,7 +140,7 @@ const Dropdown = () => {
                     <div style={{borderBottom: '1px solid #623275'}}>
                         <div onClick={() => handleSubMenu2Click(subMenu.id, sub_menu.id)} style={{padding: "0 10px",display: 'flex', justifyContent: 'space-between', alignItems:'center', }}>
                             
-                            <p style={{fontSize: '24px', fontWeight: '600', borderBottom: '#623275'}}>{sub_menu.title}</p>
+                            <p style={{fontSize: '24px', fontWeight: '600', borderBottom: '#623275', cursor: 'pointer'}}>{sub_menu.title}</p>
                         <img src={down}/>
                         
                         </div>

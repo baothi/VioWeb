@@ -1,5 +1,6 @@
  .download_center {
     justify-content: center;
+    margin-bottom: 2rem;
     
     h1{
         color: var(--gray-neutral-50, #FAFAFA);
@@ -40,49 +41,104 @@
 
    
     .download-section {
+        position: relative;
+
         border-radius: 32px;
         background: linear-gradient(to top, #7D2EBD,#C054EE,  ) ;
         display: flex;
-        margin-bottom: 2rem;
-        padding: 3rem 2rem 0 2rem;
-        
-        .text-download {
-            margin-bottom: 40px;
+     
+        padding: 2rem 2rem 4rem 2rem;
 
-            h1{
-               
-                font-size: 80px;
-           
+        .download-content-section {
+            width: 65%;
+            .text-download {
+                margin-bottom: 40px;
+                width: 90%;
+                h1{              
+                    font-size: 80px;          
+                }             
             }
-    
-             
+
+            .mockup-img {
+                display: flex;
+
+                .device_icon {
+                    display: grid;
+                    gap: 24px;
+                }
+
+                img {
+                    display: block;
+                } 
+            }
+            
         }
 
-        img {
-            display: block;
+        .download-img {
+            width: 35%;
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            padding: 0;
+            img {
+                display: block;
+            }
         }
-    
-        
-        
-       
+                      
     }
  }
- 
 
-.mockup-img {
-    display: flex;
+@media only screen and (max-width: 767px) {
+
+.download_center{
+    .section-title-wrapper {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .section-title {
+                display: block;;
+            text-align: center;
+                width: 200px;
+                h1 {
+                    font-size: 32px;
+                }
+            }
+
+            .sub-title h4 {
+                font-size: 16px !important;
+                font-weight: 200;
+            }
+        }
+    .download-section {
+        .download-content-section {
+            width: 100%;
+            display: block;
+            justify-content: center;
+            margin-bottom: 9rem;
+            .text-download {
+                display: block;
+                text-align: center;
+                
+            }
+            .text-download h1 {
+                font-size: 32px;
+                margin-top: 0 !important;
+            }
+
+            .device_icon {
+                gap: 16px;
+            }
+        }
+
+        .download-img {
+            width: 45%;
+            right: 25%;
+        }
+    }
+
+    
+
 }
 
-.download-img {
-    height: max-content;
-    padding: 0;
-
-  
 }
-
-// .download_center h1 {
-//     font-weight: 700px !important;
-// }
-
-
-

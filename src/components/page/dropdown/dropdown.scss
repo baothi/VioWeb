@@ -160,6 +160,7 @@ section.support_sec {
         }
 
         .menu3-content {
+            padding-left: 30px;
             p {
                 font-weight: 700;
                 font-size: 32px;
@@ -169,10 +170,10 @@ section.support_sec {
                 -webkit-text-fill-color: transparent;
                 text-shadow: none;
             }
-            img {
-                width:200px;
-                height: 430px;
-            }
+            // img {
+            //     width:200px;
+            //     height: 430px;
+            // }
 
             .img-content {
                 
@@ -212,7 +213,21 @@ section.support_sec {
         .grid-25.side-menu {
             display: none;
         }
-        
+
+        .menu3-content {
+            padding-left: 10px;
+            ul {
+                padding-left: 10px;
+            }
+
+            .img-content {
+                margin-left: 0;
+                gap: 40px;
+                ul {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
     
